@@ -1,0 +1,12 @@
+[Unit]
+Description=PJA110 temporary read-only charging diagnosis
+After=local-fs.target systemd-modules-load.service
+Before=upower.service
+
+[Service]
+Type=simple
+ExecStart=/bin/sh /usr/local/libexec/pja110-charger-capture
+TimeoutStopSec=3
+
+[Install]
+WantedBy=multi-user.target

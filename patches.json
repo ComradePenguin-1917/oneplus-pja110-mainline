@@ -1,0 +1,17 @@
+{
+  "description": "Deterministic fixes applied to the pinned decompiled DTS before dtc compilation. The decompiler renders a 32-bit cell whose bytes are all printable as a string literal; dtc then re-parses \\02 as an octal escape, so this property is restored explicitly. The uart14 node is additionally enabled with its Bluetooth child so hci_uart can bind the WCN7850.",
+  "replacements": [
+    {
+      "old": "regulator-min-microvolt = \"\\02K\";",
+      "new": "regulator-min-microvolt = <0x324b00>;",
+      "why": "decompiled 00 32 4b 00 was emitted as a C string '\\02K', which dtc compiles as bytes 02 4b 00 (150272 uV instead of 3294976 uV); the explicit cell restores the accepted value",
+      "node": "/soc@0/rsc@17a00000/regulators-0/bob1"
+    },
+    {
+      "old": "\t\t\tserial@898000 {\n\t\t\t\tcompatible = \"qcom,geni-uart\";\n\t\t\t\treg = <0x00 0x898000 0x00 0x4000>;\n\t\t\t\tclock-names = \"se\";\n\t\t\t\tclocks = <0x30 0x7b>;\n\t\t\t\tpinctrl-names = \"default\";\n\t\t\t\tpinctrl-0 = <0x47 0x48>;\n\t\t\t\tinterrupts = <0x00 0x1cd 0x04>;\n\t\t\t\tinterconnects = <0x32 0x02 0x00 0x32 0x05 0x00 0x33 0x02 0x00 0x34 0x1d 0x00>;\n\t\t\t\tinterconnect-names = \"qup-core\\0qup-config\";\n\t\t\t\tstatus = \"disabled\";\n\t\t\t\tphandle = <0x12f>;",
+      "new": "\t\t\tserial@898000 { \t\t\t\tcompatible = \"qcom,geni-uart\"; \t\t\t\treg = <0x00 0x898000 0x00 0x4000>; \t\t\t\tclock-names = \"se\"; \t\t\t\tclocks = <0x30 0x7b>; \t\t\t\tpinctrl-names = \"default\"; \t\t\t\tpinctrl-0 = <0x47 0x48>; \t\t\t\tinterrupts = <0x00 0x1cd 0x04>; \t\t\t\tinterconnects = <0x32 0x02 0x00 0x32 0x05 0x00 0x33 0x02 0x00 0x34 0x1d 0x00>; \t\t\t\tinterconnect-names = \"qup-core\\0qup-config\"; \t\t\t\tstatus = \"okay\"; \t\t\t\tphandle = <0x12f>;  \t\t\t\t\tbluetooth { \t\t\t\t\t\tcompatible = \"qcom,wcn7850-bt\"; \t\t\t\t\t\tmax-speed = <0x30d400>; \t\t\t\t\t};",
+      "why": "uart14 carries the WCN7850 Bluetooth transport (gpio78/79 + cts/rts on gpio76/77). It was left disabled in the vendor dump; enabling it with a qcom,wcn7850-bt child lets hci_uart bind and pwrseq_qcom_wcn drive the PMU enable GPIO. max-speed 0x30d40 = 3200000.",
+      "node": "/soc@0/geniqup@8c0000/serial@898000"
+    }
+  ]
+}

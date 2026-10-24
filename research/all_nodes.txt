@@ -1,0 +1,873 @@
+    38   clocks
+    39    xo_board: xo-board
+    44    sleep_clk: sleep-clk
+    49    bi_tcxo_div2: bi-tcxo-div2-clk
+    57    bi_tcxo_ao_div2: bi-tcxo-ao-div2-clk
+    66   cpus
+    70    cpu0: cpu@0
+    90     l2_0: l2-cache
+    95      l3_0: l3-cache
+   103    cpu1: cpu@100
+   123     l2_100: l2-cache
+   131    cpu2: cpu@200
+   151     l2_200: l2-cache
+   159    cpu3: cpu@300
+   179     l2_300: l2-cache
+   187    cpu4: cpu@400
+   207     l2_400: l2-cache
+   215    cpu5: cpu@500
+   235     l2_500: l2-cache
+   243    cpu6: cpu@600
+   263     l2_600: l2-cache
+   271    cpu7: cpu@700
+   291     l2_700: l2-cache
+   299    cpu-map
+   300     cluster0
+   301      core0
+   305      core1
+   309      core2
+   313      core3
+   317      core4
+   321      core5
+   325      core6
+   329      core7
+   335    idle-states
+   338     little_cpu_sleep_0: cpu-sleep-0-0
+   348     big_cpu_sleep_0: cpu-sleep-1-0
+   358     prime_cpu_sleep_0: cpu-sleep-2-0
+   369    domain-idle-states
+   370     cluster_sleep_0: cluster-sleep-0
+   378     cluster_sleep_1: cluster-sleep-1
+   388   firmware
+   389    scm: scm
+   398   clk_virt: interconnect-0
+   404   mc_virt: interconnect-1
+   410   qup_opp_table_100mhz: opp-table-qup100mhz
+   413    opp-75000000
+   418    opp-100000000
+   424   qup_opp_table_120mhz: opp-table-qup120mhz
+   427    opp-75000000
+   432    opp-120000000
+   438   qup_opp_table_125mhz: opp-table-qup125mhz
+   441    opp-75000000
+   446    opp-125000000
+   452   memory@a0000000
+   458   cpu0_opp_table: opp-table-cpu0
+   462    opp-307200000
+   467    opp-441600000
+   472    opp-556800000
+   477    opp-672000000
+   482    opp-787200000
+   487    opp-902400000
+   492    opp-1017600000
+   497    opp-1113600000
+   502    opp-1228800000
+   507    opp-1344000000
+   512    opp-1459200000
+   517    opp-1555200000
+   522    opp-1670400000
+   527    opp-1785600000
+   532    opp-1900800000
+   537    opp-2016000000
+   543   cpu3_opp_table: opp-table-cpu3
+   547    opp-499200000
+   552    opp-614400000
+   557    opp-729600000
+   562    opp-844800000
+   567    opp-940800000
+   572    opp-1056000000
+   577    opp-1171200000
+   582    opp-1286400000
+   587    opp-1401600000
+   592    opp-1536000000
+   597    opp-1651200000
+   602    opp-1785600000
+   607    opp-1920000000
+   612    opp-2054400000
+   617    opp-2188800000
+   622    opp-2323200000
+   627    opp-2457600000
+   632    opp-2592000000
+   637    opp-2707200000
+   642    opp-2803200000
+   648   cpu7_opp_table: opp-table-cpu7
+   652    opp-595200000
+   657    opp-729600000
+   662    opp-864000000
+   667    opp-998400000
+   672    opp-1132800000
+   677    opp-1248000000
+   682    opp-1363200000
+   687    opp-1478400000
+   692    opp-1593600000
+   697    opp-1708800000
+   702    opp-1843200000
+   707    opp-1977600000
+   712    opp-2092800000
+   717    opp-2227200000
+   722    opp-2342400000
+   727    opp-2476800000
+   732    opp-2592000000
+   737    opp-2726400000
+   742    opp-2841600000
+   747    opp-2956800000
+   752    opp-3187200000
+   758   pmu-a510
+   763   pmu-a710
+   768   pmu-a715
+   773   pmu-x3
+   778   psci
+   782    cpu_pd0: power-domain-cpu0
+   788    cpu_pd1: power-domain-cpu1
+   794    cpu_pd2: power-domain-cpu2
+   800    cpu_pd3: power-domain-cpu3
+   806    cpu_pd4: power-domain-cpu4
+   812    cpu_pd5: power-domain-cpu5
+   818    cpu_pd6: power-domain-cpu6
+   824    cpu_pd7: power-domain-cpu7
+   830    cluster_pd: power-domain-cluster
+   836   reserved_memory: reserved-memory
+   841    hyp_mem: hyp-region@80000000
+   846    cpusys_vm_mem: cpusys-vm-region@80a00000
+   851    hyp_tags_mem: hyp-tags-region@80e00000
+   856    xbl_sc_mem: xbl-sc-region@d8100000
+   861    hyp_tags_reserved_mem: hyp-tags-reserved-region@811d0000
+   867    xbl_dt_log_merged_mem: xbl-dt-log-merged-region@81a00000
+   872    aop_cmd_db_mem: aop-cmd-db-region@81c60000
+   879    aop_config_merged_mem: aop-config-merged-region@81c80000
+   885    smem: smem@81d00000
+   892    adsp_mhi_mem: adsp-mhi-region@81f00000
+   897    global_sync_mem: global-sync-region@82600000
+   902    tz_stat_mem: tz-stat-region@82700000
+   907    cdsp_secure_heap_mem: cdsp-secure-heap-region@82800000
+   912    mpss_mem: mpss-region@8a800000
+   917    q6_mpss_dtb_mem: q6-mpss-dtb-region@9b000000
+   922    ipa_fw_mem: ipa-fw-region@9b080000
+   927    ipa_gsi_mem: ipa-gsi-region@9b090000
+   932    gpu_micro_code_mem: gpu-micro-code-region@9b09a000
+   937    spss_region_mem: spss-region@9b100000
+   943    spu_tz_shared_mem: spu-tz-shared-region@9b280000
+   949    spu_modem_shared_mem: spu-modem-shared-region@9b2e0000
+   954    camera_mem: camera-region@9b300000
+   959    video_mem: video-region@9bb00000
+   964    cvp_mem: cvp-region@9c200000
+   969    cdsp_mem: cdsp-region@9c900000
+   974    q6_cdsp_dtb_mem: q6-cdsp-dtb-region@9e900000
+   979    q6_adsp_dtb_mem: q6-adsp-dtb-region@9e980000
+   984    adspslpi_mem: adspslpi-region@9ea00000
+   993    rmtfs_mem: rmtfs-region@d4a80000
+  1002    mpss_dsm_mem: mpss-dsm-region@d4d00000
+  1007    tz_reserved_mem: tz-reserved-region@d8000000
+  1012    cpucp_fw_mem: cpucp-fw-region@d8140000
+  1017    qtee_mem: qtee-region@d8300000
+  1022    ta_mem: ta-region@d8800000
+  1027    tz_tags_mem: tz-tags-region@e1200000
+  1032    hwfence_shbuf: hwfence-shbuf-region@e6440000
+  1037    trust_ui_vm_mem: trust-ui-vm-region@f3600000
+  1042    trust_ui_vm_dump: trust-ui-vm-dump-region@f80ee000
+  1047    trust_ui_vm_qrtr: trust-ui-vm-qrt-region@f80ef000
+  1052    trust_ui_vm_vblk0_ring: trust-ui-vm-vblk0-ring-region@f80f8000
+  1057    trust_ui_vm_vblk1_ring: trust-ui-vm-vblk1-ring-region@f80fc000
+  1062    trust_ui_vm_swiotlb: trust-ui-vm-swiotlb-region@f8100000
+  1067    oem_vm_mem: oem-vm-region@f8400000
+  1072    oem_vm_vblk0_ring: oem-vm-vblk0-ring-region@fcc00000
+  1077    oem_vm_swiotlb: oem-vm-swiotlb-region@fcc04000
+  1082    hyp_ext_tags_mem: hyp-ext-tags-region@fce00000
+  1087    hyp_ext_reserved_mem: hyp-ext-reserved-region@ff700000
+  1093   smp2p-adsp
+  1105    smp2p_adsp_out: master-kernel
+  1110    smp2p_adsp_in: slave-kernel
+  1117   smp2p-cdsp
+  1129    smp2p_cdsp_out: master-kernel
+  1134    smp2p_cdsp_in: slave-kernel
+  1141   smp2p-modem
+  1153    smp2p_modem_out: master-kernel
+  1158    smp2p_modem_in: slave-kernel
+  1164    ipa_smp2p_out: ipa-ap-to-modem
+  1169    ipa_smp2p_in: ipa-modem-to-ap
+  1176   soc: soc@0 [disabled]
+  1184    gcc: clock-controller@100000
+  1200    ipcc: mailbox@408000
+  1209    gpi_dma2: dma-controller@800000 [disabled]
+  1232    qupv3_id_1: geniqup@8c0000 [disabled]
+  1245     i2c8: i2c@880000 [disabled]
+  1270     spi8: spi@880000 [disabled]
+  1295     i2c9: i2c@884000 [disabled]
+  1320     spi9: spi@884000 [disabled]
+  1345     i2c10: i2c@888000 [disabled]
+  1370     spi10: spi@888000 [disabled]
+  1395     i2c11: i2c@88c000 [disabled]
+  1420     spi11: spi@88c000 [disabled]
+  1445     i2c12: i2c@890000 [disabled]
+  1470     spi12: spi@890000 [disabled]
+  1495     i2c13: i2c@894000 [disabled]
+  1520     spi13: spi@894000 [disabled]
+  1545     uart14: serial@898000 [disabled]
+  1563     i2c15: i2c@89c000 [disabled]
+  1588     spi15: spi@89c000 [disabled]
+  1613     uart15: serial@89c000 [disabled]
+  1630    i2c_master_hub_0: geniqup@9c0000 [disabled]
+  1640     i2c_hub_0: i2c@980000 [disabled]
+  1661     i2c_hub_1: i2c@984000 [disabled]
+  1682     i2c_hub_2: i2c@988000 [disabled]
+  1703     i2c_hub_3: i2c@98c000 [disabled]
+  1724     i2c_hub_4: i2c@990000 [disabled]
+  1745     i2c_hub_5: i2c@994000 [disabled]
+  1766     i2c_hub_6: i2c@998000 [disabled]
+  1787     i2c_hub_7: i2c@99c000 [disabled]
+  1808     i2c_hub_8: i2c@9a0000 [disabled]
+  1829     i2c_hub_9: i2c@9a4000 [disabled]
+  1851    gpi_dma1: dma-controller@a00000 [disabled]
+  1874    qupv3_id_0: geniqup@ac0000 [disabled]
+  1890     i2c0: i2c@a80000 [disabled]
+  1915     spi0: spi@a80000 [disabled]
+  1940     i2c1: i2c@a84000 [disabled]
+  1965     spi1: spi@a84000 [disabled]
+  1990     i2c2: i2c@a88000 [disabled]
+  2015     spi2: spi@a88000 [disabled]
+  2040     i2c3: i2c@a8c000 [disabled]
+  2065     spi3: spi@a8c000 [disabled]
+  2090     i2c4: i2c@a90000 [disabled]
+  2115     spi4: spi@a90000 [disabled]
+  2140     i2c5: i2c@a94000 [disabled]
+  2165     spi5: spi@a94000 [disabled]
+  2190     i2c6: i2c@a98000 [disabled]
+  2215     spi6: spi@a98000 [disabled]
+  2240     uart7: serial@a9c000 [disabled]
+  2259    cnoc_main: interconnect@1500000
+  2266    config_noc: interconnect@1600000
+  2273    system_noc: interconnect@1680000
+  2280    pcie_noc: interconnect@16c0000
+  2289    aggre1_noc: interconnect@16e0000
+  2298    aggre2_noc: interconnect@1700000
+  2306    mmss_noc: interconnect@1780000
+  2313    rng: rng@10c3000
+  2318    pcie0: pcie@1c00000 [disabled]
+  2407     pcie0_opp_table: opp-table
+  2411      opp-2500000-1
+  2419      opp-5000000-1
+  2427      opp-5000000-2
+  2435      opp-10000000-2
+  2443      opp-8000000-3
+  2451      opp-16000000-3
+  2459     pcie0_port0: pcie@0
+  2470    pcie0_phy: phy@1c06000 [disabled]
+  2498    pcie1: pcie@1c08000 [disabled]
+  2593     pcie1_opp_table: opp-table
+  2597      opp-2500000-1
+  2605      opp-5000000-1
+  2613      opp-5000000-2
+  2621      opp-10000000-2
+  2629      opp-8000000-3
+  2637      opp-16000000-3
+  2645      opp-16000000-4
+  2653      opp-32000000-4
+  2661     pcie1_port0: pcie@0
+  2672    pcie1_phy: phy@1c0e000 [disabled]
+  2701    cryptobam: dma-controller@1dc4000
+  2714    crypto: crypto@1dfa000
+  2726    ufs_mem_phy: phy@1d80000 [disabled]
+  2747    ufs_mem_hc: ufshc@1d84000 [disabled]
+  2792     ufs_opp_table: opp-table
+  2795      opp-75000000
+  2807      opp-150000000
+  2819      opp-300000000
+  2833    ice: crypto@1d88000
+  2845    tcsr_mutex: hwlock@1f40000
+  2851    tcsr: clock-controller@1fc0000
+  2859    gpu: gpu@3d00000 [disabled]
+  2884     gpu_zap_shader: zap-shader
+  2889     gpu_opp_table: opp-table
+  2892      opp-680000000
+  2899      opp-615000000
+  2906      opp-550000000
+  2913      opp-475000000
+  2920      opp-401000000
+  2927      opp-348000000
+  2934      opp-295000000
+  2941      opp-220000000
+  2950    gmu: gmu@3d6a000
+  2987     gmu_opp_table: opp-table
+  2990      opp-500000000
+  2995      opp-200000000
+  3002    gpucc: clock-controller@3d90000
+  3013    adreno_smmu: iommu@3da0000
+  3057    ipa: ipa@3f40000 [disabled]
+  3102    remoteproc_mpss: remoteproc@4080000 [disabled]
+  3134     glink-edge
+  3145    remoteproc_adsp: remoteproc@6800000 [disabled]
+  3176     glink-edge
+  3186      fastrpc
+  3194       compute-cb@3
+  3202       compute-cb@4
+  3210       compute-cb@5
+  3218       compute-cb@6
+  3226       compute-cb@7
+  3235      gpr
+  3243       q6apm: service@1
+  3250        q6apmdai: dais
+  3256        q6apmbedai: bedais
+  3262       q6prm: service@2
+  3268        q6prmcc: clock-controller
+  3277    lpass_wsa2macro: codec@6aa0000
+  3291    swr3: soundwire@6ab0000 [disabled]
+  3321    lpass_rxmacro: codec@6ac0000
+  3335    swr1: soundwire@6ad0000 [disabled]
+  3365    lpass_txmacro: codec@6ae0000
+  3379    lpass_wsamacro: codec@6b00000
+  3393    swr0: soundwire@6b10000 [disabled]
+  3423    swr2: soundwire@6d30000 [disabled]
+  3454    lpass_vamacro: codec@6d44000
+  3467    lpass_tlmm: pinctrl@6e80000
+  3479     tx_swr_active: tx-swr-active-state
+  3480      clk-pins
+  3488      data-pins
+  3497     rx_swr_active: rx-swr-active-state
+  3498      clk-pins
+  3506      data-pins
+  3515     dmic01_default: dmic01-default-state
+  3516      clk-pins
+  3523      data-pins
+  3531     dmic23_default: dmic23-default-state
+  3532      clk-pins
+  3539      data-pins
+  3547     wsa_swr_active: wsa-swr-active-state
+  3548      clk-pins
+  3556      data-pins
+  3565     wsa2_swr_active: wsa2-swr-active-state
+  3566      clk-pins
+  3574      data-pins
+  3584    lpass_lpiaon_noc: interconnect@7400000
+  3591    lpass_lpicx_noc: interconnect@7430000
+  3598    lpass_ag_noc: interconnect@7e40000
+  3605    sdhc_2: mmc@8804000 [disabled]
+  3634     sdhc2_opp_table: opp-table
+  3637      opp-19200000
+  3642      opp-50000000
+  3647      opp-100000000
+  3652      opp-202000000
+  3659    iris: video-codec@aa00000 [disabled]
+  3705     iris_opp_table: opp-table
+  3708      opp-240000000
+  3714      opp-338000000
+  3720      opp-366000000
+  3726      opp-444000000
+  3732      opp-533333334
+  3740    videocc: clock-controller@aaf0000
+  3754    cci0: cci@ac15000 [disabled]
+  3772     cci0_i2c0: i2c-bus@0
+  3779     cci0_i2c1: i2c-bus@1
+  3787    cci1: cci@ac16000 [disabled]
+  3805     cci1_i2c0: i2c-bus@0
+  3813    cci2: cci@ac17000 [disabled]
+  3831     cci2_i2c0: i2c-bus@0
+  3838     cci2_i2c1: i2c-bus@1
+  3846    camss: isp@acb7000 [disabled]
+  4018     ports
+  4022      port@0
+  4026      port@1
+  4030      port@2
+  4034      port@3
+  4038      port@4
+  4042      port@5
+  4046      port@6
+  4050      port@7
+  4056    camcc: clock-controller@ade0000
+  4072    mdss: display-subsystem@ae00000 [disabled]
+  4104     mdss_mdp: display-controller@ae01000
+  4133      ports
+  4137       port@0
+  4139        dpu_intf1_out: endpoint
+  4144       port@1
+  4146        dpu_intf2_out: endpoint
+  4151       port@2
+  4153        dpu_intf0_out: endpoint
+  4159      mdp_opp_table: opp-table
+  4162       opp-200000000
+  4167       opp-325000000
+  4172       opp-375000000
+  4177       opp-514000000
+  4184     mdss_dp0: displayport-controller@ae90000 [disabled]
+  4223      ports
+  4227       port@0
+  4229        mdss_dp0_in: endpoint
+  4234       port@1
+  4236        mdss_dp0_out: endpoint
+  4243      dp_opp_table: opp-table
+  4246       opp-162000000
+  4251       opp-270000000
+  4256       opp-540000000
+  4261       opp-810000000
+  4268     mdss_dsi0: dsi@ae94000 [disabled]
+  4306      ports
+  4310       port@0
+  4312        mdss_dsi0_in: endpoint
+  4317       port@1
+  4319        mdss_dsi0_out: endpoint
+  4324      mdss_dsi_opp_table: opp-table
+  4327       opp-187500000
+  4332       opp-300000000
+  4337       opp-358000000
+  4344     mdss_dsi0_phy: phy@ae95000 [disabled]
+  4363     mdss_dsi1: dsi@ae96000 [disabled]
+  4401      ports
+  4405       port@0
+  4407        mdss_dsi1_in: endpoint
+  4412       port@1
+  4414        mdss_dsi1_out: endpoint
+  4420     mdss_dsi1_phy: phy@ae97000 [disabled]
+  4440    dispcc: clock-controller@af00000
+  4466    usb_1_hsphy: phy@88e3000 [disabled]
+  4479    usb_dp_qmpphy: phy@88e8000 [disabled]
+  4503     ports
+  4507      port@0
+  4510       usb_dp_qmpphy_out: endpoint
+  4514      port@1
+  4517       usb_dp_qmpphy_usb_ss_in: endpoint
+  4522      port@2
+  4525       usb_dp_qmpphy_dp_in: endpoint
+  4532    usb_1: usb@a600000 [disabled]
+  4601     ports
+  4605      port@0
+  4608       usb_1_dwc3_hs: endpoint
+  4612      port@1
+  4615       usb_1_dwc3_ss: endpoint
+  4622    pdc: interrupt-controller@b220000
+  4633    tsens0: thermal-sensor@c271000
+  4644    tsens1: thermal-sensor@c272000
+  4655    tsens2: thermal-sensor@c273000
+  4666    aoss_qmp: power-management@c300000
+  4677    sram@c3f0000
+  4683    spmi_bus: spmi@c400000
+  4702    tlmm: pinctrl@f100000
+  4713     cam0_default: cam0-default-state
+  4714      mclk-pins
+  4722     cam0_sleep: cam0-sleep-state
+  4723      mclk-pins
+  4731     cam1_default: cam1-default-state
+  4732      mclk-pins
+  4740     cam1_sleep: cam1-sleep-state
+  4741      mclk-pins
+  4749     cam2_default: cam2-default-state
+  4750      mclk-pins
+  4758     cam2_sleep: cam2-sleep-state
+  4759      mclk-pins
+  4767     cam3_default: cam3-default-state
+  4768      mclk-pins
+  4776     cam3_sleep: cam3-sleep-state
+  4777      mclk-pins
+  4785     cam4_default: cam4-default-state
+  4786      mclk-pins
+  4794     cam4_sleep: cam4-sleep-state
+  4795      mclk-pins
+  4803     cam5_default: cam5-default-state
+  4804      mclk-pins
+  4812     cam5_sleep: cam5-sleep-state
+  4813      mclk-pins
+  4821     cam6_default: cam6-default-state
+  4822      mclk-pins
+  4830     cam6_sleep: cam6-sleep-state
+  4831      mclk-pins
+  4839     cam7_default: cam7-default-state
+  4840      mclk-pins
+  4848     cam7_sleep: cam7-sleep-state
+  4849      mclk-pins
+  4857     cci0_0_default: cci0-0-default-state
+  4858      sda-pins
+  4865      scl-pins
+  4873     cci0_0_sleep: cci0-0-sleep-state
+  4874      sda-pins
+  4881      scl-pins
+  4889     cci0_1_default: cci0-1-default-state
+  4890      sda-pins
+  4897      scl-pins
+  4905     cci0_1_sleep: cci0-1-sleep-state
+  4906      sda-pins
+  4913      scl-pins
+  4921     cci1_0_default: cci1-0-default-state
+  4922      sda-pins
+  4929      scl-pins
+  4937     cci1_0_sleep: cci1-0-sleep-state
+  4938      sda-pins
+  4945      scl-pins
+  4953     cci2_0_default: cci2-0-default-state
+  4954      sda-pins
+  4961      scl-pins
+  4969     cci2_0_sleep: cci2-0-sleep-state
+  4970      sda-pins
+  4977      scl-pins
+  4985     cci2_1_default: cci2-1-default-state
+  4986      sda-pins
+  4993      scl-pins
+  5001     cci2_1_sleep: cci2-1-sleep-state
+  5002      sda-pins
+  5009      scl-pins
+  5017     hub_i2c0_data_clk: hub-i2c0-data-clk-state
+  5025     hub_i2c1_data_clk: hub-i2c1-data-clk-state
+  5033     hub_i2c2_data_clk: hub-i2c2-data-clk-state
+  5041     hub_i2c3_data_clk: hub-i2c3-data-clk-state
+  5049     hub_i2c4_data_clk: hub-i2c4-data-clk-state
+  5057     hub_i2c5_data_clk: hub-i2c5-data-clk-state
+  5065     hub_i2c6_data_clk: hub-i2c6-data-clk-state
+  5073     hub_i2c7_data_clk: hub-i2c7-data-clk-state
+  5081     hub_i2c8_data_clk: hub-i2c8-data-clk-state
+  5089     hub_i2c9_data_clk: hub-i2c9-data-clk-state
+  5097     pcie0_default_state: pcie0-default-state
+  5098      perst-pins
+  5105      clkreq-pins
+  5112      wake-pins
+  5120     pcie1_default_state: pcie1-default-state
+  5121      perst-pins
+  5128      clkreq-pins
+  5135      wake-pins
+  5143     qup_i2c0_data_clk: qup-i2c0-data-clk-state
+  5151     qup_i2c1_data_clk: qup-i2c1-data-clk-state
+  5159     qup_i2c2_data_clk: qup-i2c2-data-clk-state
+  5167     qup_i2c3_data_clk: qup-i2c3-data-clk-state
+  5175     qup_i2c4_data_clk: qup-i2c4-data-clk-state
+  5183     qup_i2c5_data_clk: qup-i2c5-data-clk-state
+  5191     qup_i2c6_data_clk: qup-i2c6-data-clk-state
+  5199     qup_i2c8_data_clk: qup-i2c8-data-clk-state
+  5200      scl-pins
+  5207      sda-pins
+  5215     qup_i2c9_data_clk: qup-i2c9-data-clk-state
+  5223     qup_i2c10_data_clk: qup-i2c10-data-clk-state
+  5231     qup_i2c11_data_clk: qup-i2c11-data-clk-state
+  5239     qup_i2c12_data_clk: qup-i2c12-data-clk-state
+  5247     qup_i2c13_data_clk: qup-i2c13-data-clk-state
+  5255     qup_i2c15_data_clk: qup-i2c15-data-clk-state
+  5263     qup_spi0_cs: qup-spi0-cs-state
+  5270     qup_spi0_data_clk: qup-spi0-data-clk-state
+  5278     qup_spi1_cs: qup-spi1-cs-state
+  5285     qup_spi1_data_clk: qup-spi1-data-clk-state
+  5293     qup_spi2_cs: qup-spi2-cs-state
+  5300     qup_spi2_data_clk: qup-spi2-data-clk-state
+  5308     qup_spi3_cs: qup-spi3-cs-state
+  5315     qup_spi3_data_clk: qup-spi3-data-clk-state
+  5323     qup_spi4_cs: qup-spi4-cs-state
+  5330     qup_spi4_data_clk: qup-spi4-data-clk-state
+  5338     qup_spi5_cs: qup-spi5-cs-state
+  5345     qup_spi5_data_clk: qup-spi5-data-clk-state
+  5353     qup_spi6_cs: qup-spi6-cs-state
+  5360     qup_spi6_data_clk: qup-spi6-data-clk-state
+  5368     qup_spi8_cs: qup-spi8-cs-state
+  5375     qup_spi8_data_clk: qup-spi8-data-clk-state
+  5383     qup_spi9_cs: qup-spi9-cs-state
+  5390     qup_spi9_data_clk: qup-spi9-data-clk-state
+  5398     qup_spi10_cs: qup-spi10-cs-state
+  5405     qup_spi10_data_clk: qup-spi10-data-clk-state
+  5413     qup_spi11_cs: qup-spi11-cs-state
+  5420     qup_spi11_data_clk: qup-spi11-data-clk-state
+  5428     qup_spi12_cs: qup-spi12-cs-state
+  5435     qup_spi12_data_clk: qup-spi12-data-clk-state
+  5443     qup_spi13_cs: qup-spi13-cs-state
+  5450     qup_spi13_data_clk: qup-spi13-data-clk-state
+  5458     qup_spi15_cs: qup-spi15-cs-state
+  5465     qup_spi15_data_clk: qup-spi15-data-clk-state
+  5473     qup_uart7_default: qup-uart7-default-state
+  5481     qup_uart14_default: qup-uart14-default-state
+  5489     qup_uart14_cts_rts: qup-uart14-cts-rts-state
+  5497     qup_uart15_default: qup-uart15-default-state
+  5505     sdc2_sleep: sdc2-sleep-state
+  5506      clk-pins
+  5512      cmd-pins
+  5518      data-pins
+  5525     sdc2_default: sdc2-default-state
+  5526      clk-pins
+  5532      cmd-pins
+  5538      data-pins
+  5546    sram@14680000
+  5555     minidump_config: minidump-sram@1c
+  5559     ipa_modem_tables: modem-tables@8000
+  5564    apps_smmu: iommu@15000000
+  5669    intc: interrupt-controller@17100000
+  5682     ppi-partitions
+  5683      ppi_cluster0: interrupt-partition-0
+  5687      ppi_cluster1: interrupt-partition-1
+  5691      ppi_cluster2: interrupt-partition-2
+  5695      ppi_cluster3: interrupt-partition-3
+  5700     gic_its: msi-controller@17140000
+  5708    timer@17420000 [disabled]
+  5715     frame@17421000
+  5723     frame@17423000 [disabled]
+  5730     frame@17425000 [disabled]
+  5737     frame@17427000 [disabled]
+  5744     frame@17429000 [disabled]
+  5751     frame@1742b000 [disabled]
+  5758     frame@1742d000 [disabled]
+  5766    apps_rsc: rsc@17a00000
+  5783     apps_bcm_voter: bcm-voter
+  5787     rpmhcc: clock-controller
+  5794     rpmhpd: power-controller
+  5799      rpmhpd_opp_table: opp-table
+  5802       rpmhpd_opp_ret: opp-16
+  5806       rpmhpd_opp_min_svs: opp-48
+  5810       rpmhpd_opp_low_svs_d2: opp-52
+  5814       rpmhpd_opp_low_svs_d1: opp-56
+  5818       rpmhpd_opp_low_svs_d0: opp-60
+  5822       rpmhpd_opp_low_svs: opp-64
+  5826       rpmhpd_opp_low_svs_l1: opp-80
+  5830       rpmhpd_opp_svs: opp-128
+  5834       rpmhpd_opp_svs_l0: opp-144
+  5838       rpmhpd_opp_svs_l1: opp-192
+  5842       rpmhpd_opp_nom: opp-256
+  5846       rpmhpd_opp_nom_l1: opp-320
+  5850       rpmhpd_opp_nom_l2: opp-336
+  5854       rpmhpd_opp_turbo: opp-384
+  5858       rpmhpd_opp_turbo_l1: opp-416
+  5865    epss_l3: interconnect@17d90000
+  5875    cpufreq_hw: cpufreq@17d91000
+  5891    pmu@24091000
+  5900     llcc_bwmon_opp_table: opp-table
+  5903      opp-0
+  5907      opp-1
+  5911      opp-2
+  5915      opp-3
+  5919      opp-4
+  5923      opp-5
+  5927      opp-6
+  5931      opp-7
+  5935      opp-8
+  5941    pmu@240b6400
+  5950     cpu_bwmon_opp_table: opp-table
+  5953      opp-0
+  5957      opp-1
+  5961      opp-2
+  5965      opp-3
+  5969      opp-4
+  5973      opp-5
+  5979    gem_noc: interconnect@24100000
+  5986    system-cache-controller@25000000
+  6003    nsp_noc: interconnect@320c0000
+  6010    remoteproc_cdsp: remoteproc@32300000 [disabled]
+  6042     glink-edge
+  6052      fastrpc
+  6060       compute-cb@1
+  6069       compute-cb@2
+  6078       compute-cb@3
+  6087       compute-cb@4
+  6096       compute-cb@5
+  6105       compute-cb@6
+  6114       compute-cb@7
+  6123       compute-cb@8
+  6138   thermal-zones
+  6139    aoss0-thermal
+  6142     trips
+  6143      thermal-engine-config
+  6149      reset-mon-config
+  6157    cpuss0-thermal
+  6160     trips
+  6161      thermal-engine-config
+  6167      reset-mon-config
+  6175    cpuss1-thermal
+  6178     trips
+  6179      thermal-engine-config
+  6185      reset-mon-config
+  6193    cpuss2-thermal
+  6196     trips
+  6197      thermal-engine-config
+  6203      reset-mon-config
+  6211    cpuss3-thermal
+  6214     trips
+  6215      thermal-engine-config
+  6221      reset-mon-config
+  6229    cpu3-top-thermal
+  6232     trips
+  6233      cpu3_top_alert0: trip-point0
+  6239      cpu3_top_alert1: trip-point1
+  6245      cpu3_top_crit: cpu-critical
+  6253    cpu3-bottom-thermal
+  6256     trips
+  6257      cpu3_bottom_alert0: trip-point0
+  6263      cpu3_bottom_alert1: trip-point1
+  6269      cpu3_bottom_crit: cpu-critical
+  6277    cpu4-top-thermal
+  6280     trips
+  6281      cpu4_top_alert0: trip-point0
+  6287      cpu4_top_alert1: trip-point1
+  6293      cpu4_top_crit: cpu-critical
+  6301    cpu4-bottom-thermal
+  6304     trips
+  6305      cpu4_bottom_alert0: trip-point0
+  6311      cpu4_bottom_alert1: trip-point1
+  6317      cpu4_bottom_crit: cpu-critical
+  6325    cpu5-top-thermal
+  6328     trips
+  6329      cpu5_top_alert0: trip-point0
+  6335      cpu5_top_alert1: trip-point1
+  6341      cpu5_top_crit: cpu-critical
+  6349    cpu5-bottom-thermal
+  6352     trips
+  6353      cpu5_bottom_alert0: trip-point0
+  6359      cpu5_bottom_alert1: trip-point1
+  6365      cpu5_bottom_crit: cpu-critical
+  6373    cpu6-top-thermal
+  6376     trips
+  6377      cpu6_top_alert0: trip-point0
+  6383      cpu6_top_alert1: trip-point1
+  6389      cpu6_top_crit: cpu-critical
+  6397    cpu6-bottom-thermal
+  6400     trips
+  6401      cpu6_bottom_alert0: trip-point0
+  6407      cpu6_bottom_alert1: trip-point1
+  6413      cpu6_bottom_crit: cpu-critical
+  6421    cpu7-top-thermal
+  6424     trips
+  6425      cpu7_top_alert0: trip-point0
+  6431      cpu7_top_alert1: trip-point1
+  6437      cpu7_top_crit: cpu-critical
+  6445    cpu7-middle-thermal
+  6448     trips
+  6449      cpu7_middle_alert0: trip-point0
+  6455      cpu7_middle_alert1: trip-point1
+  6461      cpu7_middle_crit: cpu-critical
+  6469    cpu7-bottom-thermal
+  6472     trips
+  6473      cpu7_bottom_alert0: trip-point0
+  6479      cpu7_bottom_alert1: trip-point1
+  6485      cpu7_bottom_crit: cpu-critical
+  6493    aoss1-thermal
+  6496     trips
+  6497      thermal-engine-config
+  6503      reset-mon-config
+  6511    cpu0-thermal
+  6514     trips
+  6515      cpu0_alert0: trip-point0
+  6521      cpu0_alert1: trip-point1
+  6527      cpu0_crit: cpu-critical
+  6535    cpu1-thermal
+  6538     trips
+  6539      cpu1_alert0: trip-point0
+  6545      cpu1_alert1: trip-point1
+  6551      cpu1_crit: cpu-critical
+  6559    cpu2-thermal
+  6562     trips
+  6563      cpu2_alert0: trip-point0
+  6569      cpu2_alert1: trip-point1
+  6575      cpu2_crit: cpu-critical
+  6583    cdsp0-thermal
+  6588     trips
+  6589      thermal-engine-config
+  6595      thermal-hal-config
+  6601      reset-mon-config
+  6607      cdsp0_junction_config: junction-config
+  6615    cdsp1-thermal
+  6620     trips
+  6621      thermal-engine-config
+  6627      thermal-hal-config
+  6633      reset-mon-config
+  6639      cdsp1_junction_config: junction-config
+  6647    cdsp2-thermal
+  6652     trips
+  6653      thermal-engine-config
+  6659      thermal-hal-config
+  6665      reset-mon-config
+  6671      cdsp2_junction_config: junction-config
+  6679    cdsp3-thermal
+  6684     trips
+  6685      thermal-engine-config
+  6691      thermal-hal-config
+  6697      reset-mon-config
+  6703      cdsp3_junction_config: junction-config
+  6711    video-thermal
+  6714     trips
+  6715      thermal-engine-config
+  6721      reset-mon-config
+  6729    mem-thermal
+  6734     trips
+  6735      thermal-engine-config
+  6741      ddr_config0: ddr0-config
+  6747      reset-mon-config
+  6755    modem0-thermal
+  6758     trips
+  6759      thermal-engine-config
+  6765      mdmss0_config0: mdmss0-config0
+  6771      mdmss0_config1: mdmss0-config1
+  6777      reset-mon-config
+  6785    modem1-thermal
+  6788     trips
+  6789      thermal-engine-config
+  6795      mdmss1_config0: mdmss1-config0
+  6801      mdmss1_config1: mdmss1-config1
+  6807      reset-mon-config
+  6815    modem2-thermal
+  6818     trips
+  6819      thermal-engine-config
+  6825      mdmss2_config0: mdmss2-config0
+  6831      mdmss2_config1: mdmss2-config1
+  6837      reset-mon-config
+  6845    modem3-thermal
+  6848     trips
+  6849      thermal-engine-config
+  6855      mdmss3_config0: mdmss3-config0
+  6861      mdmss3_config1: mdmss3-config1
+  6867      reset-mon-config
+  6875    camera0-thermal
+  6878     trips
+  6879      thermal-engine-config
+  6885      reset-mon-config
+  6893    camera1-thermal
+  6896     trips
+  6897      thermal-engine-config
+  6903      reset-mon-config
+  6911    aoss2-thermal
+  6914     trips
+  6915      thermal-engine-config
+  6921      reset-mon-config
+  6929    gpuss-0-thermal
+  6934     cooling-maps
+  6935      map0
+  6941     trips
+  6942      gpu0_alert0: trip-point0
+  6948      trip-point1
+  6954      trip-point2
+  6962    gpuss-1-thermal
+  6967     cooling-maps
+  6968      map0
+  6974     trips
+  6975      gpu1_alert0: trip-point0
+  6981      trip-point1
+  6987      trip-point2
+  6995    gpuss-2-thermal
+  7000     cooling-maps
+  7001      map0
+  7007     trips
+  7008      gpu2_alert0: trip-point0
+  7014      trip-point1
+  7020      trip-point2
+  7028    gpuss-3-thermal
+  7033     cooling-maps
+  7034      map0
+  7040     trips
+  7041      gpu3_alert0: trip-point0
+  7047      trip-point1
+  7053      trip-point2
+  7061    gpuss-4-thermal
+  7066     cooling-maps
+  7067      map0
+  7073     trips
+  7074      gpu4_alert0: trip-point0
+  7080      trip-point1
+  7086      trip-point2
+  7094    gpuss-5-thermal
+  7099     cooling-maps
+  7100      map0
+  7106     trips
+  7107      gpu5_alert0: trip-point0
+  7113      trip-point1
+  7119      trip-point2
+  7127    gpuss-6-thermal
+  7132     cooling-maps
+  7133      map0
+  7139     trips
+  7140      gpu6_alert0: trip-point0
+  7146      trip-point1
+  7152      trip-point2
+  7160    gpuss-7-thermal
+  7165     cooling-maps
+  7166      map0
+  7172     trips
+  7173      gpu7_alert0: trip-point0
+  7179      trip-point1
+  7185      trip-point2
+  7194   timer

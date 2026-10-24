@@ -1,0 +1,17 @@
+[Unit]
+Description=Grow root filesystem to fill its partition
+Documentation=man:resize2fs(8)
+After=local-fs.target
+ConditionPathIsMountPoint=/
+ConditionPathExists=/dev/sda14
+
+[Service]
+# 交付镜像是 8 GiB，而 userdata 分区是 450 GiB。
+# resize2fs 支持在线扩展；文件系统已经占满时它立即成功返回，
+# 因此每次开机都跑一遍是安全的，不需要任何 marker 文件。
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/sbin/resize2fs /dev/sda14
+
+[Install]
+WantedBy=multi-user.target

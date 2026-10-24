@@ -1,0 +1,2178 @@
+{
+  "platform": "Windows",
+  "archived_files": 542,
+  "retained_tool_files": 98,
+  "archive": "H:\\workspace\\PJA110-Mainline\\archive\\maintenance-20261017\\windows-history.zip",
+  "files": {
+    "tools/activate_adc_a.py": {
+      "bytes": 724,
+      "sha256": "a0f85da2d3c0df0bd6d6af8be4c4019f376d2be9b3ba37e588745773add8ed25"
+    },
+    "tools/add_ramoops.py": {
+      "bytes": 5100,
+      "sha256": "1c9aa6e2ddef6b036a1c709d0bf1004ea679267bbf458cc72b69f5a3ef1b025d"
+    },
+    "tools/add_ramoops_fixed.py": {
+      "bytes": 4777,
+      "sha256": "6eddda0121248d6b314f575913f89980241f5a31dc4f48ad5f0cff9b8056ef20"
+    },
+    "tools/analyze_after_initrd.py": {
+      "bytes": 2859,
+      "sha256": "70a868744b128f66c8ea52dc451d69c984a45c0380c3adc2655f173becd18610"
+    },
+    "tools/analyze_bootloader_log.py": {
+      "bytes": 2566,
+      "sha256": "c1a0c3d30e215a5010461c4c977201a22c36655f93626a373814c784c7181c4a"
+    },
+    "tools/analyze_display_timing.py": {
+      "bytes": 2446,
+      "sha256": "cf1ddfe76af27038a5c876f827b69e9780471cb2ed87fb7489c09431a2f6cf2c"
+    },
+    "tools/analyze_phoc_commit.py": {
+      "bytes": 1607,
+      "sha256": "f2e1d71fe9dac39bfb32a7d3d598361a989b8053654588575b15b4bd1f8c4298"
+    },
+    "tools/answer_9008.py": {
+      "bytes": 5564,
+      "sha256": "230ba24b55442bddf824e24963873a1b6dca035159f55c45b0eed41a343ee2de"
+    },
+    "tools/answer_dtb_controllability.py": {
+      "bytes": 4130,
+      "sha256": "0da4b33bfc1ff148bcb01b9849963283436c2c4903ce6c5c72cef9dddd9e07ae"
+    },
+    "tools/answer_uart_access.py": {
+      "bytes": 4908,
+      "sha256": "9b5fe6caa6a42d94c6e0e17e3e4d74a05a1cf597eaea7c73f181e140edc9eab1"
+    },
+    "tools/assess_edl_channel.py": {
+      "bytes": 5295,
+      "sha256": "0b35a682ad206133d6522afbb0fc001577cb4b2b1276f1b3ae4a5f245fa388c4"
+    },
+    "tools/assess_noop_dtbo_risk.py": {
+      "bytes": 4469,
+      "sha256": "7a31eeccecc26103b5b65acac4924053c291817c441b0672f7c25da8c51f8fe2"
+    },
+    "tools/associate_charger_journal.py": {
+      "bytes": 1454,
+      "sha256": "b5e00c1f52d68f2d064ebde6aedc467677bd98f90e77af2fc4b75baa304f2888"
+    },
+    "tools/audit_adsp_data_sources.py": {
+      "bytes": 4011,
+      "sha256": "aa7d3f5663be2cae0f0107de327c25a8b2c11434c28c9aa6ddcea9dfe46e5d7a"
+    },
+    "tools/audit_adsp_project_guard.py": {
+      "bytes": 3783,
+      "sha256": "960a014f856917b162f8597ec6c786235341f6a82ed1a685fb504c78bb0d40df"
+    },
+    "tools/audit_arm64_handoff.py": {
+      "bytes": 2376,
+      "sha256": "58c4d827940cca8f33d56ceb687e2ed4d7e4407ef3afaabbbbca8df568d91257"
+    },
+    "tools/audit_bcc_readback_failure.py": {
+      "bytes": 2071,
+      "sha256": "a5e3c5bc752bf741036278a9b3fa2a6bb18d8d5cc70419f111216abac0c3b01f"
+    },
+    "tools/audit_charger_backend.py": {
+      "bytes": 3465,
+      "sha256": "e8696dd00a2effe6e9a5e18b3e7bac22213c685443f88c7e20220b95a89bc91c"
+    },
+    "tools/audit_charger_fault_strings.py": {
+      "bytes": 1211,
+      "sha256": "50dfc9234dc8a91fa8b477acd4bd58641ca66ae040c2294bb5d2bb7d7a3c4b3d"
+    },
+    "tools/audit_charger_module_apk.py": {
+      "bytes": 2681,
+      "sha256": "a805ff9e511c90c476d448994b785d8b64d1969ff3113b65700472454b29ce92"
+    },
+    "tools/audit_charger_sources_wsl.py": {
+      "bytes": 739,
+      "sha256": "544cca9091f34d4849d98cab1805f3a98c1d24532e83f58b4c0caff73721c8f1"
+    },
+    "tools/audit_charger_suspend.py": {
+      "bytes": 3320,
+      "sha256": "7e4a2562e75bcd5153189b123de42130d5d657861ef95bced9341b9a8fa585c1"
+    },
+    "tools/audit_charger_vote_semantics.py": {
+      "bytes": 4384,
+      "sha256": "7ef8b51c4c71def76ba288060ba685e72c5863d571fdd84f8b97164c0d5b3a2e"
+    },
+    "tools/audit_display_touch_sources.py": {
+      "bytes": 4908,
+      "sha256": "8951fff34b52e7617d80effbb12f4b2b260ca7bf1dfc9bbe9f018f247819a8ca"
+    },
+    "tools/audit_display_wiring.py": {
+      "bytes": 2554,
+      "sha256": "eadc9befedab7d648105d70575b1242c868ab7a7aa869689fd9ffcc2f70c86ca"
+    },
+    "tools/audit_dsc_packets.py": {
+      "bytes": 4081,
+      "sha256": "830e39d17b7d94a4bcbb469e810708c868eb62b3cd5f7ee1ef9371279f7f1433"
+    },
+    "tools/audit_log_nodes.py": {
+      "bytes": 4319,
+      "sha256": "e45003c0189323380589f3c849bd20e067048c34aedf21195b025412693ce39a"
+    },
+    "tools/audit_mainline_boot.py": {
+      "bytes": 3451,
+      "sha256": "808aa67ad00889fefcd32dbb17bef4f5e2b3e70fed58d552b1538cc43e8ff43e"
+    },
+    "tools/audit_pja110_gauge_handoff.py": {
+      "bytes": 2077,
+      "sha256": "93eb247e84f3fff910e92adaaa29c7d0fc916b83820d161f0293908127085b85"
+    },
+    "tools/audit_stock_adsp.py": {
+      "bytes": 5177,
+      "sha256": "81e831c0c5d4a851983a58a162b1a6acbb2b865a446ad862b97e6a697bd1da4a"
+    },
+    "tools/audit_stock_charger_policy.py": {
+      "bytes": 5094,
+      "sha256": "d20cde5c2532ca39b95384cb5cfc033074aff029a446344b7ccfb101428b9b29"
+    },
+    "tools/audit_usb_power_handoff_wsl.py": {
+      "bytes": 1067,
+      "sha256": "14f83ca942823eb0c8ebd02b3d8c5fd634bfc976da2fb87d6fd5165bb5ddb667"
+    },
+    "tools/backup_boot_partitions.py": {
+      "bytes": 2725,
+      "sha256": "b2a24665b79982e666f47526bba49e65c4a8c27a8367f4df8ccb50130a9c14a7"
+    },
+    "tools/backup_partitions.py": {
+      "bytes": 5400,
+      "sha256": "221eec5d0d76a6a90477dc8e69da3f13f8d61fc8e9b6f15e758100c1c2aa6d24"
+    },
+    "tools/backup_vendor_boot.py": {
+      "bytes": 2840,
+      "sha256": "9e59eba39a8d15601e1a347fd33311400356534cda11f15f663b8a5aeec287dd"
+    },
+    "tools/build_append_test.py": {
+      "bytes": 3887,
+      "sha256": "e7f5ace132b8e7a6da2bde6cba4c71abb39e422d3f570ae04c20ee27cb1664a5"
+    },
+    "tools/build_aston_params.py": {
+      "bytes": 5792,
+      "sha256": "e2518c9062c79561b05949ec9feacc47eb853f25847effb08a4509d849b627ce"
+    },
+    "tools/build_charger_config_probe_wsl.py": {
+      "bytes": 2580,
+      "sha256": "694ba4ecc66b86ac5e0e4543ae979a3c7b1c83ecfb24d3bbfdd56169ffef25d7"
+    },
+    "tools/build_charger_enable_cycle_wsl.py": {
+      "bytes": 5612,
+      "sha256": "b371ace29c768615c5774366051e2a654bcb186e93aeeeb110ea79b4719af922"
+    },
+    "tools/build_charger_init_candidate_wsl.py": {
+      "bytes": 1535,
+      "sha256": "1769ae76f228dd959717f445d5426e415fbd70af3973f890c30009d0fb25ae3a"
+    },
+    "tools/build_charger_state_readback_wsl.py": {
+      "bytes": 5001,
+      "sha256": "b84834822e0fc8d789080d995529f3053b208915a20007bdf9c55d2a28485d3f"
+    },
+    "tools/build_charger_status_readback_wsl.py": {
+      "bytes": 2265,
+      "sha256": "a3c788386b6a793bf98bf2e7a2eca6716c1f02a15d26b17a353e461222da4887"
+    },
+    "tools/build_charger_watchdog_probe_wsl.py": {
+      "bytes": 2121,
+      "sha256": "deb3f6e4c96aed31f9cbf0c80b79dec0792b0d62df1f1ebe4569c7bc11c200c1"
+    },
+    "tools/build_decisive.py": {
+      "bytes": 8510,
+      "sha256": "15b945804922082b52c6c88b6d113af97ce0ad0d07fb40d51149988b03e85969"
+    },
+    "tools/build_discrim_test.py": {
+      "bytes": 4989,
+      "sha256": "75acb644f5e38ce303c140af470c3eba8b6e48ce551b97e2e36d9c1007081ee4"
+    },
+    "tools/build_dts.py": {
+      "bytes": 2933,
+      "sha256": "c113dd75a1214309e02e74b15529514fad3e6510374e79cba1f3ab212c7930ae"
+    },
+    "tools/build_init_boot_test.py": {
+      "bytes": 2069,
+      "sha256": "b40f9c5b42a6650cfc1644281fd9878b3830ffce367666ef3c38d91ea8fae34b"
+    },
+    "tools/build_init_bootloader_test.py": {
+      "bytes": 3169,
+      "sha256": "8d2b78d1df5f3912482963534d500f6621da9fae0e4b5f593958eef63050f26d"
+    },
+    "tools/build_init_domain_probe.py": {
+      "bytes": 4417,
+      "sha256": "dd73436fc01be84da2ece89a1243f6499a21560ad45f8a0b70e66f3040fa0525"
+    },
+    "tools/build_isolation_tests.py": {
+      "bytes": 5335,
+      "sha256": "8aeaae1769a9131ec43b23339815470da36f9002e977e78b7d52fdde0b98791b"
+    },
+    "tools/build_marker_both.py": {
+      "bytes": 4006,
+      "sha256": "b69fe901a36d69f1fa655339183a25ad6ffdd4825c2af448b0266489d8d20bf2"
+    },
+    "tools/build_native_init_probe.py": {
+      "bytes": 3393,
+      "sha256": "f5c309c4c20411c5f60ee854296e47601998ca0b0a04c9c35539828c2e84afdc"
+    },
+    "tools/build_nodtbo_ourdtb.py": {
+      "bytes": 5256,
+      "sha256": "f7a12dcf1b611123affe7206a2e659b197ef197d2af5e2b01c29a71668fc73c6"
+    },
+    "tools/build_noop_dtbo.py": {
+      "bytes": 6046,
+      "sha256": "e5c49a25a08273ac8f4f2f471f09da626d1e6696a1225b26ddae394d64d1f58e"
+    },
+    "tools/build_phoc_ram.py": {
+      "bytes": 7463,
+      "sha256": "859edcf6366e71df66e667286590df970d0a7d8c26af40f44db0df33e6235b32"
+    },
+    "tools/build_poweroff_init_control.py": {
+      "bytes": 2802,
+      "sha256": "c2d257b2408eb5cea96a569abb1b62ff88c3e3517ffc3a8ca5870fc7d3f2c7f1"
+    },
+    "tools/build_poweroff_test.py": {
+      "bytes": 4191,
+      "sha256": "3c74913ccae790382e4295fd7091ab45cc73874538368868c28f4409ca3f92b2"
+    },
+    "tools/build_ramoops_test.py": {
+      "bytes": 4907,
+      "sha256": "c356964e917678b9b3852be5138901d00dcdd0ec13b86cf7fef54dad6c3d7e81"
+    },
+    "tools/build_smem_project_wsl.py": {
+      "bytes": 2612,
+      "sha256": "2d7252eb62f693b43a8d54eef2b1d84543230d17ae9b8008f8a50edb4771c6ec"
+    },
+    "tools/build_validate_initrd.py": {
+      "bytes": 4102,
+      "sha256": "2408a41c3e4c973646ad843059b6a314bc9d281f3eb4611acf8c07f1e976da38"
+    },
+    "tools/build_vb_marker.py": {
+      "bytes": 4705,
+      "sha256": "c2170f99b5035098b52696108504831748f6738c42f0c047b24f504e4874854a"
+    },
+    "tools/build_vb_modelmark.py": {
+      "bytes": 4799,
+      "sha256": "dcf353aaef5ef18ab9f6d5f9eb22004684f8788fddf9694927a41c19dfac3bbd"
+    },
+    "tools/build_vendor_boot_patch.py": {
+      "bytes": 4641,
+      "sha256": "a2aedf1f613a632e3ccb8a6e1710486abd70092e5b223381955e2cf16ddda3a9"
+    },
+    "tools/capture_battery_authenticated.ps1": {
+      "bytes": 2220,
+      "sha256": "9349db5ccc1a0ecc12813566edf74fd473db078f07aa471f58ce827619e8f04f"
+    },
+    "tools/capture_charger_last_shutdown.py": {
+      "bytes": 936,
+      "sha256": "843638cb22444dad1c5e883d1af5cdf53ab3523bbfe093cfbc66364677fea026"
+    },
+    "tools/capture_display_timing.py": {
+      "bytes": 2175,
+      "sha256": "481800daa4daefec535d32cfc65ac315cd510881d697f065b5a7a45d31e4abf3"
+    },
+    "tools/capture_low_battery_window.py": {
+      "bytes": 5159,
+      "sha256": "126f8b2301adab750216f91fd1e9e06ad3fbd630d8a585a79f9f6f5a6f5c2498"
+    },
+    "tools/capture_mainline_serial.ps1": {
+      "bytes": 6074,
+      "sha256": "57338ce708c8dfb80af6975444c6d15215053ab62422eb84fc616341c2bdc37f"
+    },
+    "tools/capture_ncm_ssh.py": {
+      "bytes": 1867,
+      "sha256": "1873c61282dce62b47f878887e4e532203618f55bd6874a3f4b8e670ed83eec6"
+    },
+    "tools/capture_ubuntu_ram.py": {
+      "bytes": 2022,
+      "sha256": "5c9d96a5ddaef9219b0bef0c077d8ce80fbf7f2ef024f0ba866b39ede94f60ac"
+    },
+    "tools/capture_weston_kms.py": {
+      "bytes": 2541,
+      "sha256": "c49b9f76c506975270b49e8ee96bbdbcae577bd701e4201626a8ee2979b2ab06"
+    },
+    "tools/chase_log_leads.py": {
+      "bytes": 4224,
+      "sha256": "24762fa7d31a9d7ddbf7488e65c81ac42820dde9250a473f32056d32b5dcccb5"
+    },
+    "tools/check_abl_labels.py": {
+      "bytes": 1865,
+      "sha256": "33826c95e46e585a1490ea4aa27bda0126b52e93cbe41252ef8a95a13780128a"
+    },
+    "tools/check_adc_runtime_preflight.py": {
+      "bytes": 1627,
+      "sha256": "156b3ceda0a0266651e4209f430769196bb42499c2ecae92282b6fcc22691637"
+    },
+    "tools/check_battery_runtime.py": {
+      "bytes": 2564,
+      "sha256": "e8e3aa6a82ade5504db3e7c50e1d508bb4b1f834dcc822961760522565216bad"
+    },
+    "tools/check_boot_history.py": {
+      "bytes": 3676,
+      "sha256": "f2e1732d0d3060a2b07a2a33302c7aa5d35f46bb6d5f5705f33da6b7dfc14da0"
+    },
+    "tools/check_charger_config_probe.py": {
+      "bytes": 1735,
+      "sha256": "13f4c5663ed48bdde54cbdccf716401fc895b038fe5676863b1cd3f3f09e261a"
+    },
+    "tools/check_charger_enable_cycle.py": {
+      "bytes": 1845,
+      "sha256": "973c69f71a71ac4204d1ff1b7065ab89c2d8ceb604c24a425ef5d448f5847592"
+    },
+    "tools/check_charger_recovered_snapshot.py": {
+      "bytes": 1832,
+      "sha256": "182577238a48170def7df930f6b42b01865f907c50c3b989c2e3a6dcce6715ba"
+    },
+    "tools/check_charger_state_readback.py": {
+      "bytes": 1093,
+      "sha256": "c48efc017c296f91cf3ef142216ada0c2acddfc954cb3e8b2171e54bb141dc29"
+    },
+    "tools/check_charger_status_readback.py": {
+      "bytes": 1121,
+      "sha256": "acee8734cb732e2eb4b68b7ccf4a2aaa78fb27c8114766731a1dce9b8bad77e6"
+    },
+    "tools/check_charger_watchdog_pair.py": {
+      "bytes": 1782,
+      "sha256": "cb8bb2fdcd55aa3a3fd7ddc2c4187bb27e13ab78ed775173c70380cf344a1ec2"
+    },
+    "tools/check_charger_watchdog_probe.py": {
+      "bytes": 1135,
+      "sha256": "0e7ae487f4808c14e5b74434103597b2a5462c1b3000be834f4b0e7bf095ead1"
+    },
+    "tools/check_chosen_overlay.py": {
+      "bytes": 3212,
+      "sha256": "1bf6234794b10f6eba80192da11d183d5331d3cf226018ae2c50a08af6ab616a"
+    },
+    "tools/check_cmdline_overwrite.py": {
+      "bytes": 3224,
+      "sha256": "e410b1784829216827466dc2e2a63bf60740a8a5c6104eb3a7cc7ce1e798d164"
+    },
+    "tools/check_display_dsc.py": {
+      "bytes": 1608,
+      "sha256": "8de328fa954acac429e58808a9bb444b3bb0247925612d99cb81874e012a37f0"
+    },
+    "tools/check_driver_requirements.py": {
+      "bytes": 4216,
+      "sha256": "41bf1edf7b8ae2fe4bf3b44ab8122b3d5e430a568b400126c6417209034f025e"
+    },
+    "tools/check_dtbo_model_write.py": {
+      "bytes": 3871,
+      "sha256": "af26f579c06042d482576275d00f0f1a4e228fe51616dc792c2d36579f3df603"
+    },
+    "tools/check_eud.py": {
+      "bytes": 3897,
+      "sha256": "808b96c2e10ecfcd5e4fb9d0061babd10c4c25aad97d9df7ec8d864ceba7b942"
+    },
+    "tools/check_fbcon_channel.py": {
+      "bytes": 4522,
+      "sha256": "9d56ebbbae35d00ae07b02121bbc2d6d00f3db0d849bdea1d5b4e4ec04ea8b4e"
+    },
+    "tools/check_fixup_coverage.py": {
+      "bytes": 3835,
+      "sha256": "2110e8a24d7098cd0c34295d122e24bb58a2afd9244112e51e66e7d8cc88e638"
+    },
+    "tools/check_local_usb_sources.py": {
+      "bytes": 2422,
+      "sha256": "1946da30dab3cf15b8d1127cdc4381b0ac14e9ef6f40b720294dbd32dcee8845"
+    },
+    "tools/check_marker_confound.py": {
+      "bytes": 3327,
+      "sha256": "b36ab07ebcaf92f85593c3f4483a9959b9369cff93ca52051c94bf898b564c2d"
+    },
+    "tools/check_native_partitions.py": {
+      "bytes": 3956,
+      "sha256": "1caae699921b180c8e293ac343670e2ae46c4b8cb677efd24be5ae22f7bda016"
+    },
+    "tools/check_pstore_cleanup.py": {
+      "bytes": 3845,
+      "sha256": "44109092c16985122859a312a8b0c9f733624795b3a18b2000922edb13045c60"
+    },
+    "tools/check_ramoops_armed.py": {
+      "bytes": 3396,
+      "sha256": "4b2019b6760b3c460d386a65a3b60f5d8ee8ceed9b11955c71aed2544cc8ed48"
+    },
+    "tools/check_ramoops_channel.py": {
+      "bytes": 5222,
+      "sha256": "fd9456a6a26c43c47b3d842ed5f42d85785e479ea639bd7fa0fd4054c07c662a"
+    },
+    "tools/check_rollback_index.py": {
+      "bytes": 4115,
+      "sha256": "094a1e5b02047f345c7e554a77c3cd971526704259db31e6e742ff03462d49c0"
+    },
+    "tools/check_slot_b.py": {
+      "bytes": 3327,
+      "sha256": "86cbe9315e6e0b6b8500cfb2c32f55030c6dc40c75d6262ea849990cc831ea57"
+    },
+    "tools/check_stock_kernel_support.py": {
+      "bytes": 4317,
+      "sha256": "70b8837322b69ee09b3cfab31b18aed3a2938374206544fc0072f1b152af77ca"
+    },
+    "tools/check_ubuntu_install.py": {
+      "bytes": 1815,
+      "sha256": "c28e4f74373a02a9d5d63eae73cf128e3aea0c71bbeb220d2dca3cab50d3417d"
+    },
+    "tools/collect_battery_privileged_readonly.sh": {
+      "bytes": 1573,
+      "sha256": "8cdb441d7112825bbf2c6b486b884687e12a92f7af38fca2a860fb549bb3a272"
+    },
+    "tools/compare_aston_display.py": {
+      "bytes": 1539,
+      "sha256": "c720acd95301ff152afb5164bac917324a8a1a98bcacecfb2926678cf5d8b8b4"
+    },
+    "tools/compare_aston_usb.ps1": {
+      "bytes": 3825,
+      "sha256": "6c61e04c9f001d67a22315b6af14fc6d5a0da7710728def1f37649bafe20255d"
+    },
+    "tools/compute_os_version.py": {
+      "bytes": 1774,
+      "sha256": "4342510458acb2d8033e5a145d31bf46a3532c150b4cd1c7d01dee257fb3ab81"
+    },
+    "tools/configure_codex_wsl_sandbox.ps1": {
+      "bytes": 3691,
+      "sha256": "48a4c77f25c5f36dc90921128c41be80bfe56522a94f2ed5f31a68cb336789c0"
+    },
+    "tools/configure_native_ncm.ps1": {
+      "bytes": 1405,
+      "sha256": "18b467a1d4c13876965cceb4d60432e8655c395975b952b35bd1049fb67153e3"
+    },
+    "tools/configure_ubuntu_systemd.py": {
+      "bytes": 6428,
+      "sha256": "9ef0a686a19ff05ff6a6d828f5aea9e88cdf29edf425f0f21cdcf4710ee5d454"
+    },
+    "tools/connect_mainline_ncm.ps1": {
+      "bytes": 746,
+      "sha256": "047e6232aef8179d1ad239d16de18a18ef647f5f366e2c9d0d56449ce2238877"
+    },
+    "tools/console_readiness.py": {
+      "bytes": 4650,
+      "sha256": "aa7f0d1dbf50bf5a39ca972284ef3b8e4e30de1a1d84b0f44be0c1b7d3aa1f25"
+    },
+    "tools/control_pstore.py": {
+      "bytes": 5083,
+      "sha256": "da734d0476af68164e16c21599634ffaf0eeefa71e9f65dd382ba57e96e46f23"
+    },
+    "tools/control_slot_b.py": {
+      "bytes": 3964,
+      "sha256": "d2ffb864f10700b1ce49a0ccb119a4054fa3b09797c1d21ceff6d46c269fe2ce"
+    },
+    "tools/decide_strategy.py": {
+      "bytes": 5853,
+      "sha256": "3032c6a9fce2de45eed86f1103e4ed1e16b78b7362c86a0569ea59a06fc2bf73"
+    },
+    "tools/decode_charger_pmic_snapshot.py": {
+      "bytes": 1688,
+      "sha256": "4d760faf6fb5ec0ce5c0503fe56e99b8dc4411334acbcf8a49e0881d90bf7b55"
+    },
+    "tools/decode_display_sync.py": {
+      "bytes": 1994,
+      "sha256": "90aaa510cb9cc08b69d3d8fb7e32f275646daabee2eb4e4b2134cc90924ca544"
+    },
+    "tools/deploy_charger_startup.py": {
+      "bytes": 2876,
+      "sha256": "28cb1ff952a387c7c689ccb73dc7bbe15fa83b74bf20e50a0c3949097812cd58"
+    },
+    "tools/deploy_display_port.py": {
+      "bytes": 5674,
+      "sha256": "b820a031cc4eeba5da56a1544aa31caf4c62073c2a8ef7a0d1feee9169c9703d"
+    },
+    "tools/deploy_generated_panel.py": {
+      "bytes": 8373,
+      "sha256": "425939ec40f186620d15e8f72d270a05650d46f982bbf2c29fef1d2bda09b19b"
+    },
+    "tools/deploy_gpu_port.py": {
+      "bytes": 5619,
+      "sha256": "95257f429a54b2cf571025fed86c289ea4d334a712b81899aa84f847d53f3b3d"
+    },
+    "tools/deploy_native_rootfs.py": {
+      "bytes": 6750,
+      "sha256": "3f64d93f7182aa774f2095a6cc502771b7069c0ee94c16692ba3684f8e006395"
+    },
+    "tools/deploy_sdma_control.py": {
+      "bytes": 6337,
+      "sha256": "c9356c25f813fa31815680941af632f7af6adeee862d29e2add7955d40a7f255"
+    },
+    "tools/deploy_touch_port.py": {
+      "bytes": 7466,
+      "sha256": "77fc97cea7735b40ca39434d3c2f215d5d28c19132d4575100e95113ef83df96"
+    },
+    "tools/deploy_ubuntu_ram.py": {
+      "bytes": 4101,
+      "sha256": "d3d3eef19258c0cb089324d4df2c66d8e2b82fb3223223aa894c72c1d5a45ce1"
+    },
+    "tools/diag_fastboot.py": {
+      "bytes": 2804,
+      "sha256": "83aa99d786ee20c476a331ccc3a394a71bcbd0097d876856809bab4490add5f3"
+    },
+    "tools/diag_slot_state.py": {
+      "bytes": 4522,
+      "sha256": "800739e297a939f3871b22348147d009be6f5088ba1d19142f80abbc426d8e61"
+    },
+    "tools/diagnose_adc_boot.py": {
+      "bytes": 1314,
+      "sha256": "7ecf3daa14edf50609f47eb53e1f37080be760476863f5670168d31c758e1c8a"
+    },
+    "tools/diagnose_phoc_commit.py": {
+      "bytes": 10599,
+      "sha256": "ff95c0bd9c34c32baec6f3d5d7ba32b46b891ff29a40f5a31e100c64a6ba9206"
+    },
+    "tools/diff_abl_logs.py": {
+      "bytes": 1984,
+      "sha256": "c3fb3b545df44424fb0750cef0986770197a29fdb2205c8392d2396826c459c7"
+    },
+    "tools/draw_mainline_fb.py": {
+      "bytes": 1175,
+      "sha256": "7cb239ce3491a13bf176303fc079dff83e49f9c28a5798f06b3f329f36b31fcc"
+    },
+    "tools/evidence_channels.py": {
+      "bytes": 4529,
+      "sha256": "8b7d1c1e31913c4b8374a56d239e19c244a12e42f04b480ef691271bb2ea27bc"
+    },
+    "tools/explain_control_test.py": {
+      "bytes": 3160,
+      "sha256": "c384657e9d71db43fa1e2241fec49d03a442aa455939a7e44b9bd42dd0356c21"
+    },
+    "tools/export_postmarketos_kernel.py": {
+      "bytes": 3197,
+      "sha256": "3fa541f959e1ff67f829f686bf4a430988df8678cb75dac5ff88ebc3cc6b4ddb"
+    },
+    "tools/export_ubuntu_systemd.py": {
+      "bytes": 1679,
+      "sha256": "da2a077bb616947d4553777098bd111e3a4b7a928dd21b546eaad69a5a45bace"
+    },
+    "tools/extract_charger_messages.py": {
+      "bytes": 799,
+      "sha256": "5f26d1aefb73d5e1338ea633f3cddc80e3ca25f177cecf86b0b336b7f04b55b9"
+    },
+    "tools/extract_display_baseline.py": {
+      "bytes": 2794,
+      "sha256": "5a55fef9e590027d96216e2ed279baaa7b1e5afe4d3909e94e75122659ac83b8"
+    },
+    "tools/extract_gpu_firmware.py": {
+      "bytes": 4284,
+      "sha256": "63103fdce3b62a8ee96a5f15399e842cc935b99557fddbf8908c02b90834761e"
+    },
+    "tools/extract_stock_config.py": {
+      "bytes": 3886,
+      "sha256": "5eaef1a22aa9c30302aa53d506173e20996b30e14c75fbbed5baa057e0acfd9f"
+    },
+    "tools/fb_boot_verified.py": {
+      "bytes": 4020,
+      "sha256": "203ade773af922fbc094da189e696d01679e13cbaf7833bacb92d99226181d56"
+    },
+    "tools/fetch_charger_handoff_reference.py": {
+      "bytes": 1270,
+      "sha256": "43ed804ba3c1b709460b506f205c78c0a59d771e91b5a9072ecd5823d6bcc167"
+    },
+    "tools/fetch_display_sources.py": {
+      "bytes": 3219,
+      "sha256": "cbccc4a5f563cea2953e8851588d21b46ee3136b135ed0e99144956ec0e75bf2"
+    },
+    "tools/fetch_pmbootstrap_tomli.py": {
+      "bytes": 928,
+      "sha256": "7023e24291fbd78cc435b204f3c6e8de95a02e2fd0f914bf68d5f43ec97d43ff"
+    },
+    "tools/fetch_shutdown_reference.py": {
+      "bytes": 1048,
+      "sha256": "4d7187f0027335b52c7ed66271bbbd04397eb715d648430649152f96d6c8bd36"
+    },
+    "tools/finalize_aston_touch.py": {
+      "bytes": 3408,
+      "sha256": "979834aa8240f25f341d361639e127f48ef6af09e8b82836fc95fdece8926791"
+    },
+    "tools/finalize_aston_touch_rate.py": {
+      "bytes": 3905,
+      "sha256": "214a48c3af079a0fa275f426543ba3ef1784010b346f184de26a5a9c63bb39eb"
+    },
+    "tools/finalize_early_probes.py": {
+      "bytes": 24615,
+      "sha256": "c6f73c63a35b5ccf6f8022a3bd18a61163bf9977204c30ad85ae7c60c09e6dfa"
+    },
+    "tools/finalize_postmarketos_packages.py": {
+      "bytes": 2930,
+      "sha256": "b62d72d2d2640fb4fca8b03d9aec4ed6a1e5ff18ef3babec71d9aa5d1a3e271c"
+    },
+    "tools/finalize_rndis_shell.py": {
+      "bytes": 2771,
+      "sha256": "acd8a39e8129690aaa9e4bc3edfcb71d250ea71b19e2e70fcaa6a98fe7892f1b"
+    },
+    "tools/finalize_usb_loopback.py": {
+      "bytes": 3847,
+      "sha256": "e860c349f8d992fa445122e453a03d629f9f90e4bf6f889365a00becf879d018"
+    },
+    "tools/finalize_usb_ncm.py": {
+      "bytes": 3387,
+      "sha256": "d50603a78634bd72e254007323f185fa9930bb250356e0f80b060ae48dbcb1ea"
+    },
+    "tools/finalize_usb_serial_shell.py": {
+      "bytes": 4023,
+      "sha256": "96d4cc25d7c9f6c7813cd07ac0ae1f42e05c0d67aff827ca0f48fb76784d8ee0"
+    },
+    "tools/find_adsp_firmware_wsl.py": {
+      "bytes": 470,
+      "sha256": "871006221d59b43dfa33976f4656e4cbce70a9780fce1c030e947bc6a89c80b2"
+    },
+    "tools/find_ramoops_addr.py": {
+      "bytes": 3885,
+      "sha256": "9abf6bcc555bfb48e7342401371fbd02d39c25756a08702d2a36136a6d1f0e60"
+    },
+    "tools/find_safe_marker.py": {
+      "bytes": 5248,
+      "sha256": "0464328d91eaf5ba4dc2d7cc6b96d0e3aa5ac9d9d116b62c6c18b7d361f9d78c"
+    },
+    "tools/find_seatd_package.py": {
+      "bytes": 634,
+      "sha256": "f1d4e6c1584663629fb61ae14cbba15407d7e5e1f9c6eb642c4c609db988d233"
+    },
+    "tools/find_wifi_rfkill_reference.py": {
+      "bytes": 1399,
+      "sha256": "bc0f0fbdb083f7cefdac9ca88ef9134036507cde729bf8b3b0526c9f4fba1f09"
+    },
+    "tools/fix_symlinks.py": {
+      "bytes": 1738,
+      "sha256": "2c31ef2fdaa4d3d7b96dccbd201e37c59a757e7b3a8390dfeaecc0dd4f303be9"
+    },
+    "tools/gather_evidence.py": {
+      "bytes": 4750,
+      "sha256": "7cd1d582d446abd2fb1b9fae18476969670e4ee672b55e28e936383c154d675e"
+    },
+    "tools/gen_worklist.py": {
+      "bytes": 10603,
+      "sha256": "c0ccb794321d2bcf6d37fac6544775101296e7081d17a5b7ef177c310782f2ce"
+    },
+    "tools/inject_inert_node.py": {
+      "bytes": 8490,
+      "sha256": "081bbe0039883716aa4247557b9b52a39d19deaebded3bd3c043248970394c58"
+    },
+    "tools/inspect_adc_support_wsl.py": {
+      "bytes": 450,
+      "sha256": "c9ca69e0e193176af6b115ce55faccb76e8be31592ddc3063a8ce68e69f0498b"
+    },
+    "tools/inspect_adsp_disassembly.py": {
+      "bytes": 1409,
+      "sha256": "8a11fb763c7b6efb906b510c7dd8d7a6cf9d7ab1f70738eb378097f21f9a37d8"
+    },
+    "tools/inspect_charger_candidate.py": {
+      "bytes": 621,
+      "sha256": "22c3cc1812218d93291fb75cb9eb215c18aee7b243b3ad0c0b7a3a836df9c92a"
+    },
+    "tools/inspect_charger_journal.py": {
+      "bytes": 571,
+      "sha256": "abd61d44b49f81fbd0c8d10da7804091735fedbd963e5df9ba3ae479c81eaf8f"
+    },
+    "tools/inspect_dtbo_fragments.py": {
+      "bytes": 2855,
+      "sha256": "b4e15d5b53bf84af1d2b821ff269a900f1bcfc28cc0ae68ae611ad21ee68b731"
+    },
+    "tools/inspect_native_fs_tools.py": {
+      "bytes": 512,
+      "sha256": "7b21f096a465c52924984316f3427664c0fb1c9b9320303daf10883af1669146"
+    },
+    "tools/inspect_postmarketos_session.py": {
+      "bytes": 764,
+      "sha256": "29dc3e0a8c5c86f2d689083b6ed0a81513c80e701071eff7dace3866d6ee542c"
+    },
+    "tools/inspect_serial_random.py": {
+      "bytes": 617,
+      "sha256": "5642107b13e7becd63fcaa290f394b7b9f2b61d4cf58a3a7bd4640d45016a96f"
+    },
+    "tools/install_charger_capture.py": {
+      "bytes": 1769,
+      "sha256": "9ed218acdb750f939952a4a18d25322c949e777a48a682cd00b81226b5cd7d67"
+    },
+    "tools/install_phoc_apk_ram.py": {
+      "bytes": 2615,
+      "sha256": "e0f8ff9c65a16ff70605950af47d2d390dd63bc2dbfb9155623fd2b6b8856040"
+    },
+    "tools/install_ubuntu_systemd.py": {
+      "bytes": 2579,
+      "sha256": "1cb0d28c189310c2a3a2c9e6cd24036a25e56840db9d58389523e1331c5c0916"
+    },
+    "tools/install_wifi_authenticated.ps1": {
+      "bytes": 921,
+      "sha256": "2a914a169eb5aa7d585d5cdeaeb85149ce36ece9e2c6d9fd961a164780c7455c"
+    },
+    "tools/install_wifi_firmware_authenticated.ps1": {
+      "bytes": 687,
+      "sha256": "cfc87f3e7424a27a77dba87d8ab313e45dfc45c884441198e660756991aa7a02"
+    },
+    "tools/install_wifi_oem_authenticated.ps1": {
+      "bytes": 636,
+      "sha256": "e43d02254ea15c7cd07bd57e393db81b0e492d83131acd992f306708725d9e66"
+    },
+    "tools/install_wifi_rfkill_authenticated.ps1": {
+      "bytes": 632,
+      "sha256": "6e29630e36a4ae5db816212900cfacbccaa804dc9a606c8076644d7f2184e632"
+    },
+    "tools/investigate_boot_b.py": {
+      "bytes": 5503,
+      "sha256": "20733a544d12d216736c0ed2db7b63ce514ba5c35392b79f60d5f8b23d7c4939"
+    },
+    "tools/invoke_debug_serial.ps1": {
+      "bytes": 792,
+      "sha256": "43852b7fd9ceea31db022767b130563dcda9549038714edb3842d682671a6c5d"
+    },
+    "tools/kernel_entry_probe.S": {
+      "bytes": 484,
+      "sha256": "6949c7cd08fa861970fbbb398ea7cf58426f02bb1f7d49abffe5cac7fcf3eef5"
+    },
+    "tools/kernel_exec_return_probe.S": {
+      "bytes": 546,
+      "sha256": "2c35182593e49acaf9c5555926a44cd7e1be2f21c488b0c50fa13f1464c697bc"
+    },
+    "tools/live_facts.py": {
+      "bytes": 3094,
+      "sha256": "09687b963a317f1d64e4a8c43295788ee0ca93951f245d8079ec924bd597addb"
+    },
+    "tools/load_qrtr_smd_authenticated.ps1": {
+      "bytes": 1700,
+      "sha256": "a7aff58e43552a1f8e46eb0e25c38efee894bc9c301fbb80166297c5dcb04c30"
+    },
+    "tools/load_qrtr_smd_test.sh": {
+      "bytes": 650,
+      "sha256": "3994fdfecef28e54fe7980a15aee7fd2fe9ec7e6e926e95f203089dc840c8d7e"
+    },
+    "tools/load_reboot_modules.py": {
+      "bytes": 1767,
+      "sha256": "f274e6aa52676e551e71da89191f1975c037d17dcc57ba4a549a6da1e9cf2474"
+    },
+    "tools/locate_uart.py": {
+      "bytes": 4878,
+      "sha256": "7ab3713c2ad17fab3b1734caf5f22459c7aa69cf8cd564d326652aa9a72dd7ef"
+    },
+    "tools/logdump_retention_control.py": {
+      "bytes": 11308,
+      "sha256": "44d24435a8d82979cf3a20af9c9196a1645eea794f48a17f0ba25dccc10dff10"
+    },
+    "tools/mainline_button_test.c": {
+      "bytes": 6109,
+      "sha256": "b5156414fd806274668fc6e06f8777ce5430f09cadb797f3fa6d5ad20103f749"
+    },
+    "tools/mainline_display_diag.c": {
+      "bytes": 1241,
+      "sha256": "d31ad056b1667b4a62677f2a0ed59ecc44f961d7dc28958dbc69cdd658e0d536"
+    },
+    "tools/mainline_fb_pattern.c": {
+      "bytes": 3030,
+      "sha256": "495015c1a9675252ad15232ed8bb6419304f9c827293aa7be68d98bb959142ef"
+    },
+    "tools/mainline_gpu_probe.c": {
+      "bytes": 2461,
+      "sha256": "1f79e6d10c541bc29fa84de74fa0549dd34ad8fcae835537f3aeeaad11387157"
+    },
+    "tools/mainline_ncm_upload_handler.sh": {
+      "bytes": 314,
+      "sha256": "3846afb413e385f5833de58a1a653b5acc1817caa71c185c0dec30708afcf2d9"
+    },
+    "tools/mainline_panel_vout_test.c": {
+      "bytes": 1907,
+      "sha256": "f612c369e84754a0925bf510a190d7beb3befee3f41254b4739d01596349c2bb"
+    },
+    "tools/mainline_touch_capture.c": {
+      "bytes": 5643,
+      "sha256": "4e7db3b7b0c54c4a9d2f21c138d502c4b92285dd7cd58d90c3567664f0a85b9c"
+    },
+    "tools/mainline_usb_loopback_control.sh": {
+      "bytes": 1656,
+      "sha256": "9ef1fcc2aea150e21712b76b26344f045a94a69982d50ff009604325dbaf1146"
+    },
+    "tools/mainline_usb_loopback_rebind.sh": {
+      "bytes": 226,
+      "sha256": "013702a76a9300cef6efb9bcd18a024c4f562ef7ece5155bf16db2861acb9dc8"
+    },
+    "tools/mainline_usb_ncm_control.sh": {
+      "bytes": 1803,
+      "sha256": "171b2a17006797fe7bde094f0b8d527e87b4bac2c10770cf67eff69b1fd95f87"
+    },
+    "tools/map_dtbo_partition.py": {
+      "bytes": 3313,
+      "sha256": "8d1cd16c70bdbdfde0f26c76c75470ffea7d70dea7010f71489d32025bc63c96"
+    },
+    "tools/map_minidump.py": {
+      "bytes": 4654,
+      "sha256": "720789cfaf5950321f74b2bd0cd231ab0f0c3b19f655fa8ffdfcf9ef2b0b78d3"
+    },
+    "tools/map_regulators.py": {
+      "bytes": 2957,
+      "sha256": "9867cf55070371e2aabb2215f2e860ae8d2562fb774befce700c4e356c3f5c17"
+    },
+    "tools/map_vendor_boot.py": {
+      "bytes": 4890,
+      "sha256": "3fe01fbc018513d0f32df97d895393e9d0c29dcfe680845f96f8274d09bc7572"
+    },
+    "tools/mesa_offscreen_test.c": {
+      "bytes": 5835,
+      "sha256": "89433f794e3f5fd44bf935121aa372483baa1478e8ca4a9bf5869666aef3f301"
+    },
+    "tools/minidump_probe.py": {
+      "bytes": 3320,
+      "sha256": "2b530a0f8fbac8b2d181d583394337e410e2e8a984206170c691938ce053dcb0"
+    },
+    "tools/monitor_charger_collapse.py": {
+      "bytes": 1200,
+      "sha256": "6bd861ccd2419b26af7095ce5ef1602bf14fffaea3bc219427a03fbccddf7e78"
+    },
+    "tools/monitor_charger_recovery.py": {
+      "bytes": 1361,
+      "sha256": "8f82f5dc3c885104787f860b762b7fd0b658f133f4d92eee7757c9ce936fdaf8"
+    },
+    "tools/observe_battery_charger.py": {
+      "bytes": 1146,
+      "sha256": "a0b60bc9208ed1b3f7c823446edc0f5cf4c99cbcbbae6992d7337d7130ff6e54"
+    },
+    "tools/package_aston_touch_autostart.py": {
+      "bytes": 3931,
+      "sha256": "4ee9494c952afa44b8c88acacbe7729905046a51135d7f61a713550748c669f9"
+    },
+    "tools/package_display_port.py": {
+      "bytes": 7006,
+      "sha256": "0af5abe3005148a24cb57a81386d1a5d8468384d21c826c669c80218fb1173fd"
+    },
+    "tools/package_display_trace_modules.py": {
+      "bytes": 2213,
+      "sha256": "2225b40ef40ab7c22349209385b2971884aacd397a0ff1703c9e051d9d14e8a0"
+    },
+    "tools/package_flashlog_init.py": {
+      "bytes": 3759,
+      "sha256": "6c89d40036935c846783f54e4f842ee56d331e17298882231cafd0c0784e4dac"
+    },
+    "tools/package_gpu_port.py": {
+      "bytes": 4905,
+      "sha256": "506af03361d97c3c3d24bd9dcb26d3ba2da0956f2c1fb238f0fd6630ec493d0d"
+    },
+    "tools/package_kernel_entry_probe.py": {
+      "bytes": 3345,
+      "sha256": "b8f5f0fca20eaeff49c0c1c6505a215e545d50978aeb2136f600fa4353c074d0"
+    },
+    "tools/package_post_mmu_probe.py": {
+      "bytes": 14030,
+      "sha256": "3b8e373906f2233ea89c1e7eb43b410d516a7557dfbcedca984b88628d60fdc9"
+    },
+    "tools/package_pstore_reader.py": {
+      "bytes": 2167,
+      "sha256": "a0774e76a619106febca0a85b9e1823ddfe6dbf912a80b6658c755ece8f01045"
+    },
+    "tools/package_sdma_control.py": {
+      "bytes": 4745,
+      "sha256": "43e39737eae6daa377b2d2e3bf25b7691e44948c8f249fa766d960fda49a8e07"
+    },
+    "tools/package_touch_autostart.py": {
+      "bytes": 4575,
+      "sha256": "8cabec1ae1ee27efff6097ff12633df53a65348b2cecf32d9b9f2c672a440bdb"
+    },
+    "tools/package_touch_port.py": {
+      "bytes": 3887,
+      "sha256": "fd7445c66c41ffb4b111fb1de75addf3979d550ed3d625b201caa4b4cf8aff15"
+    },
+    "tools/package_usb_diag.py": {
+      "bytes": 2025,
+      "sha256": "c924aeaaf9d203c8201eb30091f512172fa9e0e4528742900b08045dc3715a26"
+    },
+    "tools/package_user_init_reset.py": {
+      "bytes": 17195,
+      "sha256": "b93eb1176455ae9bfcace340aa26310915ae212a845436936432aed6adb2e860"
+    },
+    "tools/package_verified_display.py": {
+      "bytes": 1369,
+      "sha256": "8060a425111d4b8f33c9ab057c86308365300f97a80a9394133362ba9ac50254"
+    },
+    "tools/package_verified_kernel.py": {
+      "bytes": 5722,
+      "sha256": "5d88f52f8c2af005763c4cbb396f31c8b884853b067a2d2fdef2bea6273b3508"
+    },
+    "tools/panel_timing.py": {
+      "bytes": 3269,
+      "sha256": "57d69804847311457d37934f2970e45373eed2143b1f5747bd5bea65c9e26c4f"
+    },
+    "tools/parse_boot.py": {
+      "bytes": 5910,
+      "sha256": "f77ac31774ade7e7e92bbf126d660413159650bf4b3da2f8a48bdea8e4c26568"
+    },
+    "tools/patch_display_budget.py": {
+      "bytes": 3087,
+      "sha256": "f79458b2cf818742a9d146778465972c15d60f98c8cd193c615ba83f11e39ce0"
+    },
+    "tools/patch_drm_shutdown.py": {
+      "bytes": 1474,
+      "sha256": "2fff01a34ca0225a2a3cde37b0eb8f67e8a686cbe61acc83d84f2762505830d4"
+    },
+    "tools/patch_force_cmdline_test.py": {
+      "bytes": 1004,
+      "sha256": "1bdfebacfc0543aad7e0220ec3c5b309f7283dd9e109f26f6b9d7f1145d004ea"
+    },
+    "tools/plan_initrd_delivery.py": {
+      "bytes": 4031,
+      "sha256": "6d72bdb3094d61b207dc26adbd0bf1909ddebb717a97f0673c111d63e8718d62"
+    },
+    "tools/plan_surgical_compat.py": {
+      "bytes": 4972,
+      "sha256": "9d6969bce7e41c594f9727e26bba18e0e838edce52bd59dabc255705171c92e5"
+    },
+    "tools/preflight_validate.py": {
+      "bytes": 5123,
+      "sha256": "a31c25af279c441b570bcdf545c04f295e3090bae0e63d95d4564ef6979be870"
+    },
+    "tools/prep_poweroff_channel.py": {
+      "bytes": 4821,
+      "sha256": "a608d81399c66c55faacc3195e7a7e909b9da7aa56669154561ff534592af00a"
+    },
+    "tools/prepare_avb_noop_dtbo.py": {
+      "bytes": 4116,
+      "sha256": "9e32426c175d9911fba28486eadbe91ea68270dcd3574a4f83e18912c1c8a129"
+    },
+    "tools/prepare_battery_dtb_wsl.py": {
+      "bytes": 4227,
+      "sha256": "04c91cad08a8ac713dc6a17b5978013cfaa4449aa0b76c1e34905f74490afc44"
+    },
+    "tools/prepare_dwc_usb3_phy_control.py": {
+      "bytes": 3413,
+      "sha256": "8cbdc8d7280b1e7dc785b1eb8023720e61485bfcd7802a446f48ecda6b500b59"
+    },
+    "tools/prepare_flashlog_valid_abl.py": {
+      "bytes": 1358,
+      "sha256": "d198d8d3d129303b8ba8a02cacff39659641a4267337896e8933ba28cd277d13"
+    },
+    "tools/prepare_kmscube_readback.py": {
+      "bytes": 2759,
+      "sha256": "ccf46044847b54150d01d8cca8d203e45b651cb1ae88855b7fcc49956e58d1dd"
+    },
+    "tools/prepare_mesa_runtime.py": {
+      "bytes": 2282,
+      "sha256": "fba36b2295253e688e3d734a9df9c5727483c56479aa7d81438d9ccf2340f7ec"
+    },
+    "tools/prepare_native_rootfs.py": {
+      "bytes": 8533,
+      "sha256": "10373f940274921f41d5d2b9a616bade8daf23a178b583d4a7e36e217109e186"
+    },
+    "tools/prepare_ncm_ssh.py": {
+      "bytes": 690,
+      "sha256": "dcbb46190f1345905813c23fd15b63e6d5dc5e1ce7663f0c1a8025c1d29c7c78"
+    },
+    "tools/prepare_phoc_build.py": {
+      "bytes": 1240,
+      "sha256": "f573c44103ebaa074c4bde0ad030dcdb0e74bcb85752902fb4f6a681c63906e5"
+    },
+    "tools/prepare_pmos_phone_root.py": {
+      "bytes": 1977,
+      "sha256": "fbb9b926ed8fce3b5fc69564d14b851ca59b36529ef03b28175bb7ccae368e50"
+    },
+    "tools/prepare_postmarketos_ram.py": {
+      "bytes": 1777,
+      "sha256": "345a2e2567fd354e7d1f03dd9cf6143342788fd71083acb9680f6c85b04e06c7"
+    },
+    "tools/prepare_rndis_shell.py": {
+      "bytes": 9106,
+      "sha256": "ef6bed638bae4e31d75110d7a680a34b42169686b103a7ed8d79496b3348840f"
+    },
+    "tools/prepare_scan_ruler.py": {
+      "bytes": 4202,
+      "sha256": "2b67cde71a97549c224deef7cdf62e995781f9c11549a007dadb134a7e0dfab2"
+    },
+    "tools/prepare_ubuntu_ram.py": {
+      "bytes": 3655,
+      "sha256": "b9fdccc7171ec681dc36fdb84833d813eb309e858db21c5f62e613251051bd59"
+    },
+    "tools/prepare_ubuntu_systemd.py": {
+      "bytes": 2627,
+      "sha256": "d77a23d8756284a9785413649ce94652d64d0cece584f79cce992a96aa5af4b2"
+    },
+    "tools/prepare_usb2_control.py": {
+      "bytes": 3366,
+      "sha256": "2f5aeef607726efdaa1e90c2aa31483cb086b70b898134b655412e086e6e823e"
+    },
+    "tools/prepare_usb_diag.py": {
+      "bytes": 923,
+      "sha256": "797a479b2e19d8bc29256ab716fe3955cf137e90a15c6dd366f61cb7aaf31ed6"
+    },
+    "tools/prepare_wifi_firmware.py": {
+      "bytes": 1763,
+      "sha256": "889196a178fd515abed05d3341cfe098474ed32546345a8859186e6f215b3289"
+    },
+    "tools/probe_pmbootstrap_wsl_privileged.sh": {
+      "bytes": 2084,
+      "sha256": "43abbcd2385be0aa25bd3da13358958d7894a86c6734ac2987811e19961ab9de"
+    },
+    "tools/probe_vmkmsg.py": {
+      "bytes": 4990,
+      "sha256": "9493ae63c66e937458d2eddf7b8fba178fceca2808fcc7fac5357b7a92440824"
+    },
+    "tools/probe_wsl_utf8.py": {
+      "bytes": 2197,
+      "sha256": "768962c1a8a6cb8c8da53fcfc1debde504bbadd905597d4a93961689aeed1bd5"
+    },
+    "tools/pstore_early_reader.c": {
+      "bytes": 3360,
+      "sha256": "5ed6788ea3b17cb6ae5fdb6e0038edd595826561ec431da5291fc2103c44c759"
+    },
+    "tools/qemu_postmarketos_services.py": {
+      "bytes": 3633,
+      "sha256": "7bdd910f3055aa521cf4a912752b7e8388e27b946c55b8aa8388e2663be23fd6"
+    },
+    "tools/ramoops_retention_control.py": {
+      "bytes": 7378,
+      "sha256": "a389d0837ddd8ee9196345ff1d8735559081bc56a18445c912cba3039ca23c84"
+    },
+    "tools/read_adc_failed_a.py": {
+      "bytes": 1449,
+      "sha256": "58dcc805791e224cb006aa8b7da5f802cac4fb1adafaa7aabf6e058b9e9ccc5e"
+    },
+    "tools/read_boot_history_full.py": {
+      "bytes": 2672,
+      "sha256": "e2209457cfdb4999506dda78646d6db5e26e777dfbbd6736f5ee6683860cd115"
+    },
+    "tools/read_charger_journal.py": {
+      "bytes": 621,
+      "sha256": "b832849d5c98792095de3b978e30560300a98c52d47977a2f5cf582b8499046b"
+    },
+    "tools/read_ramoops_raw.py": {
+      "bytes": 4245,
+      "sha256": "34ae653ac6ccb31ab04cd7b0ae80c685820f9dcf8b7289121958b8ebb724f7a9"
+    },
+    "tools/read_smem_project_live.py": {
+      "bytes": 985,
+      "sha256": "6629f8932941a781b84a63db657c6208148a5f38c528814e5b6d63ca759d1eac"
+    },
+    "tools/reboot_adc_test.py": {
+      "bytes": 809,
+      "sha256": "62bb5c38ace8b6cc627a2af3f06c3c7c0434914d8b93f08c33eb7e42822204c1"
+    },
+    "tools/reboot_display_budget.py": {
+      "bytes": 2522,
+      "sha256": "8ad00a3673c7ec1b404f5fa5b6cf1b09b74e2d64d2346127471161783b1fc3c3"
+    },
+    "tools/reboot_wifi_clean.py": {
+      "bytes": 1186,
+      "sha256": "bbf5cd0a93761a3f9c89682a71f88a489b35649dd0d36a5b8aec035c9e675fb6"
+    },
+    "tools/reboot_wifi_diagnostic_authenticated.ps1": {
+      "bytes": 627,
+      "sha256": "31a190fddf8ac17e48d177d065d78c47c232b2d2c56c385672d39d23ebdd4997"
+    },
+    "tools/repack_verified_initramfs.py": {
+      "bytes": 3254,
+      "sha256": "44808635108e57cf9f33a4b8cf4e49f636527ce55d16f5830080de11fde49479"
+    },
+    "tools/resmem.py": {
+      "bytes": 4771,
+      "sha256": "0548f9349709a8436fe4abfa88b19a0049453bb362a8eacf0e8cd53fe117de1b"
+    },
+    "tools/resolve_hardware.py": {
+      "bytes": 4119,
+      "sha256": "5c01c25d1c4a278f01af053fe3193e49fd6faf0d7398787f532ce3c798ee4417"
+    },
+    "tools/resolve_uart_pins.py": {
+      "bytes": 4428,
+      "sha256": "8c6aa80d232180ba20d0043673d94d3cf6f9188dde7aef6d2667e6853fab516c"
+    },
+    "tools/run_button_test.py": {
+      "bytes": 1714,
+      "sha256": "a1cc694bbd331b4790e72af734e5996e640f4c5e2d64fd7215164fdc8a949187"
+    },
+    "tools/run_cmdline_experiment.py": {
+      "bytes": 3267,
+      "sha256": "929c1f596421b0c6b0b94c519dfef4d00a8fe5a29d5f6c6b2afaebf2edee7be9"
+    },
+    "tools/run_display_diag.py": {
+      "bytes": 1441,
+      "sha256": "6a55b6aec79807f3b3de0edac5fce1204263e62522f753236fe39373d7d54f39"
+    },
+    "tools/run_mesa_offscreen.py": {
+      "bytes": 2678,
+      "sha256": "0be08363dd1d047b4c0cb0a302a5b5df44794d1be029b84fc3f65206389f46f7"
+    },
+    "tools/run_panel_vout_test.py": {
+      "bytes": 1499,
+      "sha256": "13f0f85a618c8de783cd10046b02d883767b3cea9b3cb43d295743d3d1aabd4a"
+    },
+    "tools/run_r1_flash_test.py": {
+      "bytes": 8835,
+      "sha256": "1e3441ea912601e04e16bfeca9e90f3a87a8f33b783dafa52c3d06233201c6d4"
+    },
+    "tools/run_scan_ruler.py": {
+      "bytes": 2377,
+      "sha256": "76e5ea1a5774f1f14319edf73c0a7444c7094eea5dccfc3723e4982d8730cde0"
+    },
+    "tools/run_stock_base_overlay_control.py": {
+      "bytes": 1855,
+      "sha256": "e89c04d0ac912319a274f6a158cb039c426c36fd30acb2f6551c93d6e443750d"
+    },
+    "tools/run_stock_pstore_control.py": {
+      "bytes": 7227,
+      "sha256": "41d5335f71bb4deb6788649ec22d6b488bc17f99a260a8cb3656ed96c4ac13b6"
+    },
+    "tools/run_ubuntu_weston.py": {
+      "bytes": 2027,
+      "sha256": "eaf8fbc670555dcec7ada9bfb323b4c2180f8914770b9af3d86b7a78da80098f"
+    },
+    "tools/sample_display_counters.c": {
+      "bytes": 1750,
+      "sha256": "82812ef651af99d11ccd9d89f5f920bc74df978288a76be0c2d3881d06c6848b"
+    },
+    "tools/sample_display_counters.py": {
+      "bytes": 1438,
+      "sha256": "31b56d3e8b60d4680ceea1e8e366f5bed46d1faefa3537b2daac3fbf21f27243"
+    },
+    "tools/save_charger_logs.py": {
+      "bytes": 503,
+      "sha256": "8b1749d4c76696f719d00a0267d52738bd1c265abe735ac9e83f13f2164d7ee2"
+    },
+    "tools/set_display_perf_control.py": {
+      "bytes": 2159,
+      "sha256": "96b8e6caec0ebf51c0d13c54fd094ea1b1ae96c5ca1a6c17a850d026407cdfde"
+    },
+    "tools/set_usb_serial_speed.ps1": {
+      "bytes": 1782,
+      "sha256": "66980b7fd13ec39b492ec698c2908a6396164c483529b5e058b7132478116f52"
+    },
+    "tools/set_weston_repaint.py": {
+      "bytes": 2138,
+      "sha256": "3170e8155f08ba05dbca3d5046bf63075eab5993c019f0b5ac9bbe3e0cd206d7"
+    },
+    "tools/show_scanout_readback.py": {
+      "bytes": 1770,
+      "sha256": "4478748208890db547cacf6f6f946f5693b3bf1c911e5bd0f88c5f8399e313f4"
+    },
+    "tools/stage_adc_test.py": {
+      "bytes": 2941,
+      "sha256": "543653053d1c307d671d231cebfe76ae19e3d5c47779012581324ec4a3b1d0d9"
+    },
+    "tools/stage_battery_candidate.py": {
+      "bytes": 3502,
+      "sha256": "61f5e7707b417d7cee92aa0008a5156e39c4f13ea6be67d5718ac0177b4e98f7"
+    },
+    "tools/stage_charger_config_probe.py": {
+      "bytes": 2684,
+      "sha256": "454c1639584efed801cc1ff157d931ea0f477b3b1ce700d0d9929ee506b21c2b"
+    },
+    "tools/stage_charger_enable_cycle.py": {
+      "bytes": 3718,
+      "sha256": "15c19539bba3da45fc37c8a63a032e03e983db727ace20e28f2f76e6152bceb4"
+    },
+    "tools/stage_charger_firmware_audit.py": {
+      "bytes": 2367,
+      "sha256": "9825a26d075636e9f4cc9f66eab936bedc4239284bde5d061635b0be3e732e07"
+    },
+    "tools/stage_charger_readonly.py": {
+      "bytes": 2078,
+      "sha256": "9679f6c26151d788caf3227d7af079b633058cfc3c2f7730201fd7b51ff2f052"
+    },
+    "tools/stage_charger_recovered_snapshot.py": {
+      "bytes": 1414,
+      "sha256": "f950f10aaa8e72944cdbafa186b396133fac9655c72354bc61367cb5563da492"
+    },
+    "tools/stage_charger_state_readback.py": {
+      "bytes": 3021,
+      "sha256": "861a25b46897d06c0ed1978616d3ddebfc194205ab7dba22b3ebd758a293dcc8"
+    },
+    "tools/stage_charger_status_readback.py": {
+      "bytes": 2185,
+      "sha256": "871d2a1dc00458bd63d4bec350c516129de33a80944e5427b2784b0a91916f76"
+    },
+    "tools/stage_charger_watchdog_pair.py": {
+      "bytes": 2363,
+      "sha256": "9416eda0714e3b99a0135bd91edf5385d7a558d9efd6f17b4afeed600638d104"
+    },
+    "tools/stage_charger_watchdog_probe.py": {
+      "bytes": 2672,
+      "sha256": "cfe78f0dc6b58e789a88660f8b9be7ec0a3b7cbbca919920ae9644490e65a432"
+    },
+    "tools/stage_smem_project.py": {
+      "bytes": 1545,
+      "sha256": "c0246bf218eeb1283e6247f9552f2c903975dc7bed8f5cfbadb8c70b02dd09d3"
+    },
+    "tools/stage_wifi_candidate.py": {
+      "bytes": 5570,
+      "sha256": "55facf0a269c15a7ead0094198f6814cbd12d96e8783c66b3bad710fb7458c0e"
+    },
+    "tools/stage_wifi_clean_boot.py": {
+      "bytes": 3031,
+      "sha256": "962e2b606a71b10d37bba261190f4fee57c08bf63ae023126fd4fc47b1e5d40b"
+    },
+    "tools/stage_wifi_oem_firmware.py": {
+      "bytes": 4858,
+      "sha256": "26d10cd5ace1f02703ae0f132ed871bf9d6895a7fd37a58596805eebe6cbeaee"
+    },
+    "tools/stage_wifi_rfkill_module.py": {
+      "bytes": 4829,
+      "sha256": "f968002095096bfcd21473eec4f11c89ebe3a22afd1d55dd0afcf666106f14ef"
+    },
+    "tools/stage_wifi_stock_board.py": {
+      "bytes": 3195,
+      "sha256": "761b828781caec5d6bf1a0718b7a2a1e66dd336da534103bea0a8846a5bef937"
+    },
+    "tools/summarize_aston_usb.py": {
+      "bytes": 4321,
+      "sha256": "468d10e63dce9c98c9bb816a416d6c59e6993f8fe556ac7305c6de9b15d0426b"
+    },
+    "tools/test_boot_success_reboot.py": {
+      "bytes": 2751,
+      "sha256": "02d85ff6e90bbffbe8e5f54308b76f513577ecf3bad25b87527de90848423344"
+    },
+    "tools/test_drm_shutdown.py": {
+      "bytes": 3850,
+      "sha256": "0232d783a5049197da86568baa79ac0d278540667f960a75a097f1cf75eef2b2"
+    },
+    "tools/test_flashlog_writer.py": {
+      "bytes": 3339,
+      "sha256": "8bc1650348207556c9d3d2f5489b478708bc145ff47fa0ebef324d98c83efeec"
+    },
+    "tools/test_ncm_ssh.py": {
+      "bytes": 2438,
+      "sha256": "f9331bde42b2208b6d653e676b2d3bf060cf8b036881e56029e9a1bc043429da"
+    },
+    "tools/test_phoc_atomic_fix.py": {
+      "bytes": 9659,
+      "sha256": "56499d6294a9a802758dada67b43ced3940b5d2eda03debc4e8b892fcfd535a0"
+    },
+    "tools/test_pmos_systemd_phone.py": {
+      "bytes": 19841,
+      "sha256": "e13f7c0dff671df1ba0f449349801646c750d25e4a4ec4a5b3de98aad245e858"
+    },
+    "tools/test_postmarketos_ram.py": {
+      "bytes": 9920,
+      "sha256": "23167785db3614883c2773d03dfd27ed31ed149b9a50ad6414a33e594e87f6e7"
+    },
+    "tools/test_qrtr_live.py": {
+      "bytes": 1558,
+      "sha256": "3422c67af2843e70356e5c555282b6a3d1c176d69606597e1f3af28a2f4aa4d8"
+    },
+    "tools/test_touch_reboot.py": {
+      "bytes": 1443,
+      "sha256": "3252eff0c085160a37072c62da8f4fa58a52bfed4b376644759502846702368b"
+    },
+    "tools/test_ubuntu_systemd_namespace.py": {
+      "bytes": 3134,
+      "sha256": "57f25d45a8d34de34c2f9aec349b22c19216f3ef5a4bea020d2635c2f61f6a47"
+    },
+    "tools/test_usb_loopback.py": {
+      "bytes": 2236,
+      "sha256": "44575ab17cea21ddab947c50a0adad5445cd8e4546a94ccfd2601d7c83f56d59"
+    },
+    "tools/test_usb_ncm.py": {
+      "bytes": 3740,
+      "sha256": "5cb3f2604dcac13214799c27c4fc126353e01480123e6679b0170ce45733dfac"
+    },
+    "tools/test_usb_serial_native.py": {
+      "bytes": 2019,
+      "sha256": "72c24aacb83b6d6bcbe314c8ef5fe33302b97c1cf40671aff99889c8bd942b1a"
+    },
+    "tools/test_usb_serial_reliability.ps1": {
+      "bytes": 7758,
+      "sha256": "9037236e8f961234978bbe111b9930c039228569c591c8822dcd7cb761addfc5"
+    },
+    "tools/test_usb_serial_reopen.ps1": {
+      "bytes": 1000,
+      "sha256": "e207b32e38a01f82dc30c08835f528e25b3bdc95e5eecdcc3b28f14bbae1b2ae"
+    },
+    "tools/test_usb_serial_upload.ps1": {
+      "bytes": 3626,
+      "sha256": "7d5b8ab8ec5121403d46ccc868c450d6127bfa7ddd23f4594b987bff77c49a88"
+    },
+    "tools/ubuntu_weston_clients.py": {
+      "bytes": 1281,
+      "sha256": "35d8ff045c23f9254fac466f8359529b6cb53d913c14b91abcca500444fa5eb7"
+    },
+    "tools/upload_mainline_ncm_file.py": {
+      "bytes": 1637,
+      "sha256": "7fbdfff864ae6f0b58c696c60c4d1d09e0850b985b5b8865ddabb734786c4212"
+    },
+    "tools/upload_mainline_serial_file.ps1": {
+      "bytes": 2763,
+      "sha256": "aed797c285517df4eaca084817dd5e8a5b2ecd79880ae44478aa1a66390089a6"
+    },
+    "tools/usb_loopback_winusb.c": {
+      "bytes": 6501,
+      "sha256": "0153a7c160b904698886cd7ae0bcd2d885d869568d6d3f8aca8dd6648a00e095"
+    },
+    "tools/usb_serial_native_capture.c": {
+      "bytes": 3735,
+      "sha256": "fba6cc74dc61af294c7324e12431f9138e0b658f7d72c8bb9f99db6cd211c31e"
+    },
+    "tools/UsbSerialContinuousReader.cs": {
+      "bytes": 2887,
+      "sha256": "5b6ebfb04869e05cf387ca74db05cc966352d0aa68b8f10bb1e8644d9191ba56"
+    },
+    "tools/UsbSerialReader.ps1": {
+      "bytes": 407,
+      "sha256": "b5e98d02aaa05a5df64adb8e5e3050492e5c518b7562f6d37a737f69414c8d88"
+    },
+    "tools/user_init_reset_probe.S": {
+      "bytes": 714,
+      "sha256": "191a36a96eee6dcb8f03315f1492c91e32e9da128212a0e1ed39184031f744ca"
+    },
+    "tools/validate_postmarketos_packages.py": {
+      "bytes": 3692,
+      "sha256": "78403516a527578531e2897e4d6cc4aee6a43f0b39826d5978e99deefee26f0c"
+    },
+    "tools/vendor_boot_ramdisk.py": {
+      "bytes": 2767,
+      "sha256": "7aa24b7155d0e2fb616762e89f041e8883e07778a9992aa8c5e98df76f132ebe"
+    },
+    "tools/vendor_boot_risk.py": {
+      "bytes": 3606,
+      "sha256": "b39ee3a8d720b50a524aefca7e2fea1d49bf362bb275f34f006863e98ccd1851"
+    },
+    "tools/verify_boot_success.py": {
+      "bytes": 1328,
+      "sha256": "15f8f5d76c8a99b0be3c2136377d06da7a1cb7f5fe20738ef06ec4e9fa4e5d83"
+    },
+    "tools/verify_bootb_and_slots.py": {
+      "bytes": 5075,
+      "sha256": "b661dcc504cf689713a2d201b8cef49407e9201364c996e46521a46533d317f1"
+    },
+    "tools/verify_dts.py": {
+      "bytes": 3250,
+      "sha256": "50d9cb68c292ec20f0c8eeb4e3839253dbeeb34bc8dc48ee4ea2d572fdd765ac"
+    },
+    "tools/verify_initial_state.py": {
+      "bytes": 3981,
+      "sha256": "4c67a055887993b6635b5c6c0ad42d931558b25169225b0742d239a935595925"
+    },
+    "tools/verify_live.py": {
+      "bytes": 3602,
+      "sha256": "66ddec416b2b74b701a89c776786c5cf8b114d73f034f57ba00f114b08da036f"
+    },
+    "tools/verify_native_boot.py": {
+      "bytes": 2945,
+      "sha256": "26cf9b5714f6ae0908eeee6e10d901406b2cd41e8249387799b211480b7a392c"
+    },
+    "tools/verify_native_rootfs_phone.py": {
+      "bytes": 1902,
+      "sha256": "4f9077fac54d8113531e2dd94df798dd60ed3eac42cd82efbaf73ada4f87444f"
+    },
+    "tools/verify_panel.py": {
+      "bytes": 2625,
+      "sha256": "dfe39867d6fc0c3e37f6db35593e01390aa3697065a923997e03afb68ede8cff"
+    },
+    "tools/verify_two_labels.py": {
+      "bytes": 4296,
+      "sha256": "88e13a3f8d1feb6db196c8c825d00a0327a9717cc0ba8999e2ba9aa9dac7b5a0"
+    },
+    "tools/verify_vb_node.py": {
+      "bytes": 4096,
+      "sha256": "0882c329944b9038024103f38cfe4eab30e0fa403bf501404acc9ce93b7a037d"
+    },
+    "tools/watch_pstore_window.py": {
+      "bytes": 4643,
+      "sha256": "e449b7a15916e7f162abbf3eb0628d7122d0f2f73923ed8679833bbcaa7e9c81"
+    },
+    "tools/why_noop_dtbo_is_risky.py": {
+      "bytes": 4482,
+      "sha256": "31dc0cefe2971cda4c49f74b364b89c2dc63f8961f6e5ca30fe817a91d1fa07b"
+    },
+    "tools/wsl_add_dtc_flags.sh": {
+      "bytes": 1599,
+      "sha256": "9db373031cc6944e843160de890a3dc49afae8d16ff0ff6bf1c30dab4e49d031"
+    },
+    "tools/wsl_assemble_ubuntu_ram.sh": {
+      "bytes": 3229,
+      "sha256": "ffd8f5226a195a09f1834cd1b1734778381a13a2d6ad0f06661eab964c298893"
+    },
+    "tools/wsl_audit_aston_touch.sh": {
+      "bytes": 1123,
+      "sha256": "3d4427694885e9d30c184be6c4d2fe046383a41a241528c4d56d3e407eb2ca39"
+    },
+    "tools/wsl_audit_display_sync.sh": {
+      "bytes": 1113,
+      "sha256": "ab65a8b681f8f809b6b308c18b4539d977b8cae22cadb8ef5fd634207bc6fcf5"
+    },
+    "tools/wsl_boot_chain_audit.sh": {
+      "bytes": 968,
+      "sha256": "707ae2dcb47d85678aae5f15146b8e12316f9074a0c21cf85a862e44e6ae4c3b"
+    },
+    "tools/wsl_build_aston_touch.sh": {
+      "bytes": 1427,
+      "sha256": "639cf30c3cbd8e917831bf43761b45a364fd2f12452553af9207268bf43e6d9d"
+    },
+    "tools/wsl_build_busybox.sh": {
+      "bytes": 2798,
+      "sha256": "de6a211e417ff347c238fa01234fce58f24192b8f624f81abd8b20f65d75b92d"
+    },
+    "tools/wsl_build_buttons.sh": {
+      "bytes": 503,
+      "sha256": "3ace206b93ae687108324a586ffab0d66491f687e3ce333ede45068a4bbb4500"
+    },
+    "tools/wsl_build_cmdline_probe.sh": {
+      "bytes": 1258,
+      "sha256": "87e03fc8735c5aedaf46bb1c66b8351871d9d46624c0e5a49d3c5b4f1fe5baa9"
+    },
+    "tools/wsl_build_control.sh": {
+      "bytes": 2299,
+      "sha256": "bae249459130855c74cffcbc25a893e91cf09700a90ec29e554e99dc828b7fcc"
+    },
+    "tools/wsl_build_display.sh": {
+      "bytes": 3381,
+      "sha256": "083c7312710729e0641a14b420e0ac34e8df6c1825910f885358e710c38d3819"
+    },
+    "tools/wsl_build_display_budget.sh": {
+      "bytes": 1071,
+      "sha256": "800d5ee1bcf029986f749e4ad3b2063b61e1c9c7f513f2e3f4329aba09941bed"
+    },
+    "tools/wsl_build_display_counters.sh": {
+      "bytes": 569,
+      "sha256": "b57bc284d52b3a125d0a76d0daabbe58d8cb8d0f5837b600d870d0b82ceede96"
+    },
+    "tools/wsl_build_display_diag.sh": {
+      "bytes": 1049,
+      "sha256": "b078ab7b58166bd0bcbf9437b765d01b1efe5eb41a229798c2863b6b0ce76fb6"
+    },
+    "tools/wsl_build_display_trace.sh": {
+      "bytes": 1728,
+      "sha256": "8d3860f95681fffdc298a47f6df9f61bac744ce2002a74df052932fa4d5867f7"
+    },
+    "tools/wsl_build_display_trace_modules.sh": {
+      "bytes": 1150,
+      "sha256": "a73fa8949b49a6c4e2bf79ea376e593f1953b4dc24a89ad738b967fe002bc94f"
+    },
+    "tools/wsl_build_drm_shutdown.sh": {
+      "bytes": 827,
+      "sha256": "2f4d4b650fbe5dec254943e0960b8e34ab9182691f3d1a3664e97b694632ec6f"
+    },
+    "tools/wsl_build_dropbear.sh": {
+      "bytes": 1718,
+      "sha256": "f4cc00a24579ecf727c4c5d074fe6747f5e6fe5917390fb1b74644ee2b33bf21"
+    },
+    "tools/wsl_build_dsc_firstline.sh": {
+      "bytes": 2115,
+      "sha256": "414e2a5d2b44b3b73b008d77172c826789b86521bb0ff4dc4ed2158bb05c1919"
+    },
+    "tools/wsl_build_dsc_packet_control.sh": {
+      "bytes": 1208,
+      "sha256": "d10e6f76c1a35092293e27904754c0465239666c58fda7c09167e86cf956e6ef"
+    },
+    "tools/wsl_build_evtest.sh": {
+      "bytes": 476,
+      "sha256": "0bd75f09425037683d4d417035f7620c60c14c1db9e36590878745815747801a"
+    },
+    "tools/wsl_build_fb_pattern.sh": {
+      "bytes": 620,
+      "sha256": "d783c6964cb9b53b4cf14a718f721ec62c8eb636df1dd69d81c059cd8cb122fc"
+    },
+    "tools/wsl_build_fixed_ncm.sh": {
+      "bytes": 737,
+      "sha256": "a8e64ebde0e036119a2e362c087b0078702a23132f64fa2f7f9fbf23b44af27c"
+    },
+    "tools/wsl_build_generated_panel.sh": {
+      "bytes": 1606,
+      "sha256": "401b313573eb6771f84a34292ce7fb20cc563e87db81ee1e1be3ca15a8cc0d36"
+    },
+    "tools/wsl_build_initramfs.sh": {
+      "bytes": 2953,
+      "sha256": "f59bf6f17b6e4fff3126014ec8d000a0117d7b286c466d6399445fb114c61fef"
+    },
+    "tools/wsl_build_kernel2.sh": {
+      "bytes": 1941,
+      "sha256": "e7beccb22f5ffd16bb3bbd9eff97f2176512ca72d3316a511baed70a557b3fff"
+    },
+    "tools/wsl_build_kmscube.sh": {
+      "bytes": 1178,
+      "sha256": "678fdb06b571a888056a8b65c9cd25591a6b2340d0f8998c940ce278c547a8ed"
+    },
+    "tools/wsl_build_marker2.sh": {
+      "bytes": 2195,
+      "sha256": "d991c1416ee9857039fdbededf4da24ea12fb3411b4505a6a0fb998d7481adcb"
+    },
+    "tools/wsl_build_marker_probe.sh": {
+      "bytes": 2608,
+      "sha256": "6ba8f2062085dd7c0798dddda29c28548d093f6ec521461ccf8cb811b25c40c2"
+    },
+    "tools/wsl_build_pstore_reader.sh": {
+      "bytes": 814,
+      "sha256": "5fe744e1143dbcd6b6eef0e4a2d20a96b64db1979665089dce8d9da52bcb63ac"
+    },
+    "tools/wsl_build_qbootctl.sh": {
+      "bytes": 550,
+      "sha256": "3cbd0f059ba9bdcecb715c15b25f501cc3895295e2cd76f84b4da3dd1c01e860"
+    },
+    "tools/wsl_build_reboot_modules.sh": {
+      "bytes": 1001,
+      "sha256": "ba303c6660e28157ddb7151d3dfb019cde5817486ee3e30554d33009d8102287"
+    },
+    "tools/wsl_build_sdma_control.sh": {
+      "bytes": 2216,
+      "sha256": "706021a91e79469824763b33fc1697d38fcabacc9e60fad1e2251011f9b573bb"
+    },
+    "tools/wsl_build_te_height_control.sh": {
+      "bytes": 2465,
+      "sha256": "bf3aee571e9475a15b3071b44b0a830b18dbaea01f8ef2eaf4125c46e6dfbc08"
+    },
+    "tools/wsl_build_touch_probe.sh": {
+      "bytes": 1427,
+      "sha256": "b73b4256ebd147c0c69ee180be11be26fdcfe9644c530f68fb29218a9ff42162"
+    },
+    "tools/wsl_build_usb_diag.sh": {
+      "bytes": 2346,
+      "sha256": "ae5c95d20d2a9654ceafdfaf226fd47c47814b99e34c0324bf15551b8fc7920b"
+    },
+    "tools/wsl_build_usb_loopback.sh": {
+      "bytes": 2689,
+      "sha256": "1cc7eac30c39c15ec222bc3b0abc2aec1dea937cdc496f5fb1e708251b8dc352"
+    },
+    "tools/wsl_build_vendor_trikey.sh": {
+      "bytes": 992,
+      "sha256": "eb34c8a9cf2f1a203d58fded21d2be285b1360ba6acc01d4a48c9574ea0b0fbe"
+    },
+    "tools/wsl_check_builtin_dtb.sh": {
+      "bytes": 2976,
+      "sha256": "af50c587e0e498f58cb5e8c61fd882c898d7233acd7da961d9e1e9a4bcd34622"
+    },
+    "tools/wsl_check_gadget.sh": {
+      "bytes": 2331,
+      "sha256": "be0be793d6141170b716601e9d868b3a866efe3363414d64f0ed66dfc375e670"
+    },
+    "tools/wsl_check_observability.sh": {
+      "bytes": 2150,
+      "sha256": "dc62b1d47951aa48e4e7d0657eae3387f57e20e387962c7a65d30ba556fa6627"
+    },
+    "tools/wsl_check_psci_source.sh": {
+      "bytes": 1844,
+      "sha256": "5e2508ebf67d69da30a71cb5cc10d11e65e6ce9dba9687a2c74916abf9b24e28"
+    },
+    "tools/wsl_collect_artifacts.sh": {
+      "bytes": 982,
+      "sha256": "9c62c1b2e5787cbf7eeeecde03b477668c926f233ad2291876afdebbeb41cca9"
+    },
+    "tools/wsl_compare_aston_display.sh": {
+      "bytes": 957,
+      "sha256": "b06aa9dce5152a5533d8683e45871430228a20b8c5c2f493fd6a0a046a46131a"
+    },
+    "tools/wsl_configure_kernel.sh": {
+      "bytes": 3114,
+      "sha256": "263b8924dfa651cd03f034e016ee0908bba294b533a8e1e211c2e6893d52bad9"
+    },
+    "tools/wsl_confirm_initrd.sh": {
+      "bytes": 3202,
+      "sha256": "02ee092311146073321e69567c30c1c256fee14de7089bff61d3c796077f75e9"
+    },
+    "tools/wsl_connect_pmbootstrap.sh": {
+      "bytes": 3248,
+      "sha256": "ebcc9c0e27e6d375530c68b3bd63a24eed1bd5bf4385e65bb127a8e686635324"
+    },
+    "tools/wsl_embed_initramfs.sh": {
+      "bytes": 2964,
+      "sha256": "c720dca942cf30d8a8c3438502fb809eecc2d2bbbec61d255ed0b7b17d5f9b54"
+    },
+    "tools/wsl_export_display_reference.sh": {
+      "bytes": 702,
+      "sha256": "82269568486b340a7dae5dd88998798e50abd1c4e230396bcd73729372252b31"
+    },
+    "tools/wsl_extract_compat.sh": {
+      "bytes": 2502,
+      "sha256": "e2fe5743b904476192891b2f630a12477b6302b650331f7ef1caf00c4a06f687"
+    },
+    "tools/wsl_extract_embedded.sh": {
+      "bytes": 3650,
+      "sha256": "d744174de9a7b825577d601198617cf414c204e2411aaa65a7518d6af2e6dd96"
+    },
+    "tools/wsl_extract_stock_gpu.sh": {
+      "bytes": 750,
+      "sha256": "bd6626ea44c080a8d800ce3d6da8b2c33c2d8ecb3d29c26e4144882ab259837a"
+    },
+    "tools/wsl_fdt_label_check.sh": {
+      "bytes": 2645,
+      "sha256": "3481eef93f8b1ac3d662aa57acdfe52de11ed277753b940f3b81c3c701cc1d38"
+    },
+    "tools/wsl_fetch_kernel.sh": {
+      "bytes": 2596,
+      "sha256": "211eceecb6dd6a712b486537c1ea83f3346c843dd6fd296eeea8ed0f5f2db82d"
+    },
+    "tools/wsl_fetch_pmbootstrap.sh": {
+      "bytes": 938,
+      "sha256": "dc0eab64ffa33f31aec51174f1a94751fb00babac5c62ea56721e90b91900b16"
+    },
+    "tools/wsl_final_verify.sh": {
+      "bytes": 3014,
+      "sha256": "eb22bb636628a17193c8edd5f4ae775be29c1de9553ab9b4a7e3ecd292f9cdb4"
+    },
+    "tools/wsl_find_cmdline_source.sh": {
+      "bytes": 2484,
+      "sha256": "aa1790ed7cad220779acb321c38fa8accb2a8a33c84e4bec335b9387c8b0b115"
+    },
+    "tools/wsl_fix_applets.sh": {
+      "bytes": 3248,
+      "sha256": "0e6596878a88efb84a740861fedbe8dcb866edfef7ab79269b1d5b4abfb065d6"
+    },
+    "tools/wsl_fix_applets2.sh": {
+      "bytes": 2902,
+      "sha256": "60ea327180198993b2a57ebdddac7e61ebd5a58f42614387b8ae5261372e37cc"
+    },
+    "tools/wsl_fix_toolchain_crt.sh": {
+      "bytes": 1550,
+      "sha256": "a3ee8500aa9a597065cd46504f4cd6811067e893b09d2cf9f29616acdc1b3889"
+    },
+    "tools/wsl_generate_panel.sh": {
+      "bytes": 989,
+      "sha256": "3a667219780100b62713638741ffe00019feb55ce210f655c1918013e518b975"
+    },
+    "tools/wsl_get_aarch64_busybox.sh": {
+      "bytes": 1880,
+      "sha256": "a2c01330ee735d21e4b0101e7e963f0e3fea0b582cc78033332c0bc0a926e0c4"
+    },
+    "tools/wsl_inspect_initramfs.sh": {
+      "bytes": 1259,
+      "sha256": "a694473e3fbd88991d9545b6b98f16e6ba2395e39006aa0a9f686897fe85d4fb"
+    },
+    "tools/wsl_install_dts.sh": {
+      "bytes": 1412,
+      "sha256": "a5c8de521ec0956c0ff91dbaf5582ee42ede0df7f2a7b744ea8b01f2ac1612e3"
+    },
+    "tools/wsl_kernel_entry_probe.sh": {
+      "bytes": 12335,
+      "sha256": "97ba08efec1550cc8ff86b2e7652f72b608b45d92972db9a8a88e59397b2ef0d"
+    },
+    "tools/wsl_kernel_format_check.sh": {
+      "bytes": 3693,
+      "sha256": "e447088fcea5589e348dcb7c7a2bab0ad3412f1fcd55e188b0894eb557081372"
+    },
+    "tools/wsl_locate_initramfs.sh": {
+      "bytes": 3590,
+      "sha256": "c24db22a2250c36b8a6ddba07200bc0be247eb2af4c916ada23b2f8b0e718030"
+    },
+    "tools/wsl_pack_bootimg.sh": {
+      "bytes": 3330,
+      "sha256": "a24ef4fe43c85584580a3a9bd67ad439991ba8354bef4426aa26a355d8a00911"
+    },
+    "tools/wsl_pack_initramfs.sh": {
+      "bytes": 2453,
+      "sha256": "891732418488b220feff02d272098f5e379122925adb6d279834345fc82e8dca"
+    },
+    "tools/wsl_pack_initrd_boot.sh": {
+      "bytes": 3441,
+      "sha256": "b6a9a82a9b5d52943a263f5e032e388ac971f03b6662263350bc7d9323d62826"
+    },
+    "tools/wsl_preflight.sh": {
+      "bytes": 3313,
+      "sha256": "cfda53a3bf4580e7256b38a2f28431958ba60cf34cd524b9774c2c1a59d42fa2"
+    },
+    "tools/wsl_prepare_mesa_test.sh": {
+      "bytes": 767,
+      "sha256": "bab960ef0f5df9a7ffa2bd20bd2361f2dd1265870cdbb2a7c7b8685a88e1ebf9"
+    },
+    "tools/wsl_probe_pmbootstrap.sh": {
+      "bytes": 732,
+      "sha256": "b9173a94c176f90aaf3811b108471344df3106f478588ece1f225009b2b578fa"
+    },
+    "tools/wsl_qemu_boot.sh": {
+      "bytes": 1949,
+      "sha256": "a91c16111a6503f222e95430e5a9e6fec4eb136290a84c40df810499c998cb83"
+    },
+    "tools/wsl_qemu_diagnose.sh": {
+      "bytes": 3221,
+      "sha256": "1e1110c5e2b77b0aef18c0f566ced1f8fc67c73b39ed1f4a781e1cea6dab34fb"
+    },
+    "tools/wsl_qemu_display.sh": {
+      "bytes": 811,
+      "sha256": "3c6bb79c33c068b7342ef424c542f317f5013dcb399a2c4c8bad8164414dfa04"
+    },
+    "tools/wsl_qemu_fixed_ncm.sh": {
+      "bytes": 803,
+      "sha256": "2cdee19ee50c7f36a8689eddb6f11966ecef5b0ba6bc025506c2d1a5e81396b7"
+    },
+    "tools/wsl_qemu_generated_panel.sh": {
+      "bytes": 910,
+      "sha256": "72d027faf73d2f44c700ac27ae3a5189906821fdf151b4099d17f494a0687a5b"
+    },
+    "tools/wsl_qemu_postmarketos.sh": {
+      "bytes": 1355,
+      "sha256": "f8e0e4c366aab58076c47c6a6019f3871118ff387dd5a682865f7a2f0bc99519"
+    },
+    "tools/wsl_qemu_raw.sh": {
+      "bytes": 3766,
+      "sha256": "07a89cbf72829a58c6d1c17c5d33fd06be75a7cf3231a68c6713e28da2361489"
+    },
+    "tools/wsl_qemu_rootless.sh": {
+      "bytes": 2646,
+      "sha256": "084cbfbf728df09f458bb587f94f438bb9067bd7ac2dac5f84f420850b05690e"
+    },
+    "tools/wsl_qemu_sdma_control.sh": {
+      "bytes": 1686,
+      "sha256": "74416900b77bd633833cd63009674bb3204147f5c9360ec074ac65748950dc46"
+    },
+    "tools/wsl_qemu_test.sh": {
+      "bytes": 2018,
+      "sha256": "1275c0396b066b27091da10c46a50c94cf77c58b44792b505b552f125bee9a18"
+    },
+    "tools/wsl_qemu_touch.sh": {
+      "bytes": 1023,
+      "sha256": "4fd94a3d35cae840ceb8dc4991162e00df481d96d2b9065d2d40a3b8361238d4"
+    },
+    "tools/wsl_rank_failures.sh": {
+      "bytes": 3312,
+      "sha256": "f5e617e2c1589d4b4a8527db3b25c042752e9bcfd0aad1541f1b04f02f64e115"
+    },
+    "tools/wsl_rebuild_busybox.sh": {
+      "bytes": 1249,
+      "sha256": "f7d2f49bca9c3f6689b964a5476368c36ee97e575fe29692b3146bd0540990f1"
+    },
+    "tools/wsl_rebuild_poweroff.sh": {
+      "bytes": 3359,
+      "sha256": "8d05c5dc0304a1b1e51f78e56fd26f74d6aa48d0da1b3b696324b92ccacf9c69"
+    },
+    "tools/wsl_rebuild_verified.sh": {
+      "bytes": 6992,
+      "sha256": "7fc49b1dc9ac4eb84afa5fea52fbb43c95d8f7d4866664062b70c5f255a39038"
+    },
+    "tools/wsl_settle_initrd.sh": {
+      "bytes": 3021,
+      "sha256": "8685b64914ea1a7054abe2bbaac452b4d65d6dc71c98d35bd4e40bc7ffb1b44f"
+    },
+    "tools/wsl_setup_toolchain.sh": {
+      "bytes": 1869,
+      "sha256": "eb351b7e80df984e97012b50f5ed2bffa273e9123a46ae3d006fa655d6e8d8cc"
+    },
+    "tools/wsl_stage_stock_gpu.py": {
+      "bytes": 2736,
+      "sha256": "c01eeb25abf2ba89eaf749ff8c0416c6d6db6626da32cf56b35f657730a8dbda"
+    },
+    "tools/wsl_test_pmbootstrap_cli.sh": {
+      "bytes": 578,
+      "sha256": "9c30ff80214eeb59ea5b0b33ab07d110d33d793377f41846f06957edc2df1307"
+    },
+    "tools/wsl_unpack_stock_vendor.sh": {
+      "bytes": 592,
+      "sha256": "6aaf4cb770b2c6b5ad571f9e7803b78df6af0d46dc0a53da39422702cb828c6b"
+    },
+    "tools/wsl_validate_gpu_port.sh": {
+      "bytes": 1485,
+      "sha256": "6f603bb0301c063725c5a3477582f83b985dc5179c95f9f3c21f7ae1f2d97717"
+    },
+    "tools/wsl_validate_postmarketos_packages.sh": {
+      "bytes": 2100,
+      "sha256": "2f96da350e169a910f58493580aec55e49827b4257dc7a52fdacf754c5592502"
+    },
+    "tools/wsl_verify_embedded.sh": {
+      "bytes": 2630,
+      "sha256": "91f6d96c8c8a703b87009aba82618b7e33715f38b93797175fe723bc720fc70e"
+    },
+    "tools/wsl_verify_initramfs.sh": {
+      "bytes": 2112,
+      "sha256": "203811c7df6c6109ee02d34c9ea8cb704d30329685117579dff1d7e2048d294b"
+    },
+    "tools/wsl_verify_kernel.sh": {
+      "bytes": 2365,
+      "sha256": "934f71d1c69b502d64950068fa2ea552fe84d65f6879d2bc4edffaff7d888a6c"
+    },
+    "docs/_minidump.txt": {
+      "bytes": 2494,
+      "sha256": "d65122d6b9d3d6d6a9b7a30cc81c5ff7286dccbe0476365ad0e6c790ba18c27b"
+    },
+    "docs/_vboot.txt": {
+      "bytes": 965,
+      "sha256": "3bd1c9aaf652ddcc22510289dc6fd196a7f839239659cd04646a7554ea6eec94"
+    },
+    "docs/_why.md": {
+      "bytes": 1472,
+      "sha256": "d8c5f983bc229e70dc23ca017456417f76dac816a1cf86640040ce46b4da3c01"
+    },
+    "docs/abl-log-breakthrough.md": {
+      "bytes": 6535,
+      "sha256": "94cc4f16e30fb793f37368887e5380241aea049622a85cf86f0c828f65865c95"
+    },
+    "docs/abl-overlay-control-20261012.md": {
+      "bytes": 3401,
+      "sha256": "c2026cb1d60df385c958e714cdb89268b306dafc39dac09ad3701a0ae8ccb3a6"
+    },
+    "docs/adc-gen3-bringup-20261017.md": {
+      "bytes": 3546,
+      "sha256": "b18569998bf267042f816cdf5b787f02162d209a5171d43a07856b2e492d4a34"
+    },
+    "docs/adsp-charger-offline-audit-20261016.md": {
+      "bytes": 23220,
+      "sha256": "ffce1e67fc381b88571f7fbf52bf05e4cca23e6c087f7dc7c9d2cb67917987c5"
+    },
+    "docs/aston-display-comparison-20261014.md": {
+      "bytes": 3332,
+      "sha256": "a6d1fe659d18814df764a4269ae6d72dd76c962e6c516c1d03d1ba3531db9d64"
+    },
+    "docs/aston-touch-20261013.md": {
+      "bytes": 4421,
+      "sha256": "713a2fda3ef4fd63b072dfcf55dd4f637d8027c7cd21b196574328e930c04923"
+    },
+    "docs/aston-touch-240hz-20261013.md": {
+      "bytes": 4054,
+      "sha256": "8e5859e0096c408182a528f4845a572d94a11a3188576504d18b533279ad2818"
+    },
+    "docs/aston-usb-patch-comparison-20261013.md": {
+      "bytes": 5482,
+      "sha256": "600d5571feeed82e2c112139cec66294ccd74771f50653779c6f63192f283a02"
+    },
+    "docs/avb-dtbo-control-20261012.md": {
+      "bytes": 3597,
+      "sha256": "0e24d25227796fbc0d1190f1c23381875507e1894c0e95a50cedbc82c0dfb0f7"
+    },
+    "docs/battery-bringup-20261016.md": {
+      "bytes": 8732,
+      "sha256": "8a8a6959d2ea66903479dfa6b5f55a6574a2b45b3dba736bec9c066240ee7e54"
+    },
+    "docs/boot-avb-recovery-20261014.md": {
+      "bytes": 2170,
+      "sha256": "dd1e08e21340557f6a42d7437a994387a82536a45b3a4a486b58ed9f3315fd67"
+    },
+    "docs/boot-chain-audit-20261012.md": {
+      "bytes": 5231,
+      "sha256": "f92f354b2f03c16066f2b87bd7b0f8c8edb53d87f3c5d1fda76d0f05cb4dddff"
+    },
+    "docs/boot-image.md": {
+      "bytes": 6810,
+      "sha256": "a5bfb4e58ba7d53ae4ac93a6f77f620ee5802dd2551f10490cd2de4288ab918d"
+    },
+    "docs/boot-r1-experiment-20261012.md": {
+      "bytes": 2515,
+      "sha256": "66488cbc2c71bb568c792ac0fd09b9a887acb32b2225c5b36522af9986d007d1"
+    },
+    "docs/boot-success-20261014.md": {
+      "bytes": 2893,
+      "sha256": "2dbbe6f4df89500c3b77d5e092e5885eb0e0cfcc08f743228dd41d4f78b74e55"
+    },
+    "docs/boot-temperature-handoff-20261017.md": {
+      "bytes": 5509,
+      "sha256": "57a5f7d4ffc26fbc5db28103f4b3f6f7b73e3189fda800904e9dbeb32ff4bd84"
+    },
+    "docs/buttons-20261013.md": {
+      "bytes": 2720,
+      "sha256": "f6e48354ee8df2dc020a2bc627904b28707d9c5957ca09a77870f3377acf605d"
+    },
+    "docs/charger-bringup-20261017.md": {
+      "bytes": 4450,
+      "sha256": "988252ce4b29eb993e6b3e1779cb519d61204d64e9ffb0dc0b3efa3918068e86"
+    },
+    "docs/charger-init-candidate-20261017.md": {
+      "bytes": 8498,
+      "sha256": "1236541ce8dd732732294ad6a4c92e9788f5c6f61f60635e8ace66287e6ed4bb"
+    },
+    "docs/cmdline-experiment-20261012.md": {
+      "bytes": 2748,
+      "sha256": "f5cf0057f57e6b046057117258b7c703488141b3265bdb119d5302e1ad605507"
+    },
+    "docs/debug-ncm-fixed-20261013.md": {
+      "bytes": 3576,
+      "sha256": "4465d3a9dff3b2831c0d2a14eaba121703fa12be43850bd251819fc9eb2a8e3b"
+    },
+    "docs/decisive-experiments.md": {
+      "bytes": 5284,
+      "sha256": "c974c2ffa6deaebeb5d015d703715cb270220404e8047049362de51eb635233d"
+    },
+    "docs/decisive-result.md": {
+      "bytes": 5374,
+      "sha256": "8e6255ad60efcee2f1f9bf24f0cb92f2a25e01c03a1594db8c10a8c632bb9951"
+    },
+    "docs/display-budget-fix-20261014.md": {
+      "bytes": 2645,
+      "sha256": "949d8bb468562d78c2624081146e24827731b0113259f583b0c3efd2dc2a47e6"
+    },
+    "docs/display-generator-avb-retest-20261014.md": {
+      "bytes": 3760,
+      "sha256": "f91f0dab71d45ef4800e13c15db2c8cfadfd6156ebb2979686ad404f295596bf"
+    },
+    "docs/display-port-20261013.md": {
+      "bytes": 8894,
+      "sha256": "c8a5b3020a249f33affb099b4a59ebdb2ba91d7228815968687210aeefdc6455"
+    },
+    "docs/display-preparation-20261013.md": {
+      "bytes": 3696,
+      "sha256": "763e0931c4d9b7e2b852105a8fcd7663275a7f6635650d3f3022ccc02c7fbdcb"
+    },
+    "docs/display-timing-diagnosis-20261014.md": {
+      "bytes": 8020,
+      "sha256": "6d1989290c53bfa99a8003a29a3bb04fc3ec457cc4ce59448f912dbea81f6812"
+    },
+    "docs/display-touch-reuse-20261013.md": {
+      "bytes": 8088,
+      "sha256": "ee7f985491b9e15058a007a4ba5e2cfb13406cea8d92a1f7eb93b7d10768464b"
+    },
+    "docs/dpu-sdma-control-20261014.md": {
+      "bytes": 1905,
+      "sha256": "a5c3c9d6c55ebad19bfd9a84c5a1d746bf14df12afe697a9df063c973cc4bae3"
+    },
+    "docs/drm-shutdown-fix-20261014.md": {
+      "bytes": 3155,
+      "sha256": "8d4a63739ea1300aefe3e9f281030ef5d6deef175418428cc69b14e973c50925"
+    },
+    "docs/dsc-audit-20261014.md": {
+      "bytes": 2173,
+      "sha256": "cff32aef037f03fdc0c79e909eab6ddef38cc09a69affe39472c2a742d3fe11a"
+    },
+    "docs/dsc-firstline-control-20261014.md": {
+      "bytes": 1635,
+      "sha256": "7042be12159d533ca4b8251a988ca9c94c03d671db93eceba53cadb49665c803"
+    },
+    "docs/dsc-packet-audit-20261014.md": {
+      "bytes": 1821,
+      "sha256": "81c03c20c1387f5a85581b53ac63b8046d4610d4ccd214a1c15676d4d0759f98"
+    },
+    "docs/dsc-packet-control-20261014.md": {
+      "bytes": 2096,
+      "sha256": "7a17b3bcd56726639de4058de8286c4651efb0e3f51f3b8b2900b97b2945ab13"
+    },
+    "docs/DTB-CONTROL-BREAKTHROUGH.md": {
+      "bytes": 6930,
+      "sha256": "720c37319a1e8e92d6544262c038e0adaab0d5b9568af24fd3080347bd85b08b"
+    },
+    "docs/dtb-controllability.md": {
+      "bytes": 5651,
+      "sha256": "4c4d70a396b6445ba7429747befabaa592d22b0c5a1456b832dff5eacd07b826"
+    },
+    "docs/dtb-delivery-proven.md": {
+      "bytes": 5554,
+      "sha256": "987583c7a0f957852eebed895dc62e4c8e16b24cdd9e9a7b958e17d1958d6c9d"
+    },
+    "docs/dtb-mechanism-and-safe-path.md": {
+      "bytes": 7385,
+      "sha256": "b8f629c50ca91ed6191d4797e1fbffb611bacc37c3a6d2540cbd688394b1c02e"
+    },
+    "docs/dts-build.md": {
+      "bytes": 5062,
+      "sha256": "6113b8e42a5383a504f95b1088d8e0690fe5b8de2903e8dbcc06c212e1aa5184"
+    },
+    "docs/evidence-channels.md": {
+      "bytes": 2189,
+      "sha256": "e0e6980605b6c5a7bb17aa3c13154b30cb264185cf71295a44b8ff45270ca47b"
+    },
+    "docs/first-boot-attempt.md": {
+      "bytes": 6462,
+      "sha256": "558ab06a12c3fc21b7a22c2a14fe92d9ca23064e0d195e2b6ca6722c0c9dbace"
+    },
+    "docs/flashlog-valid-abl-20261012.md": {
+      "bytes": 3392,
+      "sha256": "caf1f2156509c5d3856cb8c0ea8fa72851cf5fad1b063b5921bae54ec25c3945"
+    },
+    "docs/gpu-firmware-stock-20261014.md": {
+      "bytes": 2176,
+      "sha256": "e598d06d88283003b257dcbf51152a3155ad201f57a6d38b62cb3c93ce72b210"
+    },
+    "docs/gpu-inspection-20261014.md": {
+      "bytes": 2523,
+      "sha256": "73c83953e7609f961f1c7de3060d3b49573e9d1eb430dfc94d8e9a39cfa5c849"
+    },
+    "docs/gpu-port-20261014.md": {
+      "bytes": 3060,
+      "sha256": "074aad523dd757ce3332cb71825144d211bb1d2a0caf95ce892a9b71ca9de826"
+    },
+    "docs/gpu-scanout-readback-20261014.md": {
+      "bytes": 2064,
+      "sha256": "1cce2e811cf8e0c709085aa15a1787d0c5df23848a5caf57efa17f60069f306c"
+    },
+    "docs/hardware-identity.md": {
+      "bytes": 3067,
+      "sha256": "3063d2cfd4cf61627c335d8dd2a9c438a3ca9d712dbcbdd858c9e54463d147b5"
+    },
+    "docs/init-delivery-experiment-20261012.md": {
+      "bytes": 3748,
+      "sha256": "379d7390fa469ff8d9d73dcad9c8835f86b1f5da22e86a9c06e5e1c1bdce0810"
+    },
+    "docs/isolation-tests.md": {
+      "bytes": 5343,
+      "sha256": "b9b5ac8414b46f09483567aa88b36a4125b188c084d43756b3097aa4406112c7"
+    },
+    "docs/kernel-async-sync-probe-20261012.md": {
+      "bytes": 1530,
+      "sha256": "6d2f6e507942564ba722e2ecf1003a18e91af876c139daa90ebf478a9a7bf2e8"
+    },
+    "docs/kernel-build.md": {
+      "bytes": 5767,
+      "sha256": "e7b20ab88b7e9abe37a59787a69eefd85d4ae98d665940146aed870b5de1a760"
+    },
+    "docs/kernel-c-init-probes-20261012.md": {
+      "bytes": 4368,
+      "sha256": "58731e2a5a6a06a3c556ca0f65a75ad5afa0bbdf206b51c8b43bb4440b989914"
+    },
+    "docs/kernel-early-probes-20261012.md": {
+      "bytes": 4982,
+      "sha256": "9cb69538f708c448525161bda61a3a199126db9cfeed3f9800d30b29eee0cdb6"
+    },
+    "docs/kernel-el0-user-probes-20261012.md": {
+      "bytes": 3605,
+      "sha256": "64caadd451f4c311b51c887899e0c6fa21ad6a61ebb1df33c6bcd6c507cd1c0e"
+    },
+    "docs/kernel-exec-probes-20261012.md": {
+      "bytes": 3795,
+      "sha256": "c758f93735c7e59dd2573e8814f7f7244b51539d57c778794b9b07aae788d553"
+    },
+    "docs/kernel-freeable-return-probe-20261012.md": {
+      "bytes": 1755,
+      "sha256": "f3ba65d935a001361a8fee1b717750edc9999375fa78f9afba024f8e72662a54"
+    },
+    "docs/kernel-post-mmu-probes-20261012.md": {
+      "bytes": 4242,
+      "sha256": "f4cf4b722c53da36029fdf8a912f3c6f3d1d13d25e0f0f938efcb76dca12487c"
+    },
+    "docs/kernel-rebuild-20261012.md": {
+      "bytes": 5200,
+      "sha256": "0e0664668bb3fa17f98503894479d5a0ae55201902db1a4c6057dc4b0d229d50"
+    },
+    "docs/kernel-resident-probes-20261012.md": {
+      "bytes": 2920,
+      "sha256": "53e7e9ef0acc5d31865b1f7367e6cd5dae21968e149d75e2e54526853175dc72"
+    },
+    "docs/kernel-sched-irq-bisect-20261012.md": {
+      "bytes": 4473,
+      "sha256": "be807c4923346c696e4e5fe78f2beef4df3520699d5595b9564491e29fd356a9"
+    },
+    "docs/live-device-tree.md": {
+      "bytes": 5637,
+      "sha256": "1b5d11b86f631188b56c577787c40580f7cf709e84334cfff010b017efcd1889"
+    },
+    "docs/logdump-flash-journal-20261012.md": {
+      "bytes": 5105,
+      "sha256": "e16f8e1f41a88f239d098d9a3d9916de2b1680f94bf6862432c230983fac0858"
+    },
+    "docs/low-battery-window-20261016.md": {
+      "bytes": 6541,
+      "sha256": "0d534dc44505972cdfd2d6101a06ce9f24d547502627f48c1d1db6c41be3b12b"
+    },
+    "docs/mainline-init-experiment-20261012.md": {
+      "bytes": 4029,
+      "sha256": "149db7ba3b24218344af1810c480855edaad0247d9280414013baa1f2c0860af"
+    },
+    "docs/mesa-offscreen-20261014.md": {
+      "bytes": 2116,
+      "sha256": "2bdb7108dbb80d1ad8779b6a514a4902cf7b42189720610d6e811a4d764990b4"
+    },
+    "docs/observation-channel-conclusion.md": {
+      "bytes": 5357,
+      "sha256": "2da3f27d9541f0f3d45cd2ebd31c4d20c32d13ea70d1b2aea73bdfeb364550cd"
+    },
+    "docs/phoc-atomic-fix-20261016.md": {
+      "bytes": 11721,
+      "sha256": "fa58a0591ad5fad0bb1682c55712977365852476a0b3289e4a085b8e9749318d"
+    },
+    "docs/phoc-commit-diagnosis-20261015.md": {
+      "bytes": 7967,
+      "sha256": "8445be0c7df60c712d1e80e78d147aa9c6b67823691e2ab8b54f2ef610dfe720"
+    },
+    "docs/pmbootstrap-wsl-probe-20261015.md": {
+      "bytes": 4365,
+      "sha256": "2ea6a93eb6a3cdf32d7465c8e702d31b8f8038a20a2bd4de11fc7fb2f3db2c46"
+    },
+    "docs/porting-status.md": {
+      "bytes": 23581,
+      "sha256": "a3bafe0680a4ecfb31a4cbf11a1fd2aafaa9a0dfe3108b128ae161428525f5ce"
+    },
+    "docs/postmarketos-bootchain-20261015.md": {
+      "bytes": 5219,
+      "sha256": "3cf8e707a32d5af4d0887c49e176885390227334b6e7777ded7c6b8b20aeb893"
+    },
+    "docs/postmarketos-integrated-startup-20261016.md": {
+      "bytes": 3286,
+      "sha256": "d1ac787ac8299ab7d3e286f3e6a9a9ca4f623ef139dfa0a0c31ff177e8b9b459"
+    },
+    "docs/postmarketos-integration-20261016.md": {
+      "bytes": 8601,
+      "sha256": "28f6fd30ab7a5970e401b7aabc8cc74c3ae50eb07db9478b9f70479283a4a346"
+    },
+    "docs/postmarketos-native-first-boot-20261016.md": {
+      "bytes": 3552,
+      "sha256": "df4dac26429071a694ea24e5433031099c4aa74ecf14e7201fef6c5024c68119"
+    },
+    "docs/postmarketos-native-flash-20261016.md": {
+      "bytes": 2498,
+      "sha256": "5e52eb0201f4599c6be1940d06262666607679568c2147e8cc8d621d47b0c889"
+    },
+    "docs/postmarketos-native-images-20261016.md": {
+      "bytes": 5285,
+      "sha256": "54caec5a5d6271a88dc4a5c2b897d2993b5b6355f67acc99d6d0f0916b2ea392"
+    },
+    "docs/postmarketos-native-partition-audit-20261016.md": {
+      "bytes": 3108,
+      "sha256": "ca411305151a053fe8b3118422164e9de6674eb4cca8f0f5e5919c1878154b13"
+    },
+    "docs/postmarketos-native-storage-plan-20261016.md": {
+      "bytes": 7219,
+      "sha256": "50acf8f9ea6c77fc4fa01dc9795676768be5734a14d2d81ed005d860ef427c1d"
+    },
+    "docs/postmarketos-phone-systemd-20261016.md": {
+      "bytes": 5326,
+      "sha256": "ab0d1c456a7849e5da8359a7ab841f715d71aae6cd94705c61b43f3598cbf625"
+    },
+    "docs/postmarketos-ram-test-20261015.md": {
+      "bytes": 3895,
+      "sha256": "2a51135f76ceeb7a7d178bc6c8e5f0b1de341986b2f52a7ae7f04008f05c92bc"
+    },
+    "docs/postmarketos-warning-audit-20261016.md": {
+      "bytes": 4975,
+      "sha256": "7989decbccd97e5d9d41621bb12972f85a9f59c111d361022382095863896f4a"
+    },
+    "docs/ramoops-retention-control-20261012.md": {
+      "bytes": 3643,
+      "sha256": "a1e104d82153bbe18bd8c57a7181b9e08d0a819bbf03ce2855a5671d4bd30abb"
+    },
+    "docs/resmem-full-table.md": {
+      "bytes": 9400,
+      "sha256": "7525f54d20f015baede9f0706583e721a7cacae820b67b29cf81e5fd720f5f7f"
+    },
+    "docs/resmem-worklist.md": {
+      "bytes": 8577,
+      "sha256": "bf8f5d05e47f3da452297aa9961ed572da8c65f775f4dd0af8de3f91f072a151"
+    },
+    "docs/rndis-shell-20261013.md": {
+      "bytes": 4885,
+      "sha256": "f17a84b5fcba840b94cc72d9f02dbfbe9b1c6f6726e278815174d9a75356ea7e"
+    },
+    "docs/single-battery-20261017.md": {
+      "bytes": 4900,
+      "sha256": "4af3491500d8d122a9817a6e9bd5f38aca09695a0e74049cb0fed7b5eb9370fa"
+    },
+    "docs/stock-charger-policy-audit-20261017.md": {
+      "bytes": 28360,
+      "sha256": "1ea39320928732762f65049a03f53a994a8ac9df10b224995c9e794f2a49f258"
+    },
+    "docs/stock-pstore-control-20261012.md": {
+      "bytes": 4647,
+      "sha256": "1e3c7f2206f7a2e87c09396c93bb7f87b4a64c38e8b358d9c00bfbba0d575541"
+    },
+    "docs/te-height-control-20261014.md": {
+      "bytes": 2386,
+      "sha256": "55354405fa02c1c877745bc96cd715ab8ce8cae9cbe91354e11b09c9e0f96611"
+    },
+    "docs/third-boot-attempt.md": {
+      "bytes": 5557,
+      "sha256": "1697cd2a1116481389111383b05607f10fd5a0ddc3847b765d468c9622a6d623"
+    },
+    "docs/touch-port-20261013.md": {
+      "bytes": 6206,
+      "sha256": "bf9119f9e6e9c19c85c0d9b6946008ad05e8c467f0e3b67c02d91fc64d48009b"
+    },
+    "docs/ubuntu-install-progress-20261014.md": {
+      "bytes": 2292,
+      "sha256": "97949418a57337c8db6556528b35ae26a593c9c8c210c368441ee6015f7806f2"
+    },
+    "docs/ubuntu-ram-20261014.md": {
+      "bytes": 3788,
+      "sha256": "4a40b7423871db2f43e76d4cdf477c1bdf030705dd713a530de0ee1b97fd9028"
+    },
+    "docs/usb-loopback-20261013.md": {
+      "bytes": 5624,
+      "sha256": "26f34919b762d3804136e5fc8328fbe5d78702f8b73ad344eaffc718876577f9"
+    },
+    "docs/usb-ncm-20261013.md": {
+      "bytes": 5445,
+      "sha256": "b3854030465ff4b0d0b59c4e473753439fd43d53a8bcf48300f3b43dd8acd2b5"
+    },
+    "docs/usb-reliability-20261013.md": {
+      "bytes": 4689,
+      "sha256": "e60c2c81b6eafb99b3f692415fc38ceb198bab82ed62a23d5819211d5240e149"
+    },
+    "docs/user-init-usb-probes-20261012.md": {
+      "bytes": 18324,
+      "sha256": "799a4469fe2ece2ede54d705e81661bd5de9546baa3936eeb7f2eba68454cda7"
+    },
+    "docs/weston-kms-diagnosis-20261014.md": {
+      "bytes": 4070,
+      "sha256": "02db2ff5861afb83c23f8f2d18c188ea60484538dc862e433789fb370fdc873a"
+    },
+    "docs/wifi-bringup-20261017.md": {
+      "bytes": 20749,
+      "sha256": "002230f7637dbb29329fb66eb413083ac9b0f314bd0d6660ca41c661f2878753"
+    },
+    "docs/xigua-hardware.md": {
+      "bytes": 7995,
+      "sha256": "60a084b508a1cf94adc5aa796f02574df2e872a157ab0c6926e8cf80ac0f3830"
+    },
+    "postmarketos/README.md": {
+      "bytes": 4856,
+      "sha256": "cc8f506156d2d8fed8a9ace849f08a6f94944395802512d149a3b421d03a16ad"
+    },
+    "temp-aston-kernel.sh": {
+      "bytes": 1533,
+      "sha256": "526063ea08c0bc5e1ddc6abc86e1954ca2421e1c677b982acfb993afedecf021"
+    }
+  },
+  "archive_sha256": "285514cc87246815f5fa12234657d3701ba35be3eb7687f0de152664b63c3ad3",
+  "completed": true
+}

@@ -1,0 +1,31 @@
+FILE: .\research\mainline\sm8550.dtsi
+total lines: 7196
+top-level nodes found: 15
+
+chosen  (L34-34)
+clocks  (L36-62)
+    compatible: fixed-clock | fixed-clock | fixed-factor-clock
+cpus  (L64-384)
+    compatible: arm,cortex-a510 | cache | cache
+firmware  (L386-394)
+    compatible: qcom,scm-sm8550 | qcom,scm
+memory@a0000000  (L450-454)
+pmu-a510  (L756-759)
+    compatible: arm,cortex-a510-pmu
+pmu-a710  (L761-764)
+    compatible: arm,cortex-a710-pmu
+pmu-a715  (L766-769)
+    compatible: arm,cortex-a715-pmu
+pmu-x3  (L771-774)
+    compatible: arm,cortex-x3-pmu
+psci  (L776-832)
+    compatible: arm,psci-1.0
+smp2p-adsp  (L1091-1113)
+    compatible: qcom,smp2p
+smp2p-cdsp  (L1115-1137)
+    compatible: qcom,smp2p
+smp2p-modem  (L1139-1172)
+    compatible: qcom,smp2p
+thermal-zones  (L6132-7186)
+timer  (L7188-7194)
+    compatible: arm,armv8-timer

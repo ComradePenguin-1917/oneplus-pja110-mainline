@@ -1,0 +1,411 @@
+FILE: .\research\mainline\sm8550.dtsi  node decls=874
+
+  chosen   (L36, parent=None)
+  clocks   (L38, parent=None)
+      compat: fixed-clock | fixed-clock | fixed-factor-clock | fixed-factor-clock
+    xo-board   (L39, parent=clocks)
+        compat: fixed-clock
+    sleep-clk   (L44, parent=clocks)
+        compat: fixed-clock
+    bi-tcxo-div2-clk   (L49, parent=clocks)
+        compat: fixed-factor-clock
+    bi-tcxo-ao-div2-clk   (L57, parent=clocks)
+        compat: fixed-factor-clock
+  cpus   (L66, parent=None)
+      compat: arm,cortex-a510 | cache | cache | arm,cortex-a510
+    cpu@0   (L70, parent=cpus)
+        compat: arm,cortex-a510 | cache | cache
+    cpu@100   (L103, parent=cpus)
+        compat: arm,cortex-a510 | cache
+    cpu@200   (L131, parent=cpus)
+        compat: arm,cortex-a510 | cache
+    cpu@300   (L159, parent=cpus)
+        compat: arm,cortex-a715 | cache
+    cpu@400   (L187, parent=cpus)
+        compat: arm,cortex-a715 | cache
+    cpu@500   (L215, parent=cpus)
+        compat: arm,cortex-a710 | cache
+    cpu@600   (L243, parent=cpus)
+        compat: arm,cortex-a710 | cache
+    cpu@700   (L271, parent=cpus)
+        compat: arm,cortex-x3 | cache
+    cpu-map   (L299, parent=cpus)
+    idle-states   (L335, parent=cpus)
+        compat: arm,idle-state | arm,idle-state | arm,idle-state
+    domain-idle-states   (L369, parent=cpus)
+        compat: domain-idle-state | domain-idle-state
+  firmware   (L388, parent=None)
+      compat: qcom,scm-sm8550 | qcom,scm
+    scm   (L389, parent=firmware)
+        compat: qcom,scm-sm8550 | qcom,scm
+  interconnect-0   (L398, parent=None)
+      compat: qcom,sm8550-clk-virt
+  interconnect-1   (L404, parent=None)
+      compat: qcom,sm8550-mc-virt
+  opp-table-qup100mhz   (L410, parent=None)
+      compat: operating-points-v2
+    opp-75000000   (L413, parent=opp-table-qup100mhz)
+    opp-100000000   (L418, parent=opp-table-qup100mhz)
+  opp-table-qup120mhz   (L424, parent=None)
+      compat: operating-points-v2
+    opp-75000000   (L427, parent=opp-table-qup120mhz)
+    opp-120000000   (L432, parent=opp-table-qup120mhz)
+  opp-table-qup125mhz   (L438, parent=None)
+      compat: operating-points-v2
+    opp-75000000   (L441, parent=opp-table-qup125mhz)
+    opp-125000000   (L446, parent=opp-table-qup125mhz)
+  memory@a0000000   (L452, parent=None)
+  opp-table-cpu0   (L458, parent=None)
+      compat: operating-points-v2
+    opp-307200000   (L462, parent=opp-table-cpu0)
+    opp-441600000   (L467, parent=opp-table-cpu0)
+    opp-556800000   (L472, parent=opp-table-cpu0)
+    opp-672000000   (L477, parent=opp-table-cpu0)
+    opp-787200000   (L482, parent=opp-table-cpu0)
+    opp-902400000   (L487, parent=opp-table-cpu0)
+    opp-1017600000   (L492, parent=opp-table-cpu0)
+    opp-1113600000   (L497, parent=opp-table-cpu0)
+    opp-1228800000   (L502, parent=opp-table-cpu0)
+    opp-1344000000   (L507, parent=opp-table-cpu0)
+    opp-1459200000   (L512, parent=opp-table-cpu0)
+    opp-1555200000   (L517, parent=opp-table-cpu0)
+    opp-1670400000   (L522, parent=opp-table-cpu0)
+    opp-1785600000   (L527, parent=opp-table-cpu0)
+    opp-1900800000   (L532, parent=opp-table-cpu0)
+    opp-2016000000   (L537, parent=opp-table-cpu0)
+  opp-table-cpu3   (L543, parent=None)
+      compat: operating-points-v2
+    opp-499200000   (L547, parent=opp-table-cpu3)
+    opp-614400000   (L552, parent=opp-table-cpu3)
+    opp-729600000   (L557, parent=opp-table-cpu3)
+    opp-844800000   (L562, parent=opp-table-cpu3)
+    opp-940800000   (L567, parent=opp-table-cpu3)
+    opp-1056000000   (L572, parent=opp-table-cpu3)
+    opp-1171200000   (L577, parent=opp-table-cpu3)
+    opp-1286400000   (L582, parent=opp-table-cpu3)
+    opp-1401600000   (L587, parent=opp-table-cpu3)
+    opp-1536000000   (L592, parent=opp-table-cpu3)
+    opp-1651200000   (L597, parent=opp-table-cpu3)
+    opp-1785600000   (L602, parent=opp-table-cpu3)
+    opp-1920000000   (L607, parent=opp-table-cpu3)
+    opp-2054400000   (L612, parent=opp-table-cpu3)
+    opp-2188800000   (L617, parent=opp-table-cpu3)
+    opp-2323200000   (L622, parent=opp-table-cpu3)
+    opp-2457600000   (L627, parent=opp-table-cpu3)
+    opp-2592000000   (L632, parent=opp-table-cpu3)
+    opp-2707200000   (L637, parent=opp-table-cpu3)
+    opp-2803200000   (L642, parent=opp-table-cpu3)
+  opp-table-cpu7   (L648, parent=None)
+      compat: operating-points-v2
+    opp-595200000   (L652, parent=opp-table-cpu7)
+    opp-729600000   (L657, parent=opp-table-cpu7)
+    opp-864000000   (L662, parent=opp-table-cpu7)
+    opp-998400000   (L667, parent=opp-table-cpu7)
+    opp-1132800000   (L672, parent=opp-table-cpu7)
+    opp-1248000000   (L677, parent=opp-table-cpu7)
+    opp-1363200000   (L682, parent=opp-table-cpu7)
+    opp-1478400000   (L687, parent=opp-table-cpu7)
+    opp-1593600000   (L692, parent=opp-table-cpu7)
+    opp-1708800000   (L697, parent=opp-table-cpu7)
+    opp-1843200000   (L702, parent=opp-table-cpu7)
+    opp-1977600000   (L707, parent=opp-table-cpu7)
+    opp-2092800000   (L712, parent=opp-table-cpu7)
+    opp-2227200000   (L717, parent=opp-table-cpu7)
+    opp-2342400000   (L722, parent=opp-table-cpu7)
+    opp-2476800000   (L727, parent=opp-table-cpu7)
+    opp-2592000000   (L732, parent=opp-table-cpu7)
+    opp-2726400000   (L737, parent=opp-table-cpu7)
+    opp-2841600000   (L742, parent=opp-table-cpu7)
+    opp-2956800000   (L747, parent=opp-table-cpu7)
+    opp-3187200000   (L752, parent=opp-table-cpu7)
+  pmu-a510   (L758, parent=None)
+      compat: arm,cortex-a510-pmu
+  pmu-a710   (L763, parent=None)
+      compat: arm,cortex-a710-pmu
+  pmu-a715   (L768, parent=None)
+      compat: arm,cortex-a715-pmu
+  pmu-x3   (L773, parent=None)
+      compat: arm,cortex-x3-pmu
+  psci   (L778, parent=None)
+      compat: arm,psci-1.0
+    power-domain-cpu0   (L782, parent=psci)
+    power-domain-cpu1   (L788, parent=psci)
+    power-domain-cpu2   (L794, parent=psci)
+    power-domain-cpu3   (L800, parent=psci)
+    power-domain-cpu4   (L806, parent=psci)
+    power-domain-cpu5   (L812, parent=psci)
+    power-domain-cpu6   (L818, parent=psci)
+    power-domain-cpu7   (L824, parent=psci)
+    power-domain-cluster   (L830, parent=psci)
+  reserved-memory   (L836, parent=None)
+      compat: qcom,cmd-db | qcom,smem | qcom,rmtfs-mem
+    hyp-region@80000000   (L841, parent=reserved-memory)
+    cpusys-vm-region@80a00000   (L846, parent=reserved-memory)
+    hyp-tags-region@80e00000   (L851, parent=reserved-memory)
+    xbl-sc-region@d8100000   (L856, parent=reserved-memory)
+    hyp-tags-reserved-region@811d0000   (L861, parent=reserved-memory)
+    xbl-dt-log-merged-region@81a00000   (L867, parent=reserved-memory)
+    aop-cmd-db-region@81c60000   (L872, parent=reserved-memory)
+        compat: qcom,cmd-db
+    aop-config-merged-region@81c80000   (L879, parent=reserved-memory)
+    smem@81d00000   (L885, parent=reserved-memory)
+        compat: qcom,smem
+    adsp-mhi-region@81f00000   (L892, parent=reserved-memory)
+    global-sync-region@82600000   (L897, parent=reserved-memory)
+    tz-stat-region@82700000   (L902, parent=reserved-memory)
+    cdsp-secure-heap-region@82800000   (L907, parent=reserved-memory)
+    mpss-region@8a800000   (L912, parent=reserved-memory)
+    q6-mpss-dtb-region@9b000000   (L917, parent=reserved-memory)
+    ipa-fw-region@9b080000   (L922, parent=reserved-memory)
+    ipa-gsi-region@9b090000   (L927, parent=reserved-memory)
+    gpu-micro-code-region@9b09a000   (L932, parent=reserved-memory)
+    spss-region@9b100000   (L937, parent=reserved-memory)
+    spu-tz-shared-region@9b280000   (L943, parent=reserved-memory)
+    spu-modem-shared-region@9b2e0000   (L949, parent=reserved-memory)
+    camera-region@9b300000   (L954, parent=reserved-memory)
+    video-region@9bb00000   (L959, parent=reserved-memory)
+    cvp-region@9c200000   (L964, parent=reserved-memory)
+    cdsp-region@9c900000   (L969, parent=reserved-memory)
+    q6-cdsp-dtb-region@9e900000   (L974, parent=reserved-memory)
+    q6-adsp-dtb-region@9e980000   (L979, parent=reserved-memory)
+    adspslpi-region@9ea00000   (L984, parent=reserved-memory)
+    rmtfs-region@d4a80000   (L993, parent=reserved-memory)
+        compat: qcom,rmtfs-mem
+    mpss-dsm-region@d4d00000   (L1002, parent=reserved-memory)
+    tz-reserved-region@d8000000   (L1007, parent=reserved-memory)
+    cpucp-fw-region@d8140000   (L1012, parent=reserved-memory)
+    qtee-region@d8300000   (L1017, parent=reserved-memory)
+    ta-region@d8800000   (L1022, parent=reserved-memory)
+    tz-tags-region@e1200000   (L1027, parent=reserved-memory)
+    hwfence-shbuf-region@e6440000   (L1032, parent=reserved-memory)
+    trust-ui-vm-region@f3600000   (L1037, parent=reserved-memory)
+    trust-ui-vm-dump-region@f80ee000   (L1042, parent=reserved-memory)
+    trust-ui-vm-qrt-region@f80ef000   (L1047, parent=reserved-memory)
+    trust-ui-vm-vblk0-ring-region@f80f8000   (L1052, parent=reserved-memory)
+    trust-ui-vm-vblk1-ring-region@f80fc000   (L1057, parent=reserved-memory)
+    trust-ui-vm-swiotlb-region@f8100000   (L1062, parent=reserved-memory)
+    oem-vm-region@f8400000   (L1067, parent=reserved-memory)
+    oem-vm-vblk0-ring-region@fcc00000   (L1072, parent=reserved-memory)
+    oem-vm-swiotlb-region@fcc04000   (L1077, parent=reserved-memory)
+    hyp-ext-tags-region@fce00000   (L1082, parent=reserved-memory)
+    hyp-ext-reserved-region@ff700000   (L1087, parent=reserved-memory)
+  smp2p-adsp   (L1093, parent=None)
+      compat: qcom,smp2p
+    master-kernel   (L1105, parent=smp2p-adsp)
+    slave-kernel   (L1110, parent=smp2p-adsp)
+  smp2p-cdsp   (L1117, parent=None)
+      compat: qcom,smp2p
+    master-kernel   (L1129, parent=smp2p-cdsp)
+    slave-kernel   (L1134, parent=smp2p-cdsp)
+  smp2p-modem   (L1141, parent=None)
+      compat: qcom,smp2p
+    master-kernel   (L1153, parent=smp2p-modem)
+    slave-kernel   (L1158, parent=smp2p-modem)
+    ipa-ap-to-modem   (L1164, parent=smp2p-modem)
+    ipa-modem-to-ap   (L1169, parent=smp2p-modem)
+  soc@0  [status=disabled]   (L1176, parent=None)
+      compat: simple-bus | qcom,sm8550-gcc | qcom,sm8550-ipcc | qcom,ipcc
+    clock-controller@100000   (L1184, parent=soc@0)
+        compat: qcom,sm8550-gcc
+    mailbox@408000   (L1200, parent=soc@0)
+        compat: qcom,sm8550-ipcc | qcom,ipcc
+    dma-controller@800000  [status=disabled]   (L1209, parent=soc@0)
+        compat: qcom,sm8550-gpi-dma | qcom,sm6350-gpi-dma
+    geniqup@8c0000  [status=disabled]   (L1232, parent=soc@0)
+        compat: qcom,geni-se-qup | qcom,geni-i2c | qcom,geni-spi | qcom,geni-i2c
+    geniqup@9c0000  [status=disabled]   (L1630, parent=soc@0)
+        compat: qcom,geni-se-i2c-master-hub | qcom,geni-i2c-master-hub | qcom,geni-i2c-master-hub | qcom,geni-i2c-master-hub
+    dma-controller@a00000  [status=disabled]   (L1851, parent=soc@0)
+        compat: qcom,sm8550-gpi-dma | qcom,sm6350-gpi-dma
+    geniqup@ac0000  [status=disabled]   (L1874, parent=soc@0)
+        compat: qcom,geni-se-qup | qcom,geni-i2c | qcom,geni-spi | qcom,geni-i2c
+    interconnect@1500000   (L2259, parent=soc@0)
+        compat: qcom,sm8550-cnoc-main
+    interconnect@1600000   (L2266, parent=soc@0)
+        compat: qcom,sm8550-config-noc
+    interconnect@1680000   (L2273, parent=soc@0)
+        compat: qcom,sm8550-system-noc
+    interconnect@16c0000   (L2280, parent=soc@0)
+        compat: qcom,sm8550-pcie-anoc
+    interconnect@16e0000   (L2289, parent=soc@0)
+        compat: qcom,sm8550-aggre1-noc
+    interconnect@1700000   (L2298, parent=soc@0)
+        compat: qcom,sm8550-aggre2-noc
+    interconnect@1780000   (L2306, parent=soc@0)
+        compat: qcom,sm8550-mmss-noc
+    rng@10c3000   (L2313, parent=soc@0)
+        compat: qcom,sm8550-trng | qcom,trng
+    pcie@1c00000  [status=disabled]   (L2318, parent=soc@0)
+        compat: qcom,pcie-sm8550 | operating-points-v2
+    phy@1c06000  [status=disabled]   (L2470, parent=soc@0)
+        compat: qcom,sm8550-qmp-gen3x2-pcie-phy
+    pcie@1c08000  [status=disabled]   (L2498, parent=soc@0)
+        compat: qcom,pcie-sm8550 | operating-points-v2
+    phy@1c0e000  [status=disabled]   (L2672, parent=soc@0)
+        compat: qcom,sm8550-qmp-gen4x2-pcie-phy
+    dma-controller@1dc4000   (L2701, parent=soc@0)
+        compat: qcom,bam-v1.7.4 | qcom,bam-v1.7.0
+    crypto@1dfa000   (L2714, parent=soc@0)
+        compat: qcom,sm8550-qce | qcom,sm8150-qce | qcom,qce
+    phy@1d80000  [status=disabled]   (L2726, parent=soc@0)
+        compat: qcom,sm8550-qmp-ufs-phy
+    ufshc@1d84000  [status=disabled]   (L2747, parent=soc@0)
+        compat: qcom,sm8550-ufshc | qcom,ufshc | jedec,ufs-2.0 | operating-points-v2
+    crypto@1d88000   (L2833, parent=soc@0)
+        compat: qcom,sm8550-inline-crypto-engine | qcom,inline-crypto-engine
+    hwlock@1f40000   (L2845, parent=soc@0)
+        compat: qcom,tcsr-mutex
+    clock-controller@1fc0000   (L2851, parent=soc@0)
+        compat: qcom,sm8550-tcsr | syscon
+    gpu@3d00000  [status=disabled]   (L2859, parent=soc@0)
+        compat: qcom,adreno-43050a01 | qcom,adreno | operating-points-v2
+    gmu@3d6a000   (L2950, parent=soc@0)
+        compat: qcom,adreno-gmu-740.1 | qcom,adreno-gmu | operating-points-v2
+    clock-controller@3d90000   (L3002, parent=soc@0)
+        compat: qcom,sm8550-gpucc
+    iommu@3da0000   (L3013, parent=soc@0)
+        compat: qcom,sm8550-smmu-500 | qcom,adreno-smmu | qcom,smmu-500 | arm,mmu-500
+    ipa@3f40000  [status=disabled]   (L3057, parent=soc@0)
+        compat: qcom,sm8550-ipa
+    remoteproc@4080000  [status=disabled]   (L3102, parent=soc@0)
+        compat: qcom,sm8550-mpss-pas
+    remoteproc@6800000  [status=disabled]   (L3145, parent=soc@0)
+        compat: qcom,sm8550-adsp-pas | qcom,fastrpc | qcom,fastrpc-compute-cb | qcom,fastrpc-compute-cb
+    codec@6aa0000   (L3277, parent=soc@0)
+        compat: qcom,sm8550-lpass-wsa-macro
+    soundwire@6ab0000  [status=disabled]   (L3291, parent=soc@0)
+        compat: qcom,soundwire-v2.0.0
+    codec@6ac0000   (L3321, parent=soc@0)
+        compat: qcom,sm8550-lpass-rx-macro
+    soundwire@6ad0000  [status=disabled]   (L3335, parent=soc@0)
+        compat: qcom,soundwire-v2.0.0
+    codec@6ae0000   (L3365, parent=soc@0)
+        compat: qcom,sm8550-lpass-tx-macro
+    codec@6b00000   (L3379, parent=soc@0)
+        compat: qcom,sm8550-lpass-wsa-macro
+    soundwire@6b10000  [status=disabled]   (L3393, parent=soc@0)
+        compat: qcom,soundwire-v2.0.0
+    soundwire@6d30000  [status=disabled]   (L3423, parent=soc@0)
+        compat: qcom,soundwire-v2.0.0
+    codec@6d44000   (L3454, parent=soc@0)
+        compat: qcom,sm8550-lpass-va-macro
+    pinctrl@6e80000   (L3467, parent=soc@0)
+        compat: qcom,sm8550-lpass-lpi-pinctrl
+    interconnect@7400000   (L3584, parent=soc@0)
+        compat: qcom,sm8550-lpass-lpiaon-noc
+    interconnect@7430000   (L3591, parent=soc@0)
+        compat: qcom,sm8550-lpass-lpicx-noc
+    interconnect@7e40000   (L3598, parent=soc@0)
+        compat: qcom,sm8550-lpass-ag-noc
+    mmc@8804000  [status=disabled]   (L3605, parent=soc@0)
+        compat: qcom,sm8550-sdhci | qcom,sdhci-msm-v5 | operating-points-v2
+    video-codec@aa00000  [status=disabled]   (L3659, parent=soc@0)
+        compat: qcom,sm8550-iris | operating-points-v2
+    clock-controller@aaf0000   (L3740, parent=soc@0)
+        compat: qcom,sm8550-videocc
+    cci@ac15000  [status=disabled]   (L3754, parent=soc@0)
+        compat: qcom,sm8550-cci | qcom,msm8996-cci
+    cci@ac16000  [status=disabled]   (L3787, parent=soc@0)
+        compat: qcom,sm8550-cci | qcom,msm8996-cci
+    cci@ac17000  [status=disabled]   (L3813, parent=soc@0)
+        compat: qcom,sm8550-cci | qcom,msm8996-cci
+    isp@acb7000  [status=disabled]   (L3846, parent=soc@0)
+        compat: qcom,sm8550-camss
+    clock-controller@ade0000   (L4056, parent=soc@0)
+        compat: qcom,sm8550-camcc
+    display-subsystem@ae00000  [status=disabled]   (L4072, parent=soc@0)
+        compat: qcom,sm8550-mdss | qcom,sm8550-dpu | operating-points-v2 | qcom,sm8550-dp
+    clock-controller@af00000   (L4440, parent=soc@0)
+        compat: qcom,sm8550-dispcc
+    phy@88e3000  [status=disabled]   (L4466, parent=soc@0)
+        compat: qcom,sm8550-snps-eusb2-phy
+    phy@88e8000  [status=disabled]   (L4479, parent=soc@0)
+        compat: qcom,sm8550-qmp-usb3-dp-phy
+    usb@a600000  [status=disabled]   (L4532, parent=soc@0)
+        compat: qcom,sm8550-dwc3 | qcom,snps-dwc3
+    interrupt-controller@b220000   (L4622, parent=soc@0)
+        compat: qcom,sm8550-pdc | qcom,pdc
+    thermal-sensor@c271000   (L4633, parent=soc@0)
+        compat: qcom,sm8550-tsens | qcom,tsens-v2
+    thermal-sensor@c272000   (L4644, parent=soc@0)
+        compat: qcom,sm8550-tsens | qcom,tsens-v2
+    thermal-sensor@c273000   (L4655, parent=soc@0)
+        compat: qcom,sm8550-tsens | qcom,tsens-v2
+    power-management@c300000   (L4666, parent=soc@0)
+        compat: qcom,sm8550-aoss-qmp | qcom,aoss-qmp
+    sram@c3f0000   (L4677, parent=soc@0)
+        compat: qcom,rpmh-stats
+    spmi@c400000   (L4683, parent=soc@0)
+        compat: qcom,spmi-pmic-arb
+    pinctrl@f100000   (L4702, parent=soc@0)
+        compat: qcom,sm8550-tlmm
+    sram@14680000   (L5546, parent=soc@0)
+        compat: qcom,sm8550-imem | syscon | simple-mfd
+    iommu@15000000   (L5564, parent=soc@0)
+        compat: qcom,sm8550-smmu-500 | qcom,smmu-500 | arm,mmu-500
+    interrupt-controller@17100000   (L5669, parent=soc@0)
+        compat: arm,gic-v3 | arm,gic-v3-its
+    timer@17420000  [status=disabled]   (L5708, parent=soc@0)
+        compat: arm,armv7-timer-mem
+    rsc@17a00000   (L5766, parent=soc@0)
+        compat: qcom,rpmh-rsc | qcom,bcm-voter | qcom,sm8550-rpmh-clk | qcom,sm8550-rpmhpd
+    interconnect@17d90000   (L5865, parent=soc@0)
+        compat: qcom,sm8550-epss-l3 | qcom,epss-l3
+    cpufreq@17d91000   (L5875, parent=soc@0)
+        compat: qcom,sm8550-cpufreq-epss | qcom,cpufreq-epss
+    pmu@24091000   (L5891, parent=soc@0)
+        compat: qcom,sm8550-llcc-bwmon | qcom,sc7280-llcc-bwmon | operating-points-v2
+    pmu@240b6400   (L5941, parent=soc@0)
+        compat: qcom,sm8550-cpu-bwmon | qcom,sdm845-bwmon | operating-points-v2
+    interconnect@24100000   (L5979, parent=soc@0)
+        compat: qcom,sm8550-gem-noc
+    system-cache-controller@25000000   (L5986, parent=soc@0)
+        compat: qcom,sm8550-llcc
+    interconnect@320c0000   (L6003, parent=soc@0)
+        compat: qcom,sm8550-nsp-noc
+    remoteproc@32300000  [status=disabled]   (L6010, parent=soc@0)
+        compat: qcom,sm8550-cdsp-pas | qcom,fastrpc | qcom,fastrpc-compute-cb | qcom,fastrpc-compute-cb
+  thermal-zones   (L6138, parent=None)
+    aoss0-thermal   (L6139, parent=thermal-zones)
+    cpuss0-thermal   (L6157, parent=thermal-zones)
+    cpuss1-thermal   (L6175, parent=thermal-zones)
+    cpuss2-thermal   (L6193, parent=thermal-zones)
+    cpuss3-thermal   (L6211, parent=thermal-zones)
+    cpu3-top-thermal   (L6229, parent=thermal-zones)
+    cpu3-bottom-thermal   (L6253, parent=thermal-zones)
+    cpu4-top-thermal   (L6277, parent=thermal-zones)
+    cpu4-bottom-thermal   (L6301, parent=thermal-zones)
+    cpu5-top-thermal   (L6325, parent=thermal-zones)
+    cpu5-bottom-thermal   (L6349, parent=thermal-zones)
+    cpu6-top-thermal   (L6373, parent=thermal-zones)
+    cpu6-bottom-thermal   (L6397, parent=thermal-zones)
+    cpu7-top-thermal   (L6421, parent=thermal-zones)
+    cpu7-middle-thermal   (L6445, parent=thermal-zones)
+    cpu7-bottom-thermal   (L6469, parent=thermal-zones)
+    aoss1-thermal   (L6493, parent=thermal-zones)
+    cpu0-thermal   (L6511, parent=thermal-zones)
+    cpu1-thermal   (L6535, parent=thermal-zones)
+    cpu2-thermal   (L6559, parent=thermal-zones)
+    cdsp0-thermal   (L6583, parent=thermal-zones)
+    cdsp1-thermal   (L6615, parent=thermal-zones)
+    cdsp2-thermal   (L6647, parent=thermal-zones)
+    cdsp3-thermal   (L6679, parent=thermal-zones)
+    video-thermal   (L6711, parent=thermal-zones)
+    mem-thermal   (L6729, parent=thermal-zones)
+    modem0-thermal   (L6755, parent=thermal-zones)
+    modem1-thermal   (L6785, parent=thermal-zones)
+    modem2-thermal   (L6815, parent=thermal-zones)
+    modem3-thermal   (L6845, parent=thermal-zones)
+    camera0-thermal   (L6875, parent=thermal-zones)
+    camera1-thermal   (L6893, parent=thermal-zones)
+    aoss2-thermal   (L6911, parent=thermal-zones)
+    gpuss-0-thermal   (L6929, parent=thermal-zones)
+    gpuss-1-thermal   (L6962, parent=thermal-zones)
+    gpuss-2-thermal   (L6995, parent=thermal-zones)
+    gpuss-3-thermal   (L7028, parent=thermal-zones)
+    gpuss-4-thermal   (L7061, parent=thermal-zones)
+    gpuss-5-thermal   (L7094, parent=thermal-zones)
+    gpuss-6-thermal   (L7127, parent=thermal-zones)
+    gpuss-7-thermal   (L7160, parent=thermal-zones)
+  timer   (L7194, parent=None)
+      compat: arm,armv8-timer

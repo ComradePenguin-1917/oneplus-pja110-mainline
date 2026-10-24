@@ -1,0 +1,75 @@
+// SPDX-License-Identifier: BSD-3-Clause
+/* Experimental AA536 / Iris7 bypass wiring, verified against vendor live DTB.
+ * Runtime test images patch the proven USB DTB with package_display_port.py.
+ * This source fragment records equivalent board wiring for later DTS integration.
+ */
+#include <dt-bindings/clock/qcom,rpmh.h>
+
+&mdss { status = "okay"; };
+&mdss_dsi0 {
+	vdda-supply = <&vreg_l3e_1p2>;
+	oneplus,dsc-scr1;
+	oneplus,command-mode-lane-rate = /bits/ 64 <1094400000>;
+	status = "okay";
+	panel@0 {
+		compatible = "oneplus,aa536-p-3-a0001";
+		reg = <0>;
+		pinctrl-names = "default";
+		pinctrl-0 = <&aa536_iris_gpios &aa536_iris_ready &aa536_te &aa536_iris_clock>;
+		vddio-supply = <&vreg_l12b_1p8>;
+		vci-supply = <&vreg_l13b_3p3>;
+		reset-gpios = <&tlmm 133 GPIO_ACTIVE_LOW>;
+		vout-gpios = <&tlmm 90 GPIO_ACTIVE_HIGH>;
+		iris-reset-gpios = <&tlmm 109 GPIO_ACTIVE_LOW>;
+		iris-wakeup-gpios = <&tlmm 129 GPIO_ACTIVE_HIGH>;
+		iris-abyp-ready-gpios = <&tlmm 181 GPIO_ACTIVE_HIGH>;
+		iris-vdd09-gpios = <&tlmm 105 GPIO_ACTIVE_HIGH>;
+		clocks = <&rpmhcc RPMH_DIV_CLK1>;
+		clock-names = "iris";
+		port {
+			aa536_panel_in: endpoint { remote-endpoint = <&mdss_dsi0_out>; };
+		};
+	};
+};
+&mdss_dsi0_out {
+	data-lanes = <0 1 2 3>;
+	remote-endpoint = <&aa536_panel_in>;
+};
+&mdss_dsi0_phy {
+	vdds-supply = <&vreg_l1e_0p88>;
+	status = "okay";
+};
+&tlmm {
+	aa536_iris_gpios: aa536-iris-gpios-state {
+		pins = "gpio133", "gpio109", "gpio129", "gpio105", "gpio90";
+		function = "gpio";
+		drive-strength = <8>;
+		bias-disable;
+	};
+	aa536_iris_ready: aa536-iris-ready-state {
+		pins = "gpio181";
+		function = "gpio";
+		drive-strength = <8>;
+		bias-disable;
+		input-enable;
+	};
+	aa536_te: aa536-te-state {
+		pins = "gpio86";
+		function = "mdp_vsync";
+		drive-strength = <2>;
+		bias-disable;
+		input-enable;
+	};
+};
+&pmk8550_gpios {
+	/* Actual PJA110 GPIO base is 0xb800, also used by newer PMK8550 DTS. */
+	reg = <0xb800>;
+	aa536_iris_clock: aa536-iris-clock-state {
+		pins = "gpio5";
+		function = "func2";
+		power-source = <0>;
+		bias-disable;
+		input-disable;
+		output-enable;
+	};
+};

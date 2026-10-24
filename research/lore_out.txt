@@ -1,0 +1,6 @@
+!! parse error linux-arm-msm q='sm8550 dts qcom': syntax error: line 1, column 0
+!! parse error linux-arm-msm q='sm8550 bindings': syntax error: line 1, column 0
+!! parse error linux-devicetree q='sm8550': syntax error: line 1, column 0
+!! parse error dri-devel q='sm8550 adreno': syntax error: line 1, column 0
+!! parse error linux-arm-msm q='sm8550 ufs': syntax error: line 1, column 0
+!! parse error linux-arm-msm q='sm8550 pcie': syntax error: line 1, column 0

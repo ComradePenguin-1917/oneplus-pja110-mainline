@@ -1,0 +1,29 @@
+# PJA110 (xigua) deviceinfo for Ubuntu Touch
+#
+# libdeviceinfo loads /etc/deviceinfo/devices/<name>.yaml and merges it over the
+# profile selected in /etc/deviceinfo/default.yaml. For native Linux devices the
+# name is autodetected from the DTB compatible string ("oneplus,xigua").
+#
+# The top-level key MUST match the autodetected name in lowercase, and the
+# values below are the ones actually observed on this device. Anything not
+# verified on hardware is left to the profile defaults.
+xigua:
+  Name: xigua
+  PrettyName: OnePlus Ace 2 Pro
+  DeviceType: phone
+
+  # 1240x2772 panel, 70x156 mm, 6.7". GridUnit 21 follows the phone profile;
+  # a 1.5x UI at this DPI works out to 21 (fractional scaling is not enabled).
+  GridUnit: 21
+  WebkitDpr: 2
+
+  # The panel driver reports nativeOrientation = Qt::PortraitOrientation.
+  PrimaryOrientation: Portrait
+  SupportedOrientations:
+    - Portrait
+    - InvertedPortrait
+    - Landscape
+    - InvertedLandscape
+
+  # Mir runs on gbm-kms against mainline DRM; there is no Android HWC, so the
+  # MirAndroidPlatform* keys are deliberately absent.

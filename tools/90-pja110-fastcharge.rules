@@ -1,0 +1,9 @@
+# 充电器插拔时重新下发充电电流上限。
+#
+# 原因：ADSP 固件在 USB 重新枚举时可能复位 BATT_CHG_CTRL_LIM，
+#       导致插拔后快充失效。这里在 USB 供电上线时重启 fastcharge.service。
+#
+# try-restart：服务未启用时不会启动它，避免在救急/维护场景下意外触发。
+ACTION=="change", SUBSYSTEM=="power_supply", KERNEL=="qcom-battmgr-usb", \
+  ENV{POWER_SUPPLY_ONLINE}=="1", \
+  RUN+="/usr/bin/systemctl --no-block try-restart fastcharge.service"

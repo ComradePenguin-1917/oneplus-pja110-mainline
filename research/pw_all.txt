@@ -1,0 +1,302 @@
+total raw=400 unique=192
+====================================================================================================
+2026-10-05 | linux-arm-msm    | new                | Nizat Mikayilli
+    [v2,2/2] arm64: dts: qcom: sm8550: Add support for Samsung Galaxy Tab S9 Wi-Fi
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20261005-gts9wifi-dts-v2-2-c3ac9b0f9ceb@dxdmail.cc/
+2026-10-04 | linux-arm-msm    | superseded         | Nizat Mikayilli
+    [2/2] arm64: dts: qcom: sm8550: Add support for Samsung Galaxy Tab S9 Wi-Fi
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20261004-gts9wifi-dts-v1-2-1f0d7dd47e4a@dxdmail.cc/
+2026-09-26 | linux-arm-msm    | handled-elsewhere  | Vikash Garodia
+    [v5,02/13] dt-bindings: media: qcom,sm8550-iris: Add context bank subnodes
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260926-vpu_iommu_iova_handling-v5-2-0322ca5dc10c@oss.qualcomm.com/
+2026-09-24 | linux-arm-msm    | in-next            | Abel Vesa
+    [v2,32/48] clk: qcom: gcc-sm8550: Use common clock controller probe data
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260924-clk-qcom-rework-legacy-always-on-clocks-v2-32-1479443ee016@oss.qualcomm.com/
+2026-09-24 | linux-clk        | awaiting-upstream  | Abel Vesa
+    [v2,11/48] clk: qcom: dispcc-sm8550: Use common probe handling for always-on clocks
+    https://patchwork.kernel.org/project/linux-clk/patch/20260924-clk-qcom-rework-legacy-always-on-clocks-v2-11-1479443ee016@oss.qualcomm.com/
+2026-09-24 | devicetree       | not-applicable     | Abel Vesa
+    [v5,07/42] dt-bindings: clock: qcom: sm8550-gcc: Add CX power domain
+    https://patchwork.kernel.org/project/devicetree/patch/20260924-qcom-tie-cx-to-gcc-v5-7-38732033e5b5@oss.qualcomm.com/
+2026-09-21 | linux-arm-msm    | handled-elsewhere  | Wangao Wang
+    [v2,1/5] dt-bindings: media: qcom,sm8550-iris: Document Eliza IRIS accelerator
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260921-add_iris_for_eliza-v2-1-5fe7be8c0230@oss.qualcomm.com/
+2026-09-17 | linux-arm-msm    | in-next            | Krishna Chaitanya Chundru
+    [v2,09/18] arm64: dts: qcom: sm8550: Fix PCIe WAKE# GPIO polarity
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260917-root_port-v2-9-0d627d0856d5@oss.qualcomm.com/
+2026-09-16 | linux-arm-msm    | superseded         | Abel Vesa
+    [11/48] clk: qcom: dispcc-sm8550: Use common probe handling for always-on clocks
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260916-clk-qcom-rework-legacy-always-on-clocks-v1-11-25a24e50f82a@oss.qualcomm.com/
+2026-09-14 | linux-arm-msm    | superseded         | Wangao Wang
+    [1/4] dt-bindings: media: qcom,sm8550-iris: Document Eliza IRIS accelerator
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260914-add_iris_for_eliza-v1-1-e8ccd9b8cf7a@oss.qualcomm.com/
+2026-09-14 | linux-clk        | superseded         | Abel Vesa
+    [v4,07/52] dt-bindings: clock: qcom: sm8550-gcc: Add CX power domain
+    https://patchwork.kernel.org/project/linux-clk/patch/20260914-qcom-tie-cx-to-gcc-v4-7-9d5a606ada33@oss.qualcomm.com/
+2026-09-13 | linux-arm-msm    | superseded         | Vikash Garodia
+    [v4,02/13] dt-bindings: media: qcom,sm8550-iris: Add context bank subnodes
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260914-vpu_iommu_iova_handling-v4-2-9b9074a73c41@oss.qualcomm.com/
+2026-09-10 | linux-arm-msm    | changes-requested  | Krishna Chaitanya Chundru
+    [09/34] arm64: dts: qcom: sm8550: Fix PCIe wake GPIO polarity
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260910-root_port-v1-9-90a252ddbbfa@oss.qualcomm.com/
+2026-09-09 | linux-arm-msm    | superseded         | Vikash Garodia
+    [v3,02/13] dt-bindings: media: qcom,sm8550-iris: Add context bank subnodes
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260909-vpu_iommu_iova_handling-v3-2-2fe43ae45495@oss.qualcomm.com/
+2026-09-02 | linux-arm-msm    | superseded         | Mukesh Ojha
+    [v2,2/3] dt-bindings: remoteproc: qcom,sm8550-pas: make qcom,hawi-cdsp-pas standalone
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260902204334.2061226-3-mukesh.ojha@oss.qualcomm.com/
+2026-08-31 | linux-arm-msm    | new                | Neil Armstrong
+    [v4,2/3] arm64: dts: qcom: sm8550-hdk: Enable I2S for HDMI
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260831-topic-sm8x50-next-hdk-i2s-v4-2-a224aa073f9d@linaro.org/
+2026-08-28 | linux-arm-msm    | changes-requested  | Abel Vesa
+    [01/11] arm64: dts: qcom: sm8550: Disable Inline Crypto Engine by default
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260828-b4-dts-qcom-disable-ice-by-default-v1-1-1d6e0c2f5a69@oss.qualcomm.com/
+2026-08-24 | devicetree       | superseded         | Abel Vesa
+    [v3,44/47] arm64: dts: qcom: sm8550: Add GCC CX power domain
+    https://patchwork.kernel.org/project/devicetree/patch/20260824-qcom-tie-cx-to-gcc-v3-44-f1205a92682b@oss.qualcomm.com/
+2026-08-24 | linux-clk        | superseded         | Abel Vesa
+    [v3,28/47] clk: qcom: gcc-sm8550: Tie the CX power domain to controller
+    https://patchwork.kernel.org/project/linux-clk/patch/20260824-qcom-tie-cx-to-gcc-v3-28-f1205a92682b@oss.qualcomm.com/
+2026-08-24 | linux-arm-msm    | superseded         | Abel Vesa
+    [v3,07/47] dt-bindings: clock: qcom: sm8550-gcc: Add CX power domain
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260824-qcom-tie-cx-to-gcc-v3-7-f1205a92682b@oss.qualcomm.com/
+2026-08-20 | linux-arm-msm    | superseded         | Abel Vesa
+    [v2,04/16] clk: qcom: gcc-sm8550: Tie the CX power domain to controller
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260820-qcom-tie-cx-to-gcc-v2-4-e67ea30d8b7b@oss.qualcomm.com/
+2026-08-19 | linux-arm-msm    | superseded         | Abel Vesa
+    [04/16] clk: qcom: gcc-sm8550: Tie the CX power domain to controller
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260819-qcom-tie-cx-to-gcc-v1-4-840034124e73@oss.qualcomm.com/
+2026-08-07 | linux-media      | new                | Vikash Garodia
+    [09/22] arm64: dts: qcom: sm8550: Reserve low IOVA range for Iris
+    https://patchwork.kernel.org/project/linux-media/patch/20260807-iris_iova_600mb_fix-v1-9-3996f67e33f9@oss.qualcomm.com/
+2026-08-07 | linux-arm-msm    | handled-elsewhere  | Vikash Garodia
+    [02/22] dt-bindings: media: qcom,sm8550-iris: Allow IOVA reservation memory-region
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260807-iris_iova_600mb_fix-v1-2-3996f67e33f9@oss.qualcomm.com/
+2026-08-05 | linux-arm-msm    | in-next            | Mukesh Ojha
+    [v2,1/3] dt-bindings: remoteproc: qcom,sm8550-pas: Add Hawi and Maili MPSS as SM8650 fallback
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260805132129.2713174-2-mukesh.ojha@oss.qualcomm.com/
+2026-08-03 | devicetree       | changes-requested  | Mukesh Ojha
+    [1/2] dt-bindings: remoteproc: qcom,sm8550-pas: Make SDX75, Hawi and Maili MPSS fallback to SM8650
+    https://patchwork.kernel.org/project/devicetree/patch/20260803180021.20368-1-mukesh.ojha@oss.qualcomm.com/
+2026-08-03 | linux-arm-msm    | mainlined          | Manivannan Sadhasivam
+    [10/28] arm64: dts: qcom: sm8550: Fix swapped USB QMP PHY vdda-phy/vdda-pll supplies
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260803-phy-supply-fix-v1-10-5880630cde3e@oss.qualcomm.com/
+2026-07-31 | devicetree       | superseded         | Vikash Garodia
+    [v2,02/12] dt-bindings: media: qcom,sm8550-iris: Add context bank subnodes
+    https://patchwork.kernel.org/project/devicetree/patch/20260731-vpu_iommu_iova_handling-v2-2-da52b5228dbd@oss.qualcomm.com/
+2026-07-31 | linux-arm-msm    | superseded         | Neil Armstrong
+    [v2,2/3] arm64: dts: qcom: sm8550-hdk: Enable I2S for HDMI
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260731-topic-sm8x50-next-hdk-i2s-v2-2-42c1acee5a2d@linaro.org/
+2026-07-30 | linux-arm-msm    | mainlined          | Manivannan Sadhasivam
+    [10/22] arm64: dts: qcom: sm8550: Fix the PCIe iommu-map entries
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260730-iommu-map-fix-v1-10-83405d37ba41@oss.qualcomm.com/
+2026-07-28 | alsa-devel       | new                | Neil Armstrong
+    [3/4] arm64: dts: qcom: sm8550-hdk: Enable I2S for HDMI
+    https://patchwork.kernel.org/project/alsa-devel/patch/20260728-topic-sm8x50-next-hdk-i2s-v1-3-2393a0fe4aa9@linaro.org/
+2026-07-23 | devicetree       | superseded         | Alexandre Hamamdjian
+    [v5,2/3] arm64: dts: qcom: sm8550: add UART11 node
+    https://patchwork.kernel.org/project/devicetree/patch/20260723-pocketds-v5-2-74508388c716@gmail.com/
+2026-07-22 | linux-arm-msm    | mainlined          | Abel Vesa
+    [v2,1/2] dt-bindings: remoteproc: qcom,milos-pas: Move Eliza ADSP to SM8550 schema
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260722-dts-qcom-eliza-fix-adsp-binding-v2-1-e1e98ae15533@oss.qualcomm.com/
+2026-07-21 | linux-arm-msm    | superseded         | Abel Vesa
+    [1/2] dt-bindings: remoteproc: qcom,milos-pas: Move Eliza ADSP to SM8550 schema
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260721-dts-qcom-eliza-fix-adsp-binding-v1-1-3a0b03af2ec7@oss.qualcomm.com/
+2026-07-13 | linux-arm-msm    | handled-elsewhere  | Mukesh Ojha
+    dt-bindings: remoteproc: qcom,sm8550-pas: Add Hawi and Maili MPSS compatible
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260713093237.691117-1-mukesh.ojha@oss.qualcomm.com/
+2026-07-09 | linux-arm-msm    | changes-requested  | Shawn Guo
+    [2/3] dt-bindings: remoteproc: qcom,sm8550-pas: Document Nord ADSP
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260709085149.4072181-3-shengchao.guo@oss.qualcomm.com/
+2026-07-02 | linux-arm-msm    | superseded         | Neil Armstrong
+    [v5,2/5] arm64: dts: qcom: sm8550-qrd: add SPMI ADC channels and thermal nodes
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260702-topic-sm8x50-adc5-gen3-v5-2-8169953634ad@linaro.org/
+2026-06-24 | devicetree       | handled-elsewhere  | Mukesh Ojha
+    [v4,11/19] arm64: dts: qcom: sm8550: Add minidump SRAM config to SCM node
+    https://patchwork.kernel.org/project/devicetree/patch/20260624190830.3131112-12-mukesh.ojha@oss.qualcomm.com/
+2026-06-17 | linux-arm-msm    | superseded         | Neil Armstrong
+    [v4,2/5] arm64: dts: qcom: sm8550-qrd: add SPMI ADC channels and thermal nodes
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260617-topic-sm8x50-adc5-gen3-v4-2-4af9251731f1@linaro.org/
+2026-06-15 | linux-arm-msm    | handled-elsewhere  | Yijie Yang
+    [RESEND] dt-bindings: remoteproc: qcom,sm8550-pas: Add Qualcomm Maili ADSP and CDSP
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260615-remoteproc-v1-1-67721b4b052a@oss.qualcomm.com/
+2026-06-14 | linux-arm-msm    | handled-elsewhere  | Daniel J Blueman
+    [v2,1/2] dt-bindings: media: qcom,sm8550-iris: Allow IOVA reservation memory-region
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260614145113.84243-1-daniel@quora.org/
+2026-06-12 | devicetree       | handled-elsewhere  | Atanas Filipov
+    [v1,2/4] arm64: dts: qcom: sm8550: Add JPEG encoder node
+    https://patchwork.kernel.org/project/devicetree/patch/20260612194417.1737009-3-atanas.filipov@oss.qualcomm.com/
+2026-06-11 | linux-arm-msm    | changes-requested  | Krishna Chaitanya Chundru
+    [v2,09/37] arm64: dts: qcom: sm8550: Fix PCIe wake GPIO polarity
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260611-wake-v2-9-2744251b1181@oss.qualcomm.com/
+2026-06-08 | linux-pci        | accepted           | Krishna Chaitanya Chundru
+    [v3,2/3] dt-bindings: PCI: qcom,pcie-sm8550: Add Eliza compatible
+    https://patchwork.kernel.org/project/linux-pci/patch/20260608-eliza-v3-2-9bdeb7434b28@oss.qualcomm.com/
+2026-06-01 | linux-pci        | superseded         | Krishna Chaitanya Chundru
+    [v2,2/3] dt-bindings: PCI: qcom,pcie-sm8550: Add Eliza compatible
+    https://patchwork.kernel.org/project/linux-pci/patch/20260601-eliza-v2-2-6b44c9c23d5e@oss.qualcomm.com/
+2026-06-01 | linux-arm-msm    | superseded         | Daniel J Blueman
+    [1/2] dt-bindings: media: qcom,sm8550-iris: Allow IOVA reservation memory-region
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260601041336.9497-1-daniel@quora.org/
+2026-05-29 | linux-arm-msm    | superseded         | Wangao Wang
+    [v8,1/5] dt-bindings: media: qcom,sm8550-iris: Add X1P42100 compatible
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260529-enable_iris_on_purwa-v8-1-b1b9670459ab@oss.qualcomm.com/
+2026-05-28 | linux-arm-msm    | superseded         | Qiang Yu
+    [v4,1/7] dt-bindings: clock: qcom,sm8550-tcsr: Add QREF/REFGEN supply properties for glymur and mahua
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260527-tcsr_qref_0527-v4-1-ded83866c9d9@oss.qualcomm.com/
+2026-05-27 | linux-arm-msm    | mainlined          | Mukesh Ojha
+    [v2,12/24] arm64: dts: qcom: sm8550: Reduce OS PDC DRV span to 0x10000
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260527094333.2311731-13-mukesh.ojha@oss.qualcomm.com/
+2026-05-25 | linux-arm-msm    | superseded         | Yijie Yang
+    dt-bindings: remoteproc: qcom,sm8550-pas: Add Qualcomm Maili ADSP and CDSP
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260525-remoteproc-v1-1-9a1cb90994d1@oss.qualcomm.com/
+2026-05-22 | linux-arm-msm    | superseded         | Mukesh Ojha
+    [v3,10/18] arm64: dts: qcom: sm8550: Add minidump SRAM config to SCM node
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260522195009.2961022-11-mukesh.ojha@oss.qualcomm.com/
+2026-05-21 | linux-arm-msm    | superseded         | Krishna Chaitanya Chundru
+    [09/18] arm64: dts: qcom: sm8550: Fix PCIe wake GPIO polarity
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260521-wake-v1-9-d822567be258@oss.qualcomm.com/
+2026-05-17 | linux-arm-msm    | superseded         | Dmitry Baryshkov
+    [4/7] arm64: dts: qcom: sm8550: consolidate IPA properties
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260517-ipa-loader-v1-4-3c3764c1b4a3@oss.qualcomm.com/
+2026-05-14 | linux-arm-msm    | superseded         | Wangao Wang
+    [v7,1/5] dt-bindings: media: qcom,sm8550-iris: Add X1P42100 compatible
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260514-enable_iris_on_purwa-v7-1-47aa5b026f1a@oss.qualcomm.com/
+2026-05-11 | linux-arm-msm    | superseded         | Alexandre Hamamdjian
+    [v2,2/3] arm64: dts: qcom: sm8550: add labels for thermal zones
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260511-pocketds-v2-2-299dd4247f2f@gmail.com/
+2026-05-07 | linux-arm-msm    | superseded         | Wangao Wang
+    [v6,1/5] dt-bindings: media: qcom,sm8550-iris: Add X1P42100 compatible
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260507-enable_iris_on_purwa-v6-1-48da505e23bf@oss.qualcomm.com/
+2026-05-04 | linux-arm-msm    | superseded         | Neil Armstrong
+    [RFC,v2,3/6] arm64: dts: qcom: sm8550-qrd: add SPMI ADC channels and thermal nodes
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260504-topic-sm8x50-adc5-gen3-v2-3-5cc04d6ecda0@linaro.org/
+2026-04-29 | linux-arm-msm    | superseded         | Wangao Wang
+    [v5,1/5] dt-bindings: media: qcom,sm8550-iris: Add X1P42100 compatible
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260429-enable_iris_on_purwa-v5-1-438fa96da248@oss.qualcomm.com/
+2026-04-27 | linux-arm-msm    | mainlined          | Mukesh Ojha
+    [1/2] dt-bindings: remoteproc: qcom,sm8550-pas: Add Hawi ADSP compatible
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260427190614.3679937-1-mukesh.ojha@oss.qualcomm.com/
+2026-04-24 | devicetree       | superseded         | Neil Armstrong
+    [2/6] dt-bindings: clock: qcom: sm8550-gcc: Add missing power-domains property
+    https://patchwork.kernel.org/project/devicetree/patch/20260424-topic-sm8x50-tie-gcc-to-cx-v1-2-4b6e09d532ce@linaro.org/
+2026-04-23 | linux-arm-msm    | superseded         | William Bright
+    arm64: dts: qcom: sm8550: add SDHC4 controller node
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260423-sm8550-sdhc4-support-v1-1-93fd81fea5d9@imd-tec.com/
+2026-04-20 | linux-arm-msm    | changes-requested  | Jagadeesh Kona
+    [02/13] dt-bindings: clock: qcom,sm8550-dispcc: Add display CESTA support on SM8750
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260420-cesta-sm870-dispcc-v1-2-eb27d845df9c@oss.qualcomm.com/
+2026-04-16 | linux-crypto     | handled-elsewhere  | Harshal Dev
+    [v5,09/13] arm64: dts: qcom: sm8550: Add power-domain and iface clk for ice node
+    https://patchwork.kernel.org/project/linux-crypto/patch/20260416-qcom_ice_power_and_clk_vote-v5-9-5ccf5d7e2846@oss.qualcomm.com/
+2026-04-10 | linux-arm-msm    | changes-requested  | Mukesh Ojha
+    [17/35] arm64: dts: qcom: sm8550: Fix PDC reg size to single APSS DRV region
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260410184124.1068210-18-mukesh.ojha@oss.qualcomm.com/
+2026-04-09 | devicetree       | superseded         | Joe Sandom
+    [v3,1/5] arm64: dts: qcom: sm8550: add PCIe MHI register regions
+    https://patchwork.kernel.org/project/devicetree/patch/20260409-rb5gen2-dts-v3-1-be736355d4b4@axon.com/
+2026-04-07 | linux-arm-msm    | superseded         | Joe Sandom
+    [v2,1/5] arm64: dts: qcom: sm8550: add PCIe MHI register regions
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260407-rb5gen2-dts-v2-1-d0c7f447ee73@axon.com/
+2026-04-04 | linux-arm-msm    | superseded         | Joe Sandom
+    [1/5] arm64: dts: qcom: sm8550: add PCIe MHI register regions and port labels
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260404-rb5gen2-dts-v1-1-895f8fc494fc@axon.com/
+2026-04-01 | linux-arm-msm    | superseded         | Qiang Yu
+    [RFC,1/4] dt-bindings: clock: qcom,sm8550-tcsr: Add QREF regulator supplies for glymur
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260331-qref_vote-v1-1-3fd7fbf87864@oss.qualcomm.com/
+2026-03-30 | linux-arm-msm    | mainlined          | Aaron Kling
+    [v4] arm64: dts: qcom: sm8550: add cpu OPP table with DDR, LLCC & L3 bandwidths
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260330-sm8550-ddr-bw-scaling-v4-1-5020c06983a0@gmail.com/
+2026-03-23 | linux-crypto     | handled-elsewhere  | Harshal Dev
+    [v4,09/11] arm64: dts: qcom: sm8550: Add power-domain and iface clk for ice node
+    https://patchwork.kernel.org/project/linux-crypto/patch/20260323-qcom_ice_power_and_clk_vote-v4-9-e36044bbdfe9@oss.qualcomm.com/
+2026-03-19 | linux-arm-msm    | superseded         | Wangao Wang
+    [v3,1/5] dt-bindings: media: qcom,sm8550-iris: Add X1P42100 compatible
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260319-enable_iris_on_purwa-v3-1-bf8f3e9a8c9c@oss.qualcomm.com/
+2026-03-17 | linux-arm-msm    | mainlined          | Konrad Dybcio
+    [4/6] arm64: dts: qcom: sm8550: Fix GIC_ITS range length
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260317-topic-its_range_fixup-v1-4-49be8076adb1@oss.qualcomm.com/
+2026-03-17 | devicetree       | superseded         | Harshal Dev
+    [v3,09/12] arm64: dts: qcom: sm8550: Add power-domain and iface clk for ice node
+    https://patchwork.kernel.org/project/devicetree/patch/20260317-qcom_ice_power_and_clk_vote-v3-9-53371dbabd6a@oss.qualcomm.com/
+2026-03-14 | linux-arm-msm    | mainlined          | Vladimir Zapolskiy
+    [v2,1/6] arm64: dts: qcom: sm8550: Fix xo clock supply of platform SD host controller
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260314023715.357512-2-vladimir.zapolskiy@linaro.org/
+2026-03-13 | linux-arm-msm    | mainlined          | Dmitry Baryshkov
+    [4/6] arm64: dts: qcom: sm8550: correct Iris corners for the MXC rail
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260313-iris-fix-corners-v1-4-32a393c25dda@oss.qualcomm.com/
+2026-03-13 | dri-devel        | new                | Sibi Sankar
+    [V5,1/5] dt-bindings: remoteproc: qcom, sm8550-pas: Add Glymur ADSP
+    https://patchwork.kernel.org/project/dri-devel/patch/20260313120814.1312410-2-sibi.sankar@oss.qualcomm.com/
+2026-03-11 | linux-arm-msm    | mainlined          | Vladimir Zapolskiy
+    arm64: dts: sm8550-hdk: add support for the Display Card overlay
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260311001238.4191034-1-vladimir.zapolskiy@linaro.org/
+2026-03-10 | linux-arm-msm    | mainlined          | Krzysztof Kozlowski
+    [RESEND,4/5] arm64: dts: qcom: sm8550: Drop redundant VSYNC pin state
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260310-qcom-dts-redundant-pins-v1-4-98e2ef430717@oss.qualcomm.com/
+2026-03-10 | devicetree       | superseded         | Harshal Dev
+    [v2,08/11] arm64: dts: qcom: sm8550: Add power-domain and iface clk for ice node
+    https://patchwork.kernel.org/project/devicetree/patch/20260310-qcom_ice_power_and_clk_vote-v2-8-b9c2a5471d9e@oss.qualcomm.com/
+2026-03-10 | linux-remoteproc | superseded         | Sibi Sankar
+    [V4,1/5] dt-bindings: remoteproc: qcom,sm8550-pas: Add Glymur ADSP
+    https://patchwork.kernel.org/project/linux-remoteproc/patch/20260310033617.3108675-2-sibi.sankar@oss.qualcomm.com/
+2026-03-10 | dri-devel        | new                | Sibi Sankar
+    [V4,1/5] dt-bindings: remoteproc: qcom, sm8550-pas: Add Glymur ADSP
+    https://patchwork.kernel.org/project/dri-devel/patch/20260310033617.3108675-2-sibi.sankar@oss.qualcomm.com/
+2026-03-06 | linux-arm-msm    | superseded         | Wangao Wang
+    [v2,1/5] dt-bindings: media: qcom,sm8550-iris: Add X1P42100 compatible
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260306-enable_iris_on_purwa-v2-1-75fa80a0a9e3@oss.qualcomm.com/
+2026-03-05 | linux-arm-msm    | mainlined          | Konrad Dybcio
+    [v2,6/7] arm64: dts: qcom: sm8550: Explicitly describe the IPA IMEM slice
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260305-topic-ipa_mem_dts-v2-6-5cb5b90902bf@oss.qualcomm.com/
+2026-02-20 | devicetree       | not-applicable     | Aaron Kling
+    [v3,1/2] dt-bindings: interconnect: OSM L3: Document sm8550 OSM L3 compatible
+    https://patchwork.kernel.org/project/devicetree/patch/20260219-sm8550-ddr-bw-scaling-v3-1-75c19152e921@gmail.com/
+2026-02-18 | linux-arm-msm    | superseded         | Krzysztof Kozlowski
+    [4/5] arm64: dts: qcom: sm8550: Drop redundant VSYNC pin state
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260218-qcom-dts-redundant-pins-v1-4-2799b8a4184e@oss.qualcomm.com/
+2026-02-12 | linux-arm-msm    | mainlined          | Aaron Kling
+    [v3] arm64: dts: qcom: sm8550: Add UART15
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260212-sm8550-uart15-v3-1-b90405f94bec@gmail.com/
+2026-02-11 | linux-arm-msm    | superseded         | Aaron Kling
+    [v2] arm64: dts: qcom: sm8550: Add UART15
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260211-sm8550-uart15-v2-1-bd23a0de18bc@gmail.com/
+2026-02-09 | linux-arm-msm    | superseded         | Wangao Wang
+    [1/5] dt-bindings: media: qcom,sm8550-iris: Add X1P42100 compatible
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260209-enable_iris_on_purwa-v1-1-537c410f604f@oss.qualcomm.com/
+2026-02-08 | linux-arm-msm    | superseded         | Aaron Kling
+    [1/3] arm64: dts: qcom: sm8550: add OSM L3 node
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260207-sm8550-ddr-bw-scaling-v1-1-d96c3f39ac4b@gmail.com/
+2026-01-29 | linux-arm-msm    | superseded         | Aaron Kling
+    [2/3] arm64: dts: qcom: sm8550: Add tz-log node
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260129-sm8550-abl-dtbo-v1-2-abca3be14024@gmail.com/
+2026-01-29 | dri-devel        | new                | Sibi Sankar
+    [V3,1/5] dt-bindings: remoteproc: qcom, sm8550-pas: Add Glymur ADSP
+    https://patchwork.kernel.org/project/dri-devel/patch/20260129001358.770053-2-sibi.sankar@oss.qualcomm.com/
+2026-01-28 | linux-arm-msm    | mainlined          | Aaron Kling
+    arm64: dts: qcom: sm8550: Update EAS properties
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260128-sm8550-eas-v1-1-fb80615bed5c@gmail.com/
+2026-01-23 | linux-crypto     | changes-requested  | Harshal Dev
+    [08/11] arm64: dts: qcom: sm8550: Add power-domain and iface clk for ice node
+    https://patchwork.kernel.org/project/linux-crypto/patch/20260123-qcom_ice_power_and_clk_vote-v1-8-e9059776f85c@qti.qualcomm.com/
+2026-01-15 | linux-arm-msm    | handled-elsewhere  | Jingyi Wang
+    [v4,1/2] dt-bindings: remoteproc: qcom,sm8550-pas: Add Kaanapali ADSP
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260114-knp-remoteproc-v4-1-fcf0b04d01af@oss.qualcomm.com/
+2025-12-23 | linux-arm-msm    | handled-elsewhere  | Jingyi Wang
+    [v3,1/5] dt-bindings: remoteproc: qcom,sm8550-pas: Add Kaanapali ADSP
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20251223-knp-remoteproc-v3-1-5b09885c55a5@oss.qualcomm.com/
+2025-12-22 | linux-arm-msm    | mainlined          | Vladimir Zapolskiy
+    [v2,1/4] arm64: dts: qcom: sm8550-qrd: rename image sensor supply properties
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20251222023834.3284370-2-vladimir.zapolskiy@linaro.org/
+2025-12-03 | linux-arm-msm    | mainlined          | Krishna Kurapati
+    [1/2] arm64: dts: qcom: sm8550: Fix compile warnings in USB controller node
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20251203144856.2711440-2-krishna.kurapati@oss.qualcomm.com/
+2025-11-26 | linux-arm-msm    | changes-requested  | Vladimir Zapolskiy
+    [2/3] arm64: dts: qcom: sm8550: Enable UHS-I SDR50 and SDR104 SD card modes
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20251126012043.3764567-3-vladimir.zapolskiy@linaro.org/
+2025-11-24 | linux-arm-msm    | mainlined          | Vladimir Zapolskiy
+    [1/2] clk: qcom: gcc-sm8550: Use floor ops for SDCC RCGs
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20251124212012.3660189-2-vladimir.zapolskiy@linaro.org/
+2025-10-31 | linux-pm         | handled-elsewhere  | Dmitry Baryshkov
+    [v3,22/25] interconnect: qcom: sm8550: convert to dynamic IDs
+    https://patchwork.kernel.org/project/linux-pm/patch/20251031-rework-icc-v3-22-0575304c9624@oss.qualcomm.com/

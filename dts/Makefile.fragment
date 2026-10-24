@@ -1,0 +1,21 @@
+# SPDX-License-Identifier: GPL-2.0
+#
+# Build integration for the OnePlus Ace 2 Pro (PJA110 / "xigua") mainline port.
+#
+# To use: copy the .dts files next to the other qcom board DTS files and add
+# the two lines below to arch/arm64/boot/dts/qcom/Makefile.
+#
+#   cp dts/sm8550-oneplus-xigua*.dts linux/arch/arm64/boot/dts/qcom/
+#
+# Then in arch/arm64/boot/dts/qcom/Makefile, alongside the other sm8550 boards:
+#
+#   dtb-$(CONFIG_ARCH_QCOM)	+= sm8550-oneplus-xigua.dtb
+#   dtb-$(CONFIG_ARCH_QCOM)	+= sm8550-oneplus-xigua-16G.dtb
+#
+# Build just our DTB:
+#
+#   make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- \
+#        qcom/sm8550-oneplus-xigua.dtb
+#
+# Out-of-tree build (what tools/build_dts.py does on Windows) is also fine --
+# see docs/dts-build.md.

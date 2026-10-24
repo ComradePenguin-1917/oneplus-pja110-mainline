@@ -1,0 +1,18 @@
+[Unit]
+Description=PJA110 fast charge enable (set battery charge current limit)
+# qcom_battmgr 由 systemd-modules-load 加载，其 probe 会拉起 ADSP
+# (qcom_q6v5_pas)。脚本内部会等待 debugfs 与 remoteproc=running，
+# 因此这里只需确保模块加载服务已完成，不需要 after=multi-user.target
+# （那会把本服务排到启动流程末尾，白白拖慢开机）。
+After=systemd-modules-load.service
+Wants=systemd-modules-load.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/local/bin/enable-fastcharge.sh 3000000
+# 脚本内部最多等待 20s（前置条件）+ 10s（电流上升观察）
+TimeoutStartSec=60
+
+[Install]
+WantedBy=multi-user.target

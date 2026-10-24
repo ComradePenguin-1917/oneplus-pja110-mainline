@@ -1,0 +1,42 @@
+// SPDX-License-Identifier: BSD-3-Clause
+/*
+ * OnePlus Ace 2 Pro (PJA110 / "xigua") - 16 GB variant.
+ *
+ * The RAM map below is NOT guessed: it was read from the running phone via
+ *
+ *     adb shell su -c 'cp /sys/firmware/fdt /data/local/tmp/live.dtb'
+ *     adb pull /data/local/tmp/live.dtb
+ *
+ * i.e. it is the exact map the vendor kernel is using on this hardware
+ * (16 GB part, ColorOS 14.0.0.701). Recorded copy:
+ * reference/live-PJA110-A14-16G.dtb
+ *
+ * This resolved the single biggest unknown in the port: the firmware images we
+ * downloaded leave /memory empty, so the map could not be derived from them.
+ *
+ * Layout (7 regions, 15.73 GiB usable):
+ *   0x080000000 + 0x00e00000   14.0 MiB  low start, after hyp
+ *   0x0811d0000 + 0x56f90000 1391.6 MiB  main low region
+ *   0x0d8800000 + 0x00000000      0 B    zero-length hole placeholder
+ *   0x0e1bb0000 + 0x1e450000  484.3 MiB  tail of low 4 GiB
+ *   0x880000000 + 0x38700000  903.0 MiB  high block 1
+ *   0x8c0000000 + 0x140000000 5120.0 MiB high block 2
+ *   0xa00000000 + 0x200000000 8192.0 MiB high block 3
+ *
+ * A 12/24 GB phone will report a different map -- dump it with the same
+ * commands and adjust before flashing.
+ */
+
+/dts-v1/;
+
+#include "sm8550-oneplus-xigua.dts"
+
+&oplus_mem {
+	reg = <0x00 0x80000000 0x00 0x00e00000
+	       0x00 0x811d0000 0x00 0x56f90000
+	       0x00 0xd8800000 0x00 0x00000000
+	       0x00 0xe1bb0000 0x00 0x1e450000
+	       0x08 0x80000000 0x00 0x38700000
+	       0x08 0xc0000000 0x01 0x40000000
+	       0x0a 0x00000000 0x02 0x00000000>;
+};

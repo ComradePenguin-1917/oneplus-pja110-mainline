@@ -1,0 +1,19 @@
+#!/bin/sh
+# Minimal init used to prove that the kernel reached userspace.
+# A successful reboot to bootloader is observable without UART or USB gadget.
+PATH=/sbin:/bin:/usr/sbin:/usr/bin
+export PATH
+
+echo '[initramfs] reached userspace; rebooting to bootloader' > /dev/kmsg 2>/dev/null
+sync
+
+# Android/Qualcomm bootloaders recognize the restart2 argument "bootloader".
+reboot bootloader 2>/dev/null
+busybox reboot bootloader 2>/dev/null
+
+# Keep the device out of Android if the platform restart hook rejects the
+# argument; this still proves that /init ran, but should not be reached on the
+# target firmware.
+while true; do
+    sleep 1
+done

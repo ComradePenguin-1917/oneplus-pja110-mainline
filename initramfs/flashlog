@@ -1,0 +1,76 @@
+#!/bin/sh
+# Bounded diagnostic journal. No write until name, size and GPT UUID match.
+BB=${FLASHLOG_BUSYBOX:-/bin/busybox}
+SYS=${FLASHLOG_SYS_ROOT:-/sys/class/block}
+DEV=${FLASHLOG_DEV_ROOT:-/dev}
+TMP=${FLASHLOG_TMP_ROOT:-/tmp}/pja-flashlog.bin
+TOKEN=PJA110_MAINLINE_FLASHLOG_20261012_R1
+UUID_HEX=333265e09113e374763bb76a68e705dd
+UUID=e0653233-1391-74e3-763b-b76a68e705dd
+SEEK=131056
+FILE_TEST=0
+if [ "${1:-}" = '--file-test' ]; then
+    # Explicit development mode is restricted to this experiment's temp tree.
+    case "$SYS:$DEV:$TMP" in
+        /data/local/tmp/pja-flashlog-test/*:/data/local/tmp/pja-flashlog-test/*:/data/local/tmp/pja-flashlog-test/*) FILE_TEST=1 ;;
+        *) exit 90 ;;
+    esac
+fi
+
+find_target() {
+    matches=0
+    TARGET=''
+    for n in "$SYS"/*; do
+        [ -f "$n/partition" ] || continue
+        "$BB" grep -qx 'PARTNAME=logdump' "$n/uevent" || continue
+        [ "$("$BB" cat "$n/size")" = '1048576' ] || return 91
+        name=${n##*/}
+        case "$name" in sd[a-z]*[0-9]) ;; *) return 92 ;; esac
+        disk=${name%%[0-9]*}
+        partno=$("$BB" cat "$n/partition")
+        case "$partno" in ''|*[!0-9]*) return 93 ;; esac
+        [ "$partno" -ge 1 ] && [ "$partno" -le 128 ] || return 94
+        if [ "$FILE_TEST" = '1' ]; then
+            [ -f "$DEV/$name" ] && [ -f "$DEV/$disk" ] || return 95
+        else
+            [ -b "$DEV/$name" ] && [ -b "$DEV/$disk" ] || return 95
+            [ "$("$BB" blockdev --getss "$DEV/$disk")" = '4096' ] || return 96
+            [ "$("$BB" blockdev --getsize64 "$DEV/$name")" = '536870912' ] || return 97
+        fi
+        # This phone's verified GPT: entry table LBA=2, entry size=128.
+        uuid_offset=$((8192+(partno-1)*128+16))
+        actual=$("$BB" dd if="$DEV/$disk" bs=1 skip="$uuid_offset" count=16 2>/dev/null | "$BB" od -An -tx1 | "$BB" tr -d ' \n')
+        [ "$actual" = "$UUID_HEX" ] || return 98
+        matches=$((matches+1))
+        TARGET="$DEV/$name"
+    done
+    [ "$matches" = '1' ]
+}
+
+tries=0
+while ! find_target; do
+    [ "$FILE_TEST" = '0' ] || exit 99
+    tries=$((tries+1))
+    [ "$tries" -lt 20 ] || exit 99
+    "$BB" sleep 1
+done
+
+write_journal() {
+    {
+        printf '%s\n' "$TOKEN" "phase=$1" "kernel=$("$BB" uname -r)" "target=$TARGET" "partuuid=$UUID" "uptime=$("$BB" cat /proc/uptime)"
+        "$BB" cat /proc/cmdline
+        "$BB" dmesg | "$BB" tail -c 56000
+    } > "$TMP"
+    # Leave the last 4 KiB untouched for an independent retention sentinel.
+    "$BB" truncate -s 61440 "$TMP" || return 100
+    "$BB" dd if="$TMP" of="$TARGET" bs=4096 seek="$SEEK" count=15 conv=notrunc,fsync || return 101
+    "$BB" sync
+}
+
+write_journal 'init-storage-ready' || exit $?
+if [ "${1:-}" = '--loop' ]; then
+    for step in 1 2 3; do
+        "$BB" sleep 2
+        write_journal "init-progress-$step" || exit $?
+    done
+fi

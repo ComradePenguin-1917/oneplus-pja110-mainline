@@ -1,0 +1,30 @@
+// PJA110：放行三个「改自己设备」的 polkit 动作。
+//
+// 背景：polkit 对下面三个动作的默认要求都是 auth_admin(_keep)，
+// 需要授权代理弹框；但 Phosh 环境里没有任何代理（polkit-gnome / lxpolkit
+// 都没装，Phosh 本身也不带），所以这些操作会直接失败，报
+//   "Interactive authentication required"
+// 表现为：设置里能改设备名、能填新密码，但点保存就报错。
+//
+// 这台设备是单用户手机，用户已经通过解锁屏幕证明了自己的身份，
+// 因此放行这三项；其余 polkit 动作不受影响。
+//
+// 生效方式：polkitd 每次请求都会重新读取 rules.d，无需重启服务。
+
+polkit.addRule(function (action, subject) {
+    if (!subject.active) {
+        return;
+    }
+    // 设置 → 用户 → 改密码
+    if (action.id == "org.freedesktop.accounts.change-own-password") {
+        return polkit.Result.YES;
+    }
+    // 设置 → 关于 → 设备名
+    if (action.id == "org.freedesktop.hostname1.set-static-hostname") {
+        return polkit.Result.YES;
+    }
+    // hostnamectl set-hostname 走这条
+    if (action.id == "org.freedesktop.hostname1.set-hostname") {
+        return polkit.Result.YES;
+    }
+});

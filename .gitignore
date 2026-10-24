@@ -1,0 +1,66 @@
+# ============================================================
+# 构建产物与大数据 —— 一律不进仓库
+# 本仓库只放「移植记录 + 脚本 + 补丁」，镜像走 GitHub Releases
+# ============================================================
+
+# 构建输出（49 GB）
+/out/
+
+# 交付镜像包（8.8 GB）
+/image/install/bundle/
+*.img
+*.simg
+
+# 原厂线刷包（7.2 GB）
+/PJA110 线刷包-701/
+
+# 设备备份（875 MB）
+/backup/
+
+# 内核源码树快照（116 MB）—— 补丁放 patches/，源码不发
+/linux/
+
+# pmOS 构建树（42 MB）
+/postmarketos/
+
+# initramfs / 归档产物
+*.cpio
+*.cpio.gz
+*.cpio.lz4
+*.tar
+*.tar.gz
+*.tar.xz
+*.tar.zst
+*.dtb
+*.lz4
+
+# Python / 编辑器
+__pycache__/
+*.py[cod]
+.venv/
+.vscode/
+.idea/
+
+# 系统垃圾
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 本地临时脚本（调试期产物，形如 tools/_xxx.sh）
+/tools/_*
+/tools/debug_*
+/tools/audit[0-9]*.sh
+
+# 可能夹带凭据的文件类型（永不提交）
+*.nmconnection
+*.pem
+*.key
+!dts/*.key
+id_rsa*
+ssh_host_*
+*secret*
+*credential*
+
+# 调试日志（保留在磁盘，不进仓库）
+*.log
+bootloader-log*.txt

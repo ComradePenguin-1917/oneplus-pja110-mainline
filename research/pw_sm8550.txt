@@ -1,0 +1,301 @@
+q='sm8550'  count=100
+2026-10-05 | new              | linux-arm-msm      | Nizat Mikayilli
+    [v2,2/2] arm64: dts: qcom: sm8550: Add support for Samsung Galaxy Tab S9 Wi-Fi
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20261005-gts9wifi-dts-v2-2-c3ac9b0f9ceb@dxdmail.cc/
+2026-10-05 | handled-elsewhere | devicetree         | Nizat Mikayilli
+    [v2,2/2] arm64: dts: qcom: sm8550: Add support for Samsung Galaxy Tab S9 Wi-Fi
+    https://patchwork.kernel.org/project/devicetree/patch/20261005-gts9wifi-dts-v2-2-c3ac9b0f9ceb@dxdmail.cc/
+2026-10-04 | superseded       | linux-arm-msm      | Nizat Mikayilli
+    [2/2] arm64: dts: qcom: sm8550: Add support for Samsung Galaxy Tab S9 Wi-Fi
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20261004-gts9wifi-dts-v1-2-1f0d7dd47e4a@dxdmail.cc/
+2026-10-04 | superseded       | devicetree         | Nizat Mikayilli
+    [2/2] arm64: dts: qcom: sm8550: Add support for Samsung Galaxy Tab S9 Wi-Fi
+    https://patchwork.kernel.org/project/devicetree/patch/20261004-gts9wifi-dts-v1-2-1f0d7dd47e4a@dxdmail.cc/
+2026-09-26 | new              | linux-arm-msm      | Vikash Garodia
+    [v5,09/13] arm64: dts: qcom: sm8550: Add Iris context bank subnodes
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260926-vpu_iommu_iova_handling-v5-9-0322ca5dc10c@oss.qualcomm.com/
+2026-09-26 | handled-elsewhere | devicetree         | Vikash Garodia
+    [v5,09/13] arm64: dts: qcom: sm8550: Add Iris context bank subnodes
+    https://patchwork.kernel.org/project/devicetree/patch/20260926-vpu_iommu_iova_handling-v5-9-0322ca5dc10c@oss.qualcomm.com/
+2026-09-26 | new              | linux-media        | Vikash Garodia
+    [v5,09/13] arm64: dts: qcom: sm8550: Add Iris context bank subnodes
+    https://patchwork.kernel.org/project/linux-media/patch/20260926-vpu_iommu_iova_handling-v5-9-0322ca5dc10c@oss.qualcomm.com/
+2026-09-26 | handled-elsewhere | linux-arm-msm      | Vikash Garodia
+    [v5,02/13] dt-bindings: media: qcom,sm8550-iris: Add context bank subnodes
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260926-vpu_iommu_iova_handling-v5-2-0322ca5dc10c@oss.qualcomm.com/
+2026-09-26 | not-applicable   | devicetree         | Vikash Garodia
+    [v5,02/13] dt-bindings: media: qcom,sm8550-iris: Add context bank subnodes
+    https://patchwork.kernel.org/project/devicetree/patch/20260926-vpu_iommu_iova_handling-v5-2-0322ca5dc10c@oss.qualcomm.com/
+2026-09-26 | new              | linux-media        | Vikash Garodia
+    [v5,02/13] dt-bindings: media: qcom,sm8550-iris: Add context bank subnodes
+    https://patchwork.kernel.org/project/linux-media/patch/20260926-vpu_iommu_iova_handling-v5-2-0322ca5dc10c@oss.qualcomm.com/
+2026-09-24 | in-next          | linux-arm-msm      | Abel Vesa
+    [v2,40/48] clk: qcom: gpucc-sm8550: Use common probe handling for always-on clocks
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260924-clk-qcom-rework-legacy-always-on-clocks-v2-40-1479443ee016@oss.qualcomm.com/
+2026-09-24 | awaiting-upstream | linux-clk          | Abel Vesa
+    [v2,40/48] clk: qcom: gpucc-sm8550: Use common probe handling for always-on clocks
+    https://patchwork.kernel.org/project/linux-clk/patch/20260924-clk-qcom-rework-legacy-always-on-clocks-v2-40-1479443ee016@oss.qualcomm.com/
+2026-09-24 | in-next          | linux-arm-msm      | Abel Vesa
+    [v2,32/48] clk: qcom: gcc-sm8550: Use common clock controller probe data
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260924-clk-qcom-rework-legacy-always-on-clocks-v2-32-1479443ee016@oss.qualcomm.com/
+2026-09-24 | awaiting-upstream | linux-clk          | Abel Vesa
+    [v2,32/48] clk: qcom: gcc-sm8550: Use common clock controller probe data
+    https://patchwork.kernel.org/project/linux-clk/patch/20260924-clk-qcom-rework-legacy-always-on-clocks-v2-32-1479443ee016@oss.qualcomm.com/
+2026-09-24 | awaiting-upstream | linux-clk          | Abel Vesa
+    [v2,11/48] clk: qcom: dispcc-sm8550: Use common probe handling for always-on clocks
+    https://patchwork.kernel.org/project/linux-clk/patch/20260924-clk-qcom-rework-legacy-always-on-clocks-v2-11-1479443ee016@oss.qualcomm.com/
+2026-09-24 | in-next          | linux-arm-msm      | Abel Vesa
+    [v2,11/48] clk: qcom: dispcc-sm8550: Use common probe handling for always-on clocks
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260924-clk-qcom-rework-legacy-always-on-clocks-v2-11-1479443ee016@oss.qualcomm.com/
+2026-09-24 | not-applicable   | linux-clk          | Abel Vesa
+    [v5,39/42] arm64: dts: qcom: sm8550: Add GCC CX power domain
+    https://patchwork.kernel.org/project/linux-clk/patch/20260924-qcom-tie-cx-to-gcc-v5-39-38732033e5b5@oss.qualcomm.com/
+2026-09-24 | handled-elsewhere | devicetree         | Abel Vesa
+    [v5,39/42] arm64: dts: qcom: sm8550: Add GCC CX power domain
+    https://patchwork.kernel.org/project/devicetree/patch/20260924-qcom-tie-cx-to-gcc-v5-39-38732033e5b5@oss.qualcomm.com/
+2026-09-24 | in-next          | linux-arm-msm      | Abel Vesa
+    [v5,39/42] arm64: dts: qcom: sm8550: Add GCC CX power domain
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260924-qcom-tie-cx-to-gcc-v5-39-38732033e5b5@oss.qualcomm.com/
+2026-09-24 | handled-elsewhere | devicetree         | Abel Vesa
+    [v5,24/42] clk: qcom: gcc-sm8550: Tie the CX power domain to controller
+    https://patchwork.kernel.org/project/devicetree/patch/20260924-qcom-tie-cx-to-gcc-v5-24-38732033e5b5@oss.qualcomm.com/
+2026-09-24 | in-next          | linux-arm-msm      | Abel Vesa
+    [v5,24/42] clk: qcom: gcc-sm8550: Tie the CX power domain to controller
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260924-qcom-tie-cx-to-gcc-v5-24-38732033e5b5@oss.qualcomm.com/
+2026-09-24 | awaiting-upstream | linux-clk          | Abel Vesa
+    [v5,24/42] clk: qcom: gcc-sm8550: Tie the CX power domain to controller
+    https://patchwork.kernel.org/project/linux-clk/patch/20260924-qcom-tie-cx-to-gcc-v5-24-38732033e5b5@oss.qualcomm.com/
+2026-09-24 | not-applicable   | devicetree         | Abel Vesa
+    [v5,07/42] dt-bindings: clock: qcom: sm8550-gcc: Add CX power domain
+    https://patchwork.kernel.org/project/devicetree/patch/20260924-qcom-tie-cx-to-gcc-v5-7-38732033e5b5@oss.qualcomm.com/
+2026-09-24 | in-next          | linux-arm-msm      | Abel Vesa
+    [v5,07/42] dt-bindings: clock: qcom: sm8550-gcc: Add CX power domain
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260924-qcom-tie-cx-to-gcc-v5-7-38732033e5b5@oss.qualcomm.com/
+2026-09-24 | awaiting-upstream | linux-clk          | Abel Vesa
+    [v5,07/42] dt-bindings: clock: qcom: sm8550-gcc: Add CX power domain
+    https://patchwork.kernel.org/project/linux-clk/patch/20260924-qcom-tie-cx-to-gcc-v5-7-38732033e5b5@oss.qualcomm.com/
+2026-09-21 | handled-elsewhere | linux-arm-msm      | Wangao Wang
+    [v2,1/5] dt-bindings: media: qcom,sm8550-iris: Document Eliza IRIS accelerator
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260921-add_iris_for_eliza-v2-1-5fe7be8c0230@oss.qualcomm.com/
+2026-09-21 | new              | linux-media        | Wangao Wang
+    [v2,1/5] dt-bindings: media: qcom,sm8550-iris: Document Eliza IRIS accelerator
+    https://patchwork.kernel.org/project/linux-media/patch/20260921-add_iris_for_eliza-v2-1-5fe7be8c0230@oss.qualcomm.com/
+2026-09-21 | not-applicable   | devicetree         | Wangao Wang
+    [v2,1/5] dt-bindings: media: qcom,sm8550-iris: Document Eliza IRIS accelerator
+    https://patchwork.kernel.org/project/devicetree/patch/20260921-add_iris_for_eliza-v2-1-5fe7be8c0230@oss.qualcomm.com/
+2026-09-17 | in-next          | linux-arm-msm      | Krishna Chaitanya Chundru
+    [v2,15/15] arm64: dts: qcom: sm8550: Move PCIe phy and GPIOs to root port node
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260917-root_port_v2-v2-15-6272b7caae9a@oss.qualcomm.com/
+2026-09-17 | in-next          | linux-arm-msm      | Krishna Chaitanya Chundru
+    [v2,09/18] arm64: dts: qcom: sm8550: Fix PCIe WAKE# GPIO polarity
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260917-root_port-v2-9-0d627d0856d5@oss.qualcomm.com/
+2026-09-16 | superseded       | linux-arm-msm      | Abel Vesa
+    [40/48] clk: qcom: gpucc-sm8550: Use common probe handling for always-on clocks
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260916-clk-qcom-rework-legacy-always-on-clocks-v1-40-25a24e50f82a@oss.qualcomm.com/
+2026-09-16 | superseded       | linux-clk          | Abel Vesa
+    [40/48] clk: qcom: gpucc-sm8550: Use common probe handling for always-on clocks
+    https://patchwork.kernel.org/project/linux-clk/patch/20260916-clk-qcom-rework-legacy-always-on-clocks-v1-40-25a24e50f82a@oss.qualcomm.com/
+2026-09-16 | superseded       | linux-arm-msm      | Abel Vesa
+    [32/48] clk: qcom: gcc-sm8550: Use common clock controller probe data
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260916-clk-qcom-rework-legacy-always-on-clocks-v1-32-25a24e50f82a@oss.qualcomm.com/
+2026-09-16 | superseded       | linux-clk          | Abel Vesa
+    [32/48] clk: qcom: gcc-sm8550: Use common clock controller probe data
+    https://patchwork.kernel.org/project/linux-clk/patch/20260916-clk-qcom-rework-legacy-always-on-clocks-v1-32-25a24e50f82a@oss.qualcomm.com/
+2026-09-16 | superseded       | linux-arm-msm      | Abel Vesa
+    [11/48] clk: qcom: dispcc-sm8550: Use common probe handling for always-on clocks
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260916-clk-qcom-rework-legacy-always-on-clocks-v1-11-25a24e50f82a@oss.qualcomm.com/
+2026-09-16 | superseded       | linux-clk          | Abel Vesa
+    [11/48] clk: qcom: dispcc-sm8550: Use common probe handling for always-on clocks
+    https://patchwork.kernel.org/project/linux-clk/patch/20260916-clk-qcom-rework-legacy-always-on-clocks-v1-11-25a24e50f82a@oss.qualcomm.com/
+2026-09-14 | superseded       | linux-arm-msm      | Abel Vesa
+    [v4,49/52] arm64: dts: qcom: sm8550: Add GCC CX power domain
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260914-qcom-tie-cx-to-gcc-v4-49-9d5a606ada33@oss.qualcomm.com/
+2026-09-14 | superseded       | linux-clk          | Abel Vesa
+    [v4,49/52] arm64: dts: qcom: sm8550: Add GCC CX power domain
+    https://patchwork.kernel.org/project/linux-clk/patch/20260914-qcom-tie-cx-to-gcc-v4-49-9d5a606ada33@oss.qualcomm.com/
+2026-09-14 | superseded       | devicetree         | Abel Vesa
+    [v4,49/52] arm64: dts: qcom: sm8550: Add GCC CX power domain
+    https://patchwork.kernel.org/project/devicetree/patch/20260914-qcom-tie-cx-to-gcc-v4-49-9d5a606ada33@oss.qualcomm.com/
+2026-09-14 | superseded       | linux-clk          | Abel Vesa
+    [v4,33/52] clk: qcom: gcc-sm8550: Tie the CX power domain to controller
+    https://patchwork.kernel.org/project/linux-clk/patch/20260914-qcom-tie-cx-to-gcc-v4-33-9d5a606ada33@oss.qualcomm.com/
+2026-09-14 | superseded       | devicetree         | Abel Vesa
+    [v4,33/52] clk: qcom: gcc-sm8550: Tie the CX power domain to controller
+    https://patchwork.kernel.org/project/devicetree/patch/20260914-qcom-tie-cx-to-gcc-v4-33-9d5a606ada33@oss.qualcomm.com/
+2026-09-14 | superseded       | linux-arm-msm      | Abel Vesa
+    [v4,33/52] clk: qcom: gcc-sm8550: Tie the CX power domain to controller
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260914-qcom-tie-cx-to-gcc-v4-33-9d5a606ada33@oss.qualcomm.com/
+2026-09-14 | superseded       | linux-clk          | Abel Vesa
+    [v4,07/52] dt-bindings: clock: qcom: sm8550-gcc: Add CX power domain
+    https://patchwork.kernel.org/project/linux-clk/patch/20260914-qcom-tie-cx-to-gcc-v4-7-9d5a606ada33@oss.qualcomm.com/
+2026-09-14 | superseded       | devicetree         | Abel Vesa
+    [v4,07/52] dt-bindings: clock: qcom: sm8550-gcc: Add CX power domain
+    https://patchwork.kernel.org/project/devicetree/patch/20260914-qcom-tie-cx-to-gcc-v4-7-9d5a606ada33@oss.qualcomm.com/
+2026-09-14 | superseded       | linux-arm-msm      | Abel Vesa
+    [v4,07/52] dt-bindings: clock: qcom: sm8550-gcc: Add CX power domain
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260914-qcom-tie-cx-to-gcc-v4-7-9d5a606ada33@oss.qualcomm.com/
+2026-09-14 | superseded       | linux-arm-msm      | Wangao Wang
+    [1/4] dt-bindings: media: qcom,sm8550-iris: Document Eliza IRIS accelerator
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260914-add_iris_for_eliza-v1-1-e8ccd9b8cf7a@oss.qualcomm.com/
+2026-09-14 | new              | linux-media        | Wangao Wang
+    [1/4] dt-bindings: media: qcom,sm8550-iris: Document Eliza IRIS accelerator
+    https://patchwork.kernel.org/project/linux-media/patch/20260914-add_iris_for_eliza-v1-1-e8ccd9b8cf7a@oss.qualcomm.com/
+2026-09-14 | superseded       | devicetree         | Wangao Wang
+    [1/4] dt-bindings: media: qcom,sm8550-iris: Document Eliza IRIS accelerator
+    https://patchwork.kernel.org/project/devicetree/patch/20260914-add_iris_for_eliza-v1-1-e8ccd9b8cf7a@oss.qualcomm.com/
+2026-09-14 | in-next          | linux-arm-msm      | Mukesh Ojha
+    [v5,1/2] dt-bindings: remoteproc: qcom,sm8550-pas: make qcom,hawi-cdsp-pas standalone
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260914084312.3812408-2-mukesh.ojha@oss.qualcomm.com/
+2026-09-14 | accepted         | linux-remoteproc   | Mukesh Ojha
+    [v5,1/2] dt-bindings: remoteproc: qcom,sm8550-pas: make qcom,hawi-cdsp-pas standalone
+    https://patchwork.kernel.org/project/linux-remoteproc/patch/20260914084312.3812408-2-mukesh.ojha@oss.qualcomm.com/
+2026-09-14 | not-applicable   | devicetree         | Mukesh Ojha
+    [v5,1/2] dt-bindings: remoteproc: qcom,sm8550-pas: make qcom,hawi-cdsp-pas standalone
+    https://patchwork.kernel.org/project/devicetree/patch/20260914084312.3812408-2-mukesh.ojha@oss.qualcomm.com/
+2026-09-14 | changes-requested | linux-arm-msm      | Maulik Shah
+    [17/31] arm64: dts: qcom: sm8550: Add domain idle state names
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260914-b4-idle-state-name-v1-17-660c31187819@oss.qualcomm.com/
+2026-09-13 | superseded       | linux-arm-msm      | Vikash Garodia
+    [v4,09/13] arm64: dts: qcom: sm8550: Add Iris context bank subnodes
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260914-vpu_iommu_iova_handling-v4-9-9b9074a73c41@oss.qualcomm.com/
+2026-09-13 | new              | linux-media        | Vikash Garodia
+    [v4,09/13] arm64: dts: qcom: sm8550: Add Iris context bank subnodes
+    https://patchwork.kernel.org/project/linux-media/patch/20260914-vpu_iommu_iova_handling-v4-9-9b9074a73c41@oss.qualcomm.com/
+2026-09-13 | superseded       | devicetree         | Vikash Garodia
+    [v4,09/13] arm64: dts: qcom: sm8550: Add Iris context bank subnodes
+    https://patchwork.kernel.org/project/devicetree/patch/20260914-vpu_iommu_iova_handling-v4-9-9b9074a73c41@oss.qualcomm.com/
+2026-09-13 | superseded       | linux-arm-msm      | Vikash Garodia
+    [v4,02/13] dt-bindings: media: qcom,sm8550-iris: Add context bank subnodes
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260914-vpu_iommu_iova_handling-v4-2-9b9074a73c41@oss.qualcomm.com/
+2026-09-13 | new              | linux-media        | Vikash Garodia
+    [v4,02/13] dt-bindings: media: qcom,sm8550-iris: Add context bank subnodes
+    https://patchwork.kernel.org/project/linux-media/patch/20260914-vpu_iommu_iova_handling-v4-2-9b9074a73c41@oss.qualcomm.com/
+2026-09-13 | superseded       | devicetree         | Vikash Garodia
+    [v4,02/13] dt-bindings: media: qcom,sm8550-iris: Add context bank subnodes
+    https://patchwork.kernel.org/project/devicetree/patch/20260914-vpu_iommu_iova_handling-v4-2-9b9074a73c41@oss.qualcomm.com/
+2026-09-10 | superseded       | linux-arm-msm      | Mukesh Ojha
+    [v4,1/2] dt-bindings: remoteproc: qcom,sm8550-pas: make qcom,hawi-cdsp-pas standalone
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260910150638.3270162-2-mukesh.ojha@oss.qualcomm.com/
+2026-09-10 | superseded       | linux-remoteproc   | Mukesh Ojha
+    [v4,1/2] dt-bindings: remoteproc: qcom,sm8550-pas: make qcom,hawi-cdsp-pas standalone
+    https://patchwork.kernel.org/project/linux-remoteproc/patch/20260910150638.3270162-2-mukesh.ojha@oss.qualcomm.com/
+2026-09-10 | superseded       | devicetree         | Mukesh Ojha
+    [v4,1/2] dt-bindings: remoteproc: qcom,sm8550-pas: make qcom,hawi-cdsp-pas standalone
+    https://patchwork.kernel.org/project/devicetree/patch/20260910150638.3270162-2-mukesh.ojha@oss.qualcomm.com/
+2026-09-10 | changes-requested | linux-arm-msm      | Krishna Chaitanya Chundru
+    [34/34] arm64: dts: qcom: sm8550: Move PCIe phy and GPIOs to root port node
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260910-root_port-v1-34-90a252ddbbfa@oss.qualcomm.com/
+2026-09-10 | changes-requested | linux-arm-msm      | Krishna Chaitanya Chundru
+    [09/34] arm64: dts: qcom: sm8550: Fix PCIe wake GPIO polarity
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260910-root_port-v1-9-90a252ddbbfa@oss.qualcomm.com/
+2026-09-09 | superseded       | linux-arm-msm      | Vikash Garodia
+    [v3,09/13] arm64: dts: qcom: sm8550: Add Iris context bank subnodes
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260909-vpu_iommu_iova_handling-v3-9-2fe43ae45495@oss.qualcomm.com/
+2026-09-09 | superseded       | devicetree         | Vikash Garodia
+    [v3,09/13] arm64: dts: qcom: sm8550: Add Iris context bank subnodes
+    https://patchwork.kernel.org/project/devicetree/patch/20260909-vpu_iommu_iova_handling-v3-9-2fe43ae45495@oss.qualcomm.com/
+2026-09-09 | new              | linux-media        | Vikash Garodia
+    [v3,09/13] arm64: dts: qcom: sm8550: Add Iris context bank subnodes
+    https://patchwork.kernel.org/project/linux-media/patch/20260909-vpu_iommu_iova_handling-v3-9-2fe43ae45495@oss.qualcomm.com/
+2026-09-09 | superseded       | linux-arm-msm      | Vikash Garodia
+    [v3,02/13] dt-bindings: media: qcom,sm8550-iris: Add context bank subnodes
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260909-vpu_iommu_iova_handling-v3-2-2fe43ae45495@oss.qualcomm.com/
+2026-09-09 | superseded       | devicetree         | Vikash Garodia
+    [v3,02/13] dt-bindings: media: qcom,sm8550-iris: Add context bank subnodes
+    https://patchwork.kernel.org/project/devicetree/patch/20260909-vpu_iommu_iova_handling-v3-2-2fe43ae45495@oss.qualcomm.com/
+2026-09-09 | new              | linux-media        | Vikash Garodia
+    [v3,02/13] dt-bindings: media: qcom,sm8550-iris: Add context bank subnodes
+    https://patchwork.kernel.org/project/linux-media/patch/20260909-vpu_iommu_iova_handling-v3-2-2fe43ae45495@oss.qualcomm.com/
+2026-09-09 | handled-elsewhere | linux-arm-msm      | Mukesh Ojha
+    [v3,2/3] dt-bindings: remoteproc: qcom,sm8550-pas: make qcom,hawi-cdsp-pas standalone
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260909105049.1317985-3-mukesh.ojha@oss.qualcomm.com/
+2026-09-09 | superseded       | linux-remoteproc   | Mukesh Ojha
+    [v3,2/3] dt-bindings: remoteproc: qcom,sm8550-pas: make qcom,hawi-cdsp-pas standalone
+    https://patchwork.kernel.org/project/linux-remoteproc/patch/20260909105049.1317985-3-mukesh.ojha@oss.qualcomm.com/
+2026-09-09 | not-applicable   | devicetree         | Mukesh Ojha
+    [v3,2/3] dt-bindings: remoteproc: qcom,sm8550-pas: make qcom,hawi-cdsp-pas standalone
+    https://patchwork.kernel.org/project/devicetree/patch/20260909105049.1317985-3-mukesh.ojha@oss.qualcomm.com/
+2026-09-02 | superseded       | linux-arm-msm      | Mukesh Ojha
+    [v2,2/3] dt-bindings: remoteproc: qcom,sm8550-pas: make qcom,hawi-cdsp-pas standalone
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260902204334.2061226-3-mukesh.ojha@oss.qualcomm.com/
+2026-09-02 | superseded       | linux-remoteproc   | Mukesh Ojha
+    [v2,2/3] dt-bindings: remoteproc: qcom,sm8550-pas: make qcom,hawi-cdsp-pas standalone
+    https://patchwork.kernel.org/project/linux-remoteproc/patch/20260902204334.2061226-3-mukesh.ojha@oss.qualcomm.com/
+2026-09-02 | superseded       | devicetree         | Mukesh Ojha
+    [v2,2/3] dt-bindings: remoteproc: qcom,sm8550-pas: make qcom,hawi-cdsp-pas standalone
+    https://patchwork.kernel.org/project/devicetree/patch/20260902204334.2061226-3-mukesh.ojha@oss.qualcomm.com/
+2026-08-31 | new              | linux-arm-msm      | Neil Armstrong
+    [v4,2/3] arm64: dts: qcom: sm8550-hdk: Enable I2S for HDMI
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260831-topic-sm8x50-next-hdk-i2s-v4-2-a224aa073f9d@linaro.org/
+2026-08-28 | changes-requested | linux-arm-msm      | Abel Vesa
+    [01/11] arm64: dts: qcom: sm8550: Disable Inline Crypto Engine by default
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260828-b4-dts-qcom-disable-ice-by-default-v1-1-1d6e0c2f5a69@oss.qualcomm.com/
+2026-08-24 | handled-elsewhere | devicetree         | Alexandre Hamamdjian
+    [v6,2/4] arm64: dts: qcom: sm8550: add UART11 node
+    https://patchwork.kernel.org/project/devicetree/patch/20260824-pocketds-v6-2-370161574ca2@gmail.com/
+2026-08-24 | in-next          | linux-arm-msm      | Alexandre Hamamdjian
+    [v6,2/4] arm64: dts: qcom: sm8550: add UART11 node
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260824-pocketds-v6-2-370161574ca2@gmail.com/
+2026-08-24 | superseded       | devicetree         | Abel Vesa
+    [v3,44/47] arm64: dts: qcom: sm8550: Add GCC CX power domain
+    https://patchwork.kernel.org/project/devicetree/patch/20260824-qcom-tie-cx-to-gcc-v3-44-f1205a92682b@oss.qualcomm.com/
+2026-08-24 | superseded       | linux-arm-msm      | Abel Vesa
+    [v3,44/47] arm64: dts: qcom: sm8550: Add GCC CX power domain
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260824-qcom-tie-cx-to-gcc-v3-44-f1205a92682b@oss.qualcomm.com/
+2026-08-24 | superseded       | linux-clk          | Abel Vesa
+    [v3,44/47] arm64: dts: qcom: sm8550: Add GCC CX power domain
+    https://patchwork.kernel.org/project/linux-clk/patch/20260824-qcom-tie-cx-to-gcc-v3-44-f1205a92682b@oss.qualcomm.com/
+2026-08-24 | superseded       | linux-clk          | Abel Vesa
+    [v3,28/47] clk: qcom: gcc-sm8550: Tie the CX power domain to controller
+    https://patchwork.kernel.org/project/linux-clk/patch/20260824-qcom-tie-cx-to-gcc-v3-28-f1205a92682b@oss.qualcomm.com/
+2026-08-24 | superseded       | devicetree         | Abel Vesa
+    [v3,28/47] clk: qcom: gcc-sm8550: Tie the CX power domain to controller
+    https://patchwork.kernel.org/project/devicetree/patch/20260824-qcom-tie-cx-to-gcc-v3-28-f1205a92682b@oss.qualcomm.com/
+2026-08-24 | superseded       | linux-arm-msm      | Abel Vesa
+    [v3,28/47] clk: qcom: gcc-sm8550: Tie the CX power domain to controller
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260824-qcom-tie-cx-to-gcc-v3-28-f1205a92682b@oss.qualcomm.com/
+2026-08-24 | superseded       | linux-arm-msm      | Abel Vesa
+    [v3,07/47] dt-bindings: clock: qcom: sm8550-gcc: Add CX power domain
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260824-qcom-tie-cx-to-gcc-v3-7-f1205a92682b@oss.qualcomm.com/
+2026-08-24 | superseded       | linux-clk          | Abel Vesa
+    [v3,07/47] dt-bindings: clock: qcom: sm8550-gcc: Add CX power domain
+    https://patchwork.kernel.org/project/linux-clk/patch/20260824-qcom-tie-cx-to-gcc-v3-7-f1205a92682b@oss.qualcomm.com/
+2026-08-24 | superseded       | devicetree         | Abel Vesa
+    [v3,07/47] dt-bindings: clock: qcom: sm8550-gcc: Add CX power domain
+    https://patchwork.kernel.org/project/devicetree/patch/20260824-qcom-tie-cx-to-gcc-v3-7-f1205a92682b@oss.qualcomm.com/
+2026-08-20 | superseded       | linux-arm-msm      | Abel Vesa
+    [v2,12/16] arm64: dts: qcom: sm8550: Add GCC CX power domain
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260820-qcom-tie-cx-to-gcc-v2-12-e67ea30d8b7b@oss.qualcomm.com/
+2026-08-20 | superseded       | linux-clk          | Abel Vesa
+    [v2,12/16] arm64: dts: qcom: sm8550: Add GCC CX power domain
+    https://patchwork.kernel.org/project/linux-clk/patch/20260820-qcom-tie-cx-to-gcc-v2-12-e67ea30d8b7b@oss.qualcomm.com/
+2026-08-20 | superseded       | linux-arm-msm      | Abel Vesa
+    [v2,04/16] clk: qcom: gcc-sm8550: Tie the CX power domain to controller
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260820-qcom-tie-cx-to-gcc-v2-4-e67ea30d8b7b@oss.qualcomm.com/
+2026-08-20 | superseded       | linux-clk          | Abel Vesa
+    [v2,04/16] clk: qcom: gcc-sm8550: Tie the CX power domain to controller
+    https://patchwork.kernel.org/project/linux-clk/patch/20260820-qcom-tie-cx-to-gcc-v2-4-e67ea30d8b7b@oss.qualcomm.com/
+2026-08-19 | superseded       | linux-arm-msm      | Abel Vesa
+    [12/16] arm64: dts: qcom: sm8550: Add GCC CX power domain
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260819-qcom-tie-cx-to-gcc-v1-12-840034124e73@oss.qualcomm.com/
+2026-08-19 | superseded       | linux-clk          | Abel Vesa
+    [12/16] arm64: dts: qcom: sm8550: Add GCC CX power domain
+    https://patchwork.kernel.org/project/linux-clk/patch/20260819-qcom-tie-cx-to-gcc-v1-12-840034124e73@oss.qualcomm.com/
+2026-08-19 | superseded       | linux-arm-msm      | Abel Vesa
+    [04/16] clk: qcom: gcc-sm8550: Tie the CX power domain to controller
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260819-qcom-tie-cx-to-gcc-v1-4-840034124e73@oss.qualcomm.com/
+2026-08-19 | superseded       | linux-clk          | Abel Vesa
+    [04/16] clk: qcom: gcc-sm8550: Tie the CX power domain to controller
+    https://patchwork.kernel.org/project/linux-clk/patch/20260819-qcom-tie-cx-to-gcc-v1-4-840034124e73@oss.qualcomm.com/
+2026-08-07 | new              | linux-media        | Vikash Garodia
+    [09/22] arm64: dts: qcom: sm8550: Reserve low IOVA range for Iris
+    https://patchwork.kernel.org/project/linux-media/patch/20260807-iris_iova_600mb_fix-v1-9-3996f67e33f9@oss.qualcomm.com/
+2026-08-07 | changes-requested | linux-arm-msm      | Vikash Garodia
+    [09/22] arm64: dts: qcom: sm8550: Reserve low IOVA range for Iris
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260807-iris_iova_600mb_fix-v1-9-3996f67e33f9@oss.qualcomm.com/
+2026-08-07 | handled-elsewhere | devicetree         | Vikash Garodia
+    [09/22] arm64: dts: qcom: sm8550: Reserve low IOVA range for Iris
+    https://patchwork.kernel.org/project/devicetree/patch/20260807-iris_iova_600mb_fix-v1-9-3996f67e33f9@oss.qualcomm.com/
+2026-08-07 | handled-elsewhere | linux-arm-msm      | Vikash Garodia
+    [02/22] dt-bindings: media: qcom,sm8550-iris: Allow IOVA reservation memory-region
+    https://patchwork.kernel.org/project/linux-arm-msm/patch/20260807-iris_iova_600mb_fix-v1-2-3996f67e33f9@oss.qualcomm.com/

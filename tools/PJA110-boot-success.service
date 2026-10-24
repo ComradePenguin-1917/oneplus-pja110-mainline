@@ -1,0 +1,13 @@
+[Unit]
+Description=Mark verified native PJA110 slot A successful using qbootctl
+After=multi-user.target sshd.service greetd.service
+ConditionPathExists=/usr/local/libexec/pja110-qbootctl
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/libexec/pja110-mark-a-success
+RemainAfterExit=yes
+TimeoutStartSec=90
+
+[Install]
+WantedBy=graphical.target

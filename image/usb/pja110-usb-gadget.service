@@ -1,0 +1,17 @@
+[Unit]
+Description=PJA110 USB gadget (MTP only, no NCM)
+Documentation=file:///opt/pja110/usb-gadget.sh
+DefaultDependencies=no
+After=sysinit.target local-fs.target
+Before=umtp-responder.service
+ConditionPathExists=/sys/class/udc
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/opt/pja110/usb-gadget.sh prep
+ExecStop=/opt/pja110/usb-gadget.sh stop
+TimeoutStartSec=30
+
+[Install]
+WantedBy=multi-user.target

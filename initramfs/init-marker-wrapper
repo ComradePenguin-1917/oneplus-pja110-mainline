@@ -1,0 +1,17 @@
+#!/system/bin/sh
+# Control experiment: prove that this init_boot ramdisk was executed.
+# Failure to write the marker must not prevent the stock init from continuing.
+mount -t devtmpfs devtmpfs /dev 2>/dev/null
+mkdir -p /metadata 2>/dev/null
+
+for n in 1 2 3 4 5; do
+    if [ -e /dev/block/by-name/metadata ]; then
+        mount -t ext4 /dev/block/by-name/metadata /metadata 2>/dev/null
+        break
+    fi
+    sleep 1
+done
+
+echo 'pja110-init-bootloader-control-ran' > /metadata/pja110-init-marker 2>/dev/null
+sync
+exec /init.real

@@ -1,0 +1,20 @@
+[Unit]
+Description=Lomiri session (Ubuntu Touch shell) on mainline Mir
+Documentation=https://docs.ubports.com/en/latest/porting/
+After=graphical-session-pre.target
+Wants=graphical-session-pre.target
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+# The session script sets XDG_RUNTIME_DIR, the Mir platform variables and the
+# Qt QPA plugin path, then execs lomiri.
+ExecStart=/usr/bin/lomiri-session
+Restart=on-failure
+RestartSec=2
+# Lomiri needs the seat; on mainline this is the active VT.
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=graphical-session.target

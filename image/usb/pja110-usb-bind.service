@@ -1,0 +1,17 @@
+[Unit]
+Description=PJA110 bind USB gadget to UDC (after umtprd ready)
+Documentation=file:///opt/pja110/usb-gadget.sh
+After=pja110-usb-gadget.service umtp-responder.service
+Requires=pja110-usb-gadget.service
+Wants=umtp-responder.service
+ConditionPathExists=/sys/class/udc
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/opt/pja110/usb-gadget.sh bind
+ExecStop=/bin/sh -c 'echo "" > /sys/kernel/config/usb_gadget/g1/UDC 2>/dev/null || true'
+TimeoutStartSec=40
+
+[Install]
+WantedBy=multi-user.target

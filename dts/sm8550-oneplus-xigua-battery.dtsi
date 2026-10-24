@@ -1,0 +1,26 @@
+// SPDX-License-Identifier: BSD-3-Clause
+/* Candidate: Aston's upstream bq27xxx binding, checked against PJA110 22851 DT.
+ * No calibration, design-capacity or charging-policy writes are requested.
+ */
+&i2c8 {
+	status = "okay";
+	clock-frequency = <100000>;
+
+	fuel-gauge@55 {
+		compatible = "ti,bq28z610";
+		reg = <0x55>;
+	};
+};
+
+&tlmm {
+	qup_i2c8_data_clk: qup-i2c8-data-clk-state {
+		scl-pins {
+			pins = "gpio1";
+			function = "qup2_se0_l1_mirb";
+		};
+		sda-pins {
+			pins = "gpio0";
+			function = "qup2_se0_l0_mirb";
+		};
+	};
+};

@@ -1,0 +1,49 @@
+FILE: .\research\mainline\sm8550.dtsi  node decls=874
+
+  chosen   (L36, parent=None)
+  clocks   (L38, parent=None)
+      compat: fixed-clock | fixed-clock | fixed-factor-clock | fixed-factor-clock
+  cpus   (L66, parent=None)
+      compat: arm,cortex-a510 | cache | cache | arm,cortex-a510
+  firmware   (L388, parent=None)
+      compat: qcom,scm-sm8550 | qcom,scm
+  interconnect-0   (L398, parent=None)
+      compat: qcom,sm8550-clk-virt
+  interconnect-1   (L404, parent=None)
+      compat: qcom,sm8550-mc-virt
+  opp-table-qup100mhz   (L410, parent=None)
+      compat: operating-points-v2
+  opp-table-qup120mhz   (L424, parent=None)
+      compat: operating-points-v2
+  opp-table-qup125mhz   (L438, parent=None)
+      compat: operating-points-v2
+  memory@a0000000   (L452, parent=None)
+  opp-table-cpu0   (L458, parent=None)
+      compat: operating-points-v2
+  opp-table-cpu3   (L543, parent=None)
+      compat: operating-points-v2
+  opp-table-cpu7   (L648, parent=None)
+      compat: operating-points-v2
+  pmu-a510   (L758, parent=None)
+      compat: arm,cortex-a510-pmu
+  pmu-a710   (L763, parent=None)
+      compat: arm,cortex-a710-pmu
+  pmu-a715   (L768, parent=None)
+      compat: arm,cortex-a715-pmu
+  pmu-x3   (L773, parent=None)
+      compat: arm,cortex-x3-pmu
+  psci   (L778, parent=None)
+      compat: arm,psci-1.0
+  reserved-memory   (L836, parent=None)
+      compat: qcom,cmd-db | qcom,smem | qcom,rmtfs-mem
+  smp2p-adsp   (L1093, parent=None)
+      compat: qcom,smp2p
+  smp2p-cdsp   (L1117, parent=None)
+      compat: qcom,smp2p
+  smp2p-modem   (L1141, parent=None)
+      compat: qcom,smp2p
+  soc@0  [status=disabled]   (L1176, parent=None)
+      compat: simple-bus | qcom,sm8550-gcc | qcom,sm8550-ipcc | qcom,ipcc
+  thermal-zones   (L6138, parent=None)
+  timer   (L7194, parent=None)
+      compat: arm,armv8-timer

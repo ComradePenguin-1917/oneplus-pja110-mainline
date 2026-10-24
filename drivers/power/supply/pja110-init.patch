@@ -1,0 +1,192 @@
+--- a/drivers/power/supply/qcom_battmgr.c
++++ b/drivers/power/supply/qcom_battmgr.c
+@@ -7,11 +7,17 @@
+ #include <linux/module.h>
+ #include <linux/mutex.h>
+ #include <linux/of_device.h>
++#include <linux/of.h>
+ #include <linux/power_supply.h>
+ #include <linux/soc/qcom/pdr.h>
+ #include <linux/soc/qcom/pmic_glink.h>
+ #include <linux/math.h>
+ #include <linux/units.h>
++
++static bool pja110_charger_init;
++module_param(pja110_charger_init, bool, 0400);
++MODULE_PARM_DESC(pja110_charger_init, "Opt in to PJA110 OEM 500mA charger initialization");
++#define BATT_CHG_EN 24
+ 
+ #define BATTMGR_CHEMISTRY_LEN	4
+ #define BATTMGR_STRING_LEN	128
+@@ -294,6 +300,9 @@
+ 	enum qcom_battmgr_unit unit;
+ 
+ 	int error;
++	bool request_failed;
++	u32 pending_set_opcode;
++	u32 pending_set_property;
+ 	struct completion ack;
+ 
+ 	bool service_up;
+@@ -318,17 +327,24 @@
+ 	unsigned long left;
+ 	int ret;
+ 
++	/* After a failed transaction, late replies are ambiguous. Reprobe first. */
++	if (READ_ONCE(battmgr->request_failed))
++		return -EIO;
+ 	reinit_completion(&battmgr->ack);
+ 
+ 	battmgr->error = 0;
+ 
+ 	ret = pmic_glink_send(battmgr->client, data, len);
+-	if (ret < 0)
++	if (ret < 0) {
++		WRITE_ONCE(battmgr->request_failed, true);
+ 		return ret;
++	}
+ 
+ 	left = wait_for_completion_timeout(&battmgr->ack, HZ);
+-	if (!left)
++	if (!left) {
++		WRITE_ONCE(battmgr->request_failed, true);
+ 		return -ETIMEDOUT;
++	}
+ 
+ 	return battmgr->error;
+ }
+@@ -345,7 +361,15 @@
+ 		.value = cpu_to_le32(value),
+ 	};
+ 
+-	return qcom_battmgr_request(battmgr, &request, sizeof(request));
++	WRITE_ONCE(battmgr->pending_set_property, property);
++	WRITE_ONCE(battmgr->pending_set_opcode,
++		   opcode == BATTMGR_BAT_PROPERTY_SET ||
++		   opcode == BATTMGR_USB_PROPERTY_SET ? opcode : 0);
++	{
++		int ret = qcom_battmgr_request(battmgr, &request, sizeof(request));
++		WRITE_ONCE(battmgr->pending_set_opcode, 0);
++		return ret;
++	}
+ }
+ 
+ static int qcom_battmgr_update_status(struct qcom_battmgr *battmgr)
+@@ -1273,7 +1297,24 @@
+ {
+ 	const struct pmic_glink_hdr *hdr = data;
+ 	struct qcom_battmgr *battmgr = priv;
+-	unsigned int opcode = le32_to_cpu(hdr->opcode);
++	unsigned int opcode;
++	const struct qcom_battmgr_message *resp = data;
++
++	if (len < sizeof(*hdr))
++		return;
++	opcode = le32_to_cpu(hdr->opcode);
++	if (READ_ONCE(battmgr->pending_set_opcode)) {
++		if (opcode != READ_ONCE(battmgr->pending_set_opcode) ||
++		    len != sizeof(*hdr) + sizeof(resp->intval) ||
++		    le32_to_cpu(hdr->type) != PMIC_GLINK_REQ_RESP ||
++		    le32_to_cpu(resp->intval.property) != battmgr->pending_set_property)
++			return;
++		battmgr->error = le32_to_cpu(resp->intval.result) ? -EREMOTEIO : 0;
++		complete(&battmgr->ack);
++		return;
++	}
++	if (opcode == BATTMGR_BAT_PROPERTY_SET || opcode == BATTMGR_USB_PROPERTY_SET)
++		return;
+ 
+ 	if (opcode == BATTMGR_NOTIFICATION)
+ 		qcom_battmgr_notification(battmgr, data, len);
+@@ -1281,6 +1322,43 @@
+ 		qcom_battmgr_sc8280xp_callback(battmgr, data, len);
+ 	else
+ 		qcom_battmgr_sm8350_callback(battmgr, data, len);
++}
++
++#include "pja110-ap-gauge.h"
++
++/* Gated downstream initialization adapted from oplus_chg_hw_init. */
++static int qcom_battmgr_pja110_init(struct qcom_battmgr *b)
++{
++	int ret;
++
++	if (!pja110_charger_init || !of_machine_is_compatible("oneplus,xigua"))
++		return 0;
++	if (b->variant != QCOM_BATTMGR_SM8350 || !b->service_up)
++		return -ENODEV;
++	ret = qcom_battmgr_request_property(b, BATTMGR_USB_PROPERTY_GET, USB_ONLINE, 0);
++	if (ret || !b->usb.online)
++		return ret ? ret : -ENOLINK;
++	ret = pja110_ap_gauge_check(b->dev);
++	if (ret)
++		return ret;
++	ret = qcom_battmgr_request_property(b, BATTMGR_USB_PROPERTY_GET, USB_CURR_MAX, 0);
++	if (ret || b->usb.current_max < 500000)
++		return ret ? ret : -ERANGE;
++	/* UINT_MAX is the documented OEM unsuspend sentinel, not an ICL. */
++	ret = qcom_battmgr_request_property(b, BATTMGR_USB_PROPERTY_SET,
++					     USB_INPUT_CURR_LIMIT, U32_MAX);
++	dev_info(b->dev, "PJA110 unsuspend response: %d\n", ret);
++	if (ret)
++		return ret;
++	ret = qcom_battmgr_request_property(b, BATTMGR_USB_PROPERTY_SET,
++					     USB_INPUT_CURR_LIMIT, 500000);
++	dev_info(b->dev, "PJA110 500mA vote response: %d\n", ret);
++	if (ret)
++		return ret;
++	ret = qcom_battmgr_request_property(b, BATTMGR_BAT_PROPERTY_SET,
++					     BATT_CHG_EN, 1);
++	dev_info(b->dev, "PJA110 charge-enable response: %d\n", ret);
++	return ret;
+ }
+ 
+ static void qcom_battmgr_enable_worker(struct work_struct *work)
+@@ -1293,9 +1371,13 @@
+ 	};
+ 	int ret;
+ 
++	mutex_lock(&battmgr->lock);
+ 	ret = qcom_battmgr_request(battmgr, &req, sizeof(req));
++	if (!ret)
++		ret = qcom_battmgr_pja110_init(battmgr);
++	mutex_unlock(&battmgr->lock);
+ 	if (ret)
+-		dev_err(battmgr->dev, "failed to request power notifications\n");
++		dev_err(battmgr->dev, "notification/charger initialization stopped: %d\n", ret);
+ }
+ 
+ static void qcom_battmgr_pdr_notify(void *priv, int state)
+@@ -1320,6 +1402,13 @@
+ 
+ static char *qcom_battmgr_battery[] = { "battery" };
+ 
++static void qcom_battmgr_cancel_work(void *data)
++{
++	struct qcom_battmgr *b = data;
++
++	cancel_work_sync(&b->enable_work);
++}
++
+ static int qcom_battmgr_probe(struct auxiliary_device *adev,
+ 			      const struct auxiliary_device_id *id)
+ {
+@@ -1328,6 +1417,7 @@
+ 	const struct of_device_id *match;
+ 	struct qcom_battmgr *battmgr;
+ 	struct device *dev = &adev->dev;
++	int ret;
+ 
+ 	battmgr = devm_kzalloc(dev, sizeof(*battmgr), GFP_KERNEL);
+ 	if (!battmgr)
+@@ -1390,6 +1480,10 @@
+ 					     "failed to register wireless charing power supply\n");
+ 	}
+ 
++	ret = devm_add_action_or_reset(dev, qcom_battmgr_cancel_work, battmgr);
++	if (ret)
++		return ret;
++
+ 	battmgr->client = devm_pmic_glink_client_alloc(dev, PMIC_GLINK_OWNER_BATTMGR,
+ 						       qcom_battmgr_callback,
+ 						       qcom_battmgr_pdr_notify,
